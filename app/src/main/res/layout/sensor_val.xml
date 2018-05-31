@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/return_menu"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Menu" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/led_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingEnd="12dp"
+            android:enabled="true"
+            android:paddingStart="12dp"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:switchPadding="12dp"
+            android:text="@string/RedLED" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Switch
+            android:id="@+id/capsense_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:enabled="true"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:switchPadding="12dp"
+            android:text="@string/Notify" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.06">
+
+        <TextView
+            android:id="@+id/capsense_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:paddingTop="20dp"
+            android:textSize="24dp"
+            android:text="@string/Capsense" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/capsense_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:paddingTop="20dp"
+        android:textSize="48dp"
+        android:text="@string/NotifyOff" />
+
+</LinearLayout>
