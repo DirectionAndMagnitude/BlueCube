@@ -1,21 +1,82 @@
 package com.example.jeromecrocco.bluecube;
 
-import android.os.Bundle;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+    };
+
+    public void onClk_mb1 (View view){    };
+
+    public void onClk_mb2 (View view){    };
+
+
+    public void onClk_mb3 (View view){
+        Toast.makeText(this, "Simple DAQ", Toast.LENGTH_SHORT).show();
+        setContentView(R.layout.activity_daq_simple);
+        Intent daq_simple = new Intent(this, daq_simple.class);
+        startActivity(daq_simple);
+    }
+
+
+    public void onClk_mb4 (View view){
+        Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
+        setContentView(R.layout.activity_daq_ble);
+
+        Intent daq_BLE = new Intent(this, _daq_bluetooth.class);
+        startActivity(daq_BLE);
+    }
+
+
+    /*
+        TODO:  Need to delete this code?
+        //set the fragment initially
+        HomeFragment fragment = new HomeFragment();
+        android.support.v4.app.FragmentTransaction fragmentTransaction =
+                getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_container, new HomeFragment());
+        fragmentTransaction.commit();
+*/
+
+/*
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
+/*
+
+
+    }
+
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
 
 
 
-public class MainActivity extends AppCompatActivity
+    //TODO:  Repurpose Menu Navigation Commands for plotting fragments to adjust setting / export data
+
+/*
+
+public class XXX extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     NavigationView navigationView = null;
@@ -26,8 +87,9 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.layout_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -49,18 +111,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-    }
 
-
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -68,6 +119,7 @@ public class MainActivity extends AppCompatActivity
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -99,6 +151,21 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Home");
         }
 
+        else if (id == R.id.nav_internal_sensor) {
+            //set the fragment initially
+            frag_simple fragment = new frag_simple();
+            android.support.v4.app.FragmentTransaction fragmentTransaction =
+                    getSupportFragmentManager().beginTransaction();
+
+            fragmentTransaction.replace(R.id.fragment_container, fragment);
+            fragmentTransaction.commit();
+            getSupportActionBar().setTitle("Internal Sensor");
+
+            //TODO: This is where you call the new intent
+            Intent internalsensor = new Intent(this, _daq_simple.class);
+            startActivity(internalsensor);
+        }
+
         else if (id == R.id.nav_bluetooth) {
             //set the fragment initially
             BlueToothFragment fragment = new BlueToothFragment();
@@ -109,41 +176,16 @@ public class MainActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Connect BlueTooth");
 
             //TODO: This is where you call the new intent
-            Intent bluetoothIntent = new Intent(this, _ConnectBluetooth.class);
+            Intent bluetoothIntent = new Intent(this, _daq_bluetooth.class);
             startActivity(bluetoothIntent);
         }
 
-        else if (id == R.id.nav_plotDynamic) {
-            //set the fragment initially
-            BlueToothFragment fragment = new BlueToothFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction =
-                    getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
-            getSupportActionBar().setTitle("Plot Dynamic Data");
-
-            //TODO: This is where you call the new intent
-            Intent plotDynamic = new Intent(this, DynamicXYPlotActivity.class);
-
-            startActivity(plotDynamic);
-        }
-
-        else if (id == R.id.nav_plotStatic) {
-            //set the fragment initially
-            SimplePlotFragment fragment = new SimplePlotFragment();
-            android.support.v4.app.FragmentTransaction fragmentTransaction =
-                    getSupportFragmentManager().beginTransaction();
-            fragmentTransaction.replace(R.id.fragment_container, fragment);
-            fragmentTransaction.commit();
-            getSupportActionBar().setTitle("Plot Static Data");
-
-            //TODO: This is where you call the new intent
-            Intent plotStatic = new Intent(this, SimpleXYPlotActivity.class);
-            startActivity(plotStatic);
-        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
+
         return true;
+
     }
+*/
 }

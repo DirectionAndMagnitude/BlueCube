@@ -27,9 +27,11 @@
             android:id="@+id/led_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:enabled="true"
             android:paddingBottom="@dimen/activity_horizontal_margin"
             android:paddingEnd="12dp"
-            android:enabled="true"
             android:paddingStart="12dp"
             android:paddingTop="@dimen/activity_horizontal_margin"
             android:switchPadding="12dp"
@@ -46,10 +48,8 @@
             android:id="@+id/capsense_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dp"
             android:enabled="true"
             android:paddingEnd="12dp"
             android:paddingStart="12dp"
@@ -90,7 +90,27 @@
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:paddingTop="20dp"
-        android:textSize="48dp"
-        android:text="@string/NotifyOff" />
+        android:text="@string/NotifyOff"
+        android:textSize="48dp" />
+
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/button_share"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="Share" />
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart_plot"
+        android:layout_width="368dp"
+        android:layout_height="200dp" />
 
 </LinearLayout>
