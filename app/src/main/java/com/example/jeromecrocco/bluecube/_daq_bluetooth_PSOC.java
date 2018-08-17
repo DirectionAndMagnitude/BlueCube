@@ -7,7 +7,6 @@ package com.example.jeromecrocco.bluecube;
 
 
 import android.annotation.TargetApi;
-import android.app.IntentService;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.app.Service;
 import android.bluetooth.BluetoothAdapter;
@@ -38,8 +37,8 @@ import java.util.UUID;
  * Service for managing the BLE data connection with the GATT database.
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP) // This is required to allow us to use the lollipop and later scan APIs
-public class PSoCCapSenseLedService extends Service {
-    private final static String TAG = PSoCCapSenseLedService.class.getSimpleName();
+public class _daq_bluetooth_PSOC extends Service {
+    private final static String TAG = _daq_bluetooth_PSOC.class.getSimpleName();
 
     // Bluetooth objects that we need to interact with
     private static BluetoothManager mBluetoothManager;
@@ -76,16 +75,16 @@ public class PSoCCapSenseLedService extends Service {
     public final static String ACTION_DATA_RECEIVED =
             "com.cypress.academy.ble101.ACTION_DATA_RECEIVED";
 
-    public PSoCCapSenseLedService() {
+    public _daq_bluetooth_PSOC() {
 
     }
 
     /**
-     * This is a binder for the PSoCCapSenseLedService
+     * This is a binder for the _daq_bluetooth_PSOC
      */
     public class LocalBinder extends Binder {
-        PSoCCapSenseLedService getService() {
-            return PSoCCapSenseLedService.this;
+        _daq_bluetooth_PSOC getService() {
+            return _daq_bluetooth_PSOC.this;
         }
     }
 

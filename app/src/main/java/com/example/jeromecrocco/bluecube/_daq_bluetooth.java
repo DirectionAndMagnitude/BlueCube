@@ -15,45 +15,64 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.IBinder;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ShareCompat;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.TextView;
 
+import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Legend;
+import com.github.mikephil.charting.components.XAxis;
+import com.github.mikephil.charting.components.YAxis;
+import com.github.mikephil.charting.data.Entry;
+import com.github.mikephil.charting.data.LineData;
+import com.github.mikephil.charting.data.LineDataSet;
+import com.github.mikephil.charting.interfaces.datasets.ILineDataSet;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import static java.lang.Float.parseFloat;
 
 
-public class _ConnectBluetooth  extends AppCompatActivity {
+public class _daq_bluetooth extends AppCompatActivity {
 
     // TAG is used for informational messages
-    private final static String TAG = _ConnectBluetooth.class.getSimpleName();
+    private final static String TAG = _daq_bluetooth.class.getSimpleName();
 
     // Variables to access objects from the layout such as buttons, switches, values
-    private static TextView mCapsenseValue;
-    private static Button start_button;
-    private static Button search_button;
-    private static Button connect_button;
-    private static Button discover_button;
-    private static Button disconnect_button;
-    private static Switch led_switch;
-    private static Switch cap_switch;
-    private static Button menu_Button;
+    private TextView mCapsenseValue;
+    private Button start_button;
+    private Button search_button;
+    private Button connect_button;
+    private Button discover_button;
+    private Button disconnect_button;
+    private Switch led_switch;
+    private Switch cap_switch;
+    private Button menu_Button;
 
-    private static Button led_Button;
-    private static Button capsense_Button;
 
-    private static Button plotdata_button;
+    private Button led_Button;
+    private Button capsense_Button;
+    private Button plotdata_button;
 
     // Variables to manage BLE connection
     private static boolean mConnectState;
     private static boolean mServiceConnected;
-    private static PSoCCapSenseLedService mPSoCCapSenseLedService;
+    private static _daq_bluetooth_PSOC mPSoCCapSenseLedService;
     private static final int REQUEST_ENABLE_BLE = 1;
 
     //This is required for Android 6.0 (Marshmallow)
@@ -63,11 +82,19 @@ public class _ConnectBluetooth  extends AppCompatActivity {
     /* This manages the lifecycle of the BLE service.
      * When the service starts we get the service object and initialize the service. */
 
+    private FileWriter writer;
+
+    String filename = "sensors_" + System.currentTimeMillis() + ".csv";
+    private Button stop_Button;
+    private Button share_Button;
+    private LineChart mChart;
+    private Thread thread;
+    private boolean plotData = true;
 
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
         /**
-         * This is called when the PSoCCapSenseLedService is connected
+         * This is called when the _daq_bluetooth_PSOC is connected
          * @param componentName the component name of the service that has been connected
          * @param service service being bound
          */
@@ -75,7 +102,7 @@ public class _ConnectBluetooth  extends AppCompatActivity {
         @Override
         public void onServiceConnected(ComponentName componentName, IBinder service) {
             Log.i(TAG, "onServiceConnected");
-            mPSoCCapSenseLedService = ((PSoCCapSenseLedService.LocalBinder) service).getService();
+            mPSoCCapSenseLedService = ((_daq_bluetooth_PSOC.LocalBinder) service).getService();
             mServiceConnected = true;
             mPSoCCapSenseLedService.initialize();
         }
@@ -97,7 +124,7 @@ public class _ConnectBluetooth  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_connectbluetooth);
+        setContentView(R.layout.activity_daq_ble);
 
         // Set up a variable to point to the CapSense value on the display
         mCapsenseValue = (TextView) findViewById(R.id.capsense_value);
@@ -107,13 +134,14 @@ public class _ConnectBluetooth  extends AppCompatActivity {
         discover_button = (Button) findViewById(R.id.discoverSvc_button);
         disconnect_button = (Button) findViewById(R.id.disconnect_button);
         menu_Button = (Button) findViewById(R.id.return_menu);
+        feedMultiple();
 
         //Assign a listener to your button
         menu_Button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Start your second activity
-                Intent intent = new Intent(_ConnectBluetooth.this, MainActivity.class);
+                Intent intent = new Intent(_daq_bluetooth.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -122,6 +150,8 @@ public class _ConnectBluetooth  extends AppCompatActivity {
         // Initialize service and connection state variable
         mServiceConnected = false;
         mConnectState = false;
+
+
 
         //This section required for Android 6.0 (Marshmallow)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -167,13 +197,13 @@ public class _ConnectBluetooth  extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        // Register the broadcast receiver. This specified the messages the main activity looks for from the PSoCCapSenseLedService
+        // Register the broadcast receiver. This specified the messages the main activity looks for from the _daq_bluetooth_PSOC
         final IntentFilter filter = new IntentFilter();
-        filter.addAction(PSoCCapSenseLedService.ACTION_BLESCAN_CALLBACK);
-        filter.addAction(PSoCCapSenseLedService.ACTION_CONNECTED);
-        filter.addAction(PSoCCapSenseLedService.ACTION_DISCONNECTED);
-        filter.addAction(PSoCCapSenseLedService.ACTION_SERVICES_DISCOVERED);
-        filter.addAction(PSoCCapSenseLedService.ACTION_DATA_RECEIVED);
+        filter.addAction(_daq_bluetooth_PSOC.ACTION_BLESCAN_CALLBACK);
+        filter.addAction(_daq_bluetooth_PSOC.ACTION_CONNECTED);
+        filter.addAction(_daq_bluetooth_PSOC.ACTION_DISCONNECTED);
+        filter.addAction(_daq_bluetooth_PSOC.ACTION_SERVICES_DISCOVERED);
+        filter.addAction(_daq_bluetooth_PSOC.ACTION_DATA_RECEIVED);
         registerReceiver(mBleUpdateReceiver, filter);
     }
 
@@ -219,7 +249,7 @@ public class _ConnectBluetooth  extends AppCompatActivity {
 
         // Start the BLE Service
         Log.d(TAG, "Starting BLE Service");
-        Intent gattServiceIntent = new Intent(this, PSoCCapSenseLedService.class);
+        Intent gattServiceIntent = new Intent(this, _daq_bluetooth_PSOC.class);
         bindService(gattServiceIntent, mServiceConnection, BIND_AUTO_CREATE);
 
         // Disable the start button and turn on the search  button
@@ -251,15 +281,102 @@ public class _ConnectBluetooth  extends AppCompatActivity {
         setContentView(R.layout.sensor_val);
 
         menu_Button = (Button) findViewById(R.id.return_menu);
+        stop_Button = (Button) findViewById(R.id.button_stop);
+        share_Button= (Button) findViewById(R.id.button_share);
+        mChart      = buildChart();
+
+
 
         menu_Button.setOnClickListener(new View.OnClickListener() {
                                            @Override
                                            public void onClick(View v) {
                                                //Start your second activity
-                                               Intent intent = new Intent(_ConnectBluetooth.this, MainActivity.class);
+                                               //TODO:  Need to discontinue Services after button is clicked on this view.
+                                               Intent intent = new Intent(_daq_bluetooth.this, MainActivity.class);
                                                startActivity(intent);
                                            }
                                        });
+
+
+        stop_Button.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                stop_Button.setEnabled(false);
+                share_Button.setEnabled(true);
+
+                mPSoCCapSenseLedService.disconnect();
+
+                return true;
+
+            }
+        });
+
+        share_Button.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                stop_Button.setEnabled(false);
+                share_Button.setEnabled(true);
+
+
+                // Create writer to write file
+                Log.d(TAG, "Writing to " + getStorageDir());
+                try {
+                    writer = new FileWriter(new File(getStorageDir(), filename));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                LineData data = mChart.getLineData();
+
+                ILineDataSet val = data.getDataSetByIndex(0);
+
+                int nvals = val.getEntryCount();
+
+                for (int ii=0 ; ii < nvals; ii++) {
+                    Entry v = val.getEntryForIndex(ii);
+                    float x = v.getX();
+                    float y = v.getY();
+
+                    try {
+                        writer.write(String.format("SENSOR, %f, %f\n", x, y));
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                File newFile = new File(getStorageDir(), filename);
+
+                String[] emails = {"Jerome.Crocco@gmail.com"};
+
+                Uri contentUri = FileProvider.getUriForFile(_daq_bluetooth.this,
+                        "com.example.jeromecrocco.bluecube.fileprovider",
+                        newFile);
+
+                Intent shareIntent = ShareCompat.IntentBuilder.from(_daq_bluetooth.this)
+                        .setStream(contentUri)
+                        .setText("Attached is Android Sensor Data") // uri from FileProvider
+                        .setSubject("Android Sensor Data")
+                        .setEmailTo(emails)
+                        .setType(getContentResolver().getType(contentUri))
+                        .getIntent()
+                        .setAction(Intent.ACTION_SEND) //Change if needed
+                        .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+
+                startActivity(shareIntent);
+                return true;
+
+            }
+        });
+
+        LineData data = mChart.getData();
 
         led_switch = (Switch) findViewById(R.id.led_switch);
         capsense_Button = (Button) findViewById(R.id.capsense_switch);
@@ -310,6 +427,138 @@ public class _ConnectBluetooth  extends AppCompatActivity {
         /* That event broadcasts a message which is picked up by the mGattUpdateReceiver */
     }
 
+    private String getStorageDir() {
+        return getCacheDir().toString();
+    }
+
+    private void addEntry(String val) {
+
+        LineData data = mChart.getData();
+
+
+        if (data != null) {
+
+            ILineDataSet set = data.getDataSetByIndex(0);
+            // set.addEntry(...); // can be called as well
+
+            if (set == null) {
+                set = createSet();
+                data.addDataSet(set);
+            }
+
+            float value = parseFloat(val);
+
+
+//            data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
+            data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
+            data.notifyDataChanged();
+
+            // let the chart know it's data has changed
+            mChart.notifyDataSetChanged();
+
+            // limit the number of visible entries
+            mChart.setVisibleXRangeMaximum(150);
+            // mChart.setVisibleYRange(30, AxisDependency.LEFT);
+
+            // move to the latest entry
+            mChart.moveViewToX(data.getEntryCount());
+
+        }
+    }
+
+    private LineDataSet createSet() {
+
+        LineDataSet set = new LineDataSet(null, "Dynamic Data");
+        set.setAxisDependency(YAxis.AxisDependency.LEFT);
+        set.setLineWidth(3f);
+        set.setColor(Color.BLUE);
+        set.setHighlightEnabled(false);
+        set.setDrawValues(false);
+        set.setDrawCircles(false);
+        set.setMode(LineDataSet.Mode.CUBIC_BEZIER);
+        set.setCubicIntensity(0.2f);
+        return set;
+
+    }
+
+    private LineChart buildChart() {
+
+        mChart = (LineChart) findViewById(R.id.chart_plot);
+        // enable touch gestures
+        mChart.setTouchEnabled(true);
+
+        // enable scaling and dragging
+        mChart.setDragEnabled(true);
+        mChart.setScaleEnabled(true);
+        mChart.setDrawGridBackground(false);
+
+        // if disabled, scaling can be done on x- and y-axis separately
+        mChart.setPinchZoom(true);
+
+        // set an alternative background color
+        mChart.setBackgroundColor(Color.WHITE);
+
+
+        LineData data = new LineData();
+        data.setValueTextColor(Color.WHITE);
+
+        // add empty data
+        mChart.setData(data);
+
+        // get the legend (only possible after setting data)
+        Legend l = mChart.getLegend();
+
+        // modify the legend ...
+        l.setForm(Legend.LegendForm.LINE);
+        l.setTextColor(Color.WHITE);
+
+        XAxis xl = mChart.getXAxis();
+        xl.setTextColor(Color.WHITE);
+        xl.setDrawGridLines(true);
+        xl.setAvoidFirstLastClipping(true);
+        xl.setEnabled(true);
+
+        YAxis leftAxis = mChart.getAxisLeft();
+        leftAxis.setTextColor(Color.WHITE);
+        leftAxis.setDrawGridLines(false);
+        leftAxis.setAxisMaximum(100f);
+        leftAxis.setAxisMinimum(0f);
+        leftAxis.setDrawGridLines(true);
+
+        YAxis rightAxis = mChart.getAxisRight();
+        rightAxis.setEnabled(false);
+
+        mChart.getAxisLeft().setDrawGridLines(false);
+        mChart.getXAxis().setDrawGridLines(false);
+        mChart.setDrawBorders(false);
+
+        return mChart;
+    }
+
+    private void feedMultiple() {
+
+        if (thread != null){
+            thread.interrupt();
+        }
+
+        thread = new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                while (true){
+                    plotData = true;
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
+            }
+        });
+
+        thread.start();
+    }
 
 
     /**  * Listener for BLE event broadcasts */
@@ -319,14 +568,14 @@ public class _ConnectBluetooth  extends AppCompatActivity {
             final String action = intent.getAction();
 
             switch (action) {
-                case PSoCCapSenseLedService.ACTION_BLESCAN_CALLBACK:
+                case _daq_bluetooth_PSOC.ACTION_BLESCAN_CALLBACK:
                     // Disable the search button and enable the connect button
                     search_button.setEnabled(false);
                     connect_button.setEnabled(true);
 
                     break;
 
-                case PSoCCapSenseLedService.ACTION_CONNECTED:
+                case _daq_bluetooth_PSOC.ACTION_CONNECTED:
                     /* This if statement is needed because we sometimes get a GATT_CONNECTED */
                     if (!mConnectState) {
                         connect_button.setEnabled(false);
@@ -336,7 +585,7 @@ public class _ConnectBluetooth  extends AppCompatActivity {
                         Log.d(TAG, "Connected to Device");
                     }
                     break;
-                case PSoCCapSenseLedService.ACTION_DISCONNECTED:
+                case _daq_bluetooth_PSOC.ACTION_DISCONNECTED:
                     // Disable the disconnect, discover svc, discover char button, and enable the search button
                     disconnect_button.setEnabled(false);
                     discover_button.setEnabled(false);
@@ -345,7 +594,7 @@ public class _ConnectBluetooth  extends AppCompatActivity {
                     Log.d(TAG, "Disconnected");
                     break;
 
-                case PSoCCapSenseLedService.ACTION_SERVICES_DISCOVERED:
+                case _daq_bluetooth_PSOC.ACTION_SERVICES_DISCOVERED:
                     // Disable the discover services button
                     Log.d(TAG, "Enabling Discover Button");
                     discover_button.setEnabled(false);
@@ -356,13 +605,22 @@ public class _ConnectBluetooth  extends AppCompatActivity {
                     break;
 
 
-                case PSoCCapSenseLedService.ACTION_DATA_RECEIVED:
+                case _daq_bluetooth_PSOC.ACTION_DATA_RECEIVED:
                     // This is called after a notify or a read completes
                     Log.d(TAG, "Receiving Data");
 
                     // Get CapSense Slider Value
                     Log.d(TAG, "Receiving CAP SENSE DATA");
                     String CapSensePos = mPSoCCapSenseLedService.getCapSenseValue();
+
+                    addEntry(CapSensePos);
+                    //float val = parseFloat(CapSensePos);
+                    //Long tsLong = System.currentTimeMillis()/1000;
+                    //String ts = tsLong.toString();
+                    //writer.write(String.format("ACC, %f, %f, %f, %f, %f, %f\n", 0.f, 0.f, 0.f, 0.f, 0.f, 0.f));
+                    //writer.write("DOG");
+                    //writer.write(System.lineSeparator()); //new line
+
                     if (CapSensePos.equals("-1")) {  // No Touch returns 0xFFFF which is -1
                         if (!CapSenseNotifyState) { // Notifications are off
                             mCapsenseValue.setText(R.string.NotifyOff);
@@ -378,13 +636,9 @@ public class _ConnectBluetooth  extends AppCompatActivity {
                   // Check LED switch Setting
                     Log.d(TAG, "Receiving LED SWITCH DATA");
                     if (!mPSoCCapSenseLedService.getLedSwitchState()) {
-                        Log.d(TAG, "LED SWITCH DATA True");
                         led_switch.setChecked(true);
-                        Log.d(TAG, "LED SWITCH DATA True Still");
                     } else {
-                        Log.d(TAG, "LED SWITCH DATA False");
                         led_switch.setChecked(false);
-                        Log.d(TAG, "LED SWITCH DATA False Still");
                     }
 
                 default:
