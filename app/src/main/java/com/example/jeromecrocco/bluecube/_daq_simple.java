@@ -14,7 +14,6 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -25,7 +24,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -44,7 +42,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class daq_simple extends AppCompatActivity
+public class _daq_simple extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,SensorEventListener2 {
 
     SensorManager manager;
@@ -85,7 +83,7 @@ public class daq_simple extends AppCompatActivity
         }
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                daq_simple.this,
+                _daq_simple.this,
                 android.R.layout.simple_spinner_dropdown_item,
                 spinnerArray);
 
@@ -118,7 +116,7 @@ public class daq_simple extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 setContentView(R.layout.activity_main);
-                Intent intent = new Intent(daq_simple.this, MainActivity.class);
+                Intent intent = new Intent(_daq_simple.this, MainActivity.class);
                 startActivity(intent);
 
             }
@@ -146,7 +144,7 @@ public class daq_simple extends AppCompatActivity
                 for (Sensor s : sensorList) {
                     if (s.getName() == sItems.getSelectedItem()) {
                         //TODO:  need to get index of accelerometer instead of hard code
-                        manager.registerListener(daq_simple.this, manager.getDefaultSensor(s.getType()), 0);
+                        manager.registerListener(_daq_simple.this, manager.getDefaultSensor(s.getType()), 0);
                     }
                 }
 
@@ -163,8 +161,8 @@ public class daq_simple extends AppCompatActivity
                         .setAction("Action", null).show();
 
                 isRunning = false;
-                manager.flush(daq_simple.this);
-                manager.unregisterListener(daq_simple.this);
+                manager.flush(_daq_simple.this);
+                manager.unregisterListener(_daq_simple.this);
                 try {
                     writer.close();
                 } catch (IOException e) {
@@ -216,11 +214,11 @@ public class daq_simple extends AppCompatActivity
 
                 String[] emails = {"Jerome.Crocco@gmail.com"};
 
-                Uri contentUri = FileProvider.getUriForFile(daq_simple.this,
+                Uri contentUri = FileProvider.getUriForFile(_daq_simple.this,
                         "com.example.jeromecrocco.bluecube.fileprovider",
                         newFile);
 
-                Intent shareIntent = ShareCompat.IntentBuilder.from(daq_simple.this)
+                Intent shareIntent = ShareCompat.IntentBuilder.from(_daq_simple.this)
                         .setStream(contentUri)
                         .setText("Attached is Android Sensor Data") // uri from FileProvider
                         .setSubject("Android Sensor Data")
@@ -492,7 +490,7 @@ public class daq_simple extends AppCompatActivity
 
     @Override
     protected void onDestroy() {
-        manager.unregisterListener(daq_simple.this);
+        manager.unregisterListener(_daq_simple.this);
         thread.interrupt();
         super.onDestroy();
     }

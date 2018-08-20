@@ -24,14 +24,18 @@ public class MainActivity extends AppCompatActivity {
     };
 
 
-    public void onClk_mb2 (View view){    };
+    public void onClk_mb2 (View view){
+        Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
+        setContentView(R.layout.activity_new_study);
 
-
+        Intent intent = new Intent(this, _study_new.class);
+        startActivity(intent);
+    };
 
     public void onClk_mb3 (View view){
         Toast.makeText(this, "Simple DAQ", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_daq_simple);
-        Intent intent = new Intent(this, daq_simple.class);
+        Intent intent = new Intent(this, _daq_simple.class);
         startActivity(intent);
     }
 

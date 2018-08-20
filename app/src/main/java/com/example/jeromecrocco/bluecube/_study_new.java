@@ -1,5 +1,8 @@
 package com.example.jeromecrocco.bluecube;
 
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -12,8 +15,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
-public class new_study extends AppCompatActivity
+public class _study_new extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
@@ -48,7 +52,9 @@ public class new_study extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            setContentView(R.layout.activity_main);
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -98,4 +104,50 @@ public class new_study extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void onClkIntro (View v){
+        Toast.makeText(this,"Add Intro to Project",Toast.LENGTH_SHORT).show();
+
+        // get fragment manager
+        FragmentManager fm = getFragmentManager();
+
+
+        // replace
+        FragmentTransaction ft = fm.beginTransaction();
+
+        ft.replace(R.id.frag_intro_layout, new frag_intro() );
+        ft.commit();
+    /*
+        // remove
+        Fragment fragment = fm.findFragmentById(R.id.your_placehodler);
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.remove(fragment);
+        ft.commit();
+
+        // add
+        FragmentTransaction ft = fm.beginTransaction();
+        ft.add(R.id.your_placehodler, new YourFragment());
+        // alternatively add it with a tag
+        // trx.add(R.id.your_placehodler, new YourFragment(), "detail");
+        ft.commit();
+
+        */
+
+
+    };
+
+    public void onClkExp (View v){
+        Toast.makeText(this,"Add Exp. Details to Project",Toast.LENGTH_SHORT).show();
+
+    };
+
+    public void onClkData (View v){
+        Toast.makeText(this,"Add Data to Project",Toast.LENGTH_SHORT).show();
+
+    };
+
+    public void onClkNotes (View v){
+        Toast.makeText(this,"Add Notes to Project",Toast.LENGTH_SHORT).show();
+
+    };
 }

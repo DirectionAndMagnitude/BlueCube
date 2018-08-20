@@ -65,7 +65,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity
-            android:name=".daq_simple"
+            android:name="._daq_simple"
             android:label="@string/title_activity_daq_simple"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -75,7 +75,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".new_study"
+            android:name="._study_new"
             android:label="@string/title_activity_new_study"
             android:theme="@style/AppTheme"></activity>
     </application>

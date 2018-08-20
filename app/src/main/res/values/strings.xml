@@ -15,6 +15,14 @@
     <string name="main_button_3">Simple</string>
     <string name="main_button_4">Bluetooth</string>
 
+
+    <!--New Study Related Strings-->
+    <string name="new_AddIntro">Intro Stuff</string>
+    <string name="new_AddExp">Experimental Things</string>
+    <string name="new_AddData">Add Some Data</string>
+    <string name="new_AddNotes">Notes</string>
+
+
     <!--BLE Related Strings-->
     <string name="ConnectBLE">Run All</string>
     <string name="Start">Initialize BLE</string>
@@ -45,9 +53,11 @@
         <item>Conclusions</item>
         <item>References</item>
         <item>Notes</item>
-
-
     </string-array>
+
     <string name="title_activity_new_study">new_study</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
 
