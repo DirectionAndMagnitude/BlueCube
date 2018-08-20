@@ -13,6 +13,7 @@
     <!-- Location permission required for android 6.0 (Marshmallow) -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.company.app.fileprovider.READ" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -50,11 +51,11 @@
 
         <activity
             android:name="._daq_bluetooth"
-            android:label="_ConnectBluetooth" />
+            android:label="_daq_bluetooth" />
         <activity
-            android:name="._daq_simple"
-            android:label="_ConnectBluetooth" />
-
+            android:name="._exp_new"
+            android:label="_exp_new"
+            android:launchMode="standard" />
         <!--
      ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -73,6 +74,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".new_study"
+            android:label="@string/title_activity_new_study"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

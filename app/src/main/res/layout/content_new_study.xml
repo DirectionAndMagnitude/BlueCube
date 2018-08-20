@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".daq_simple"
-    android:alpha="0.9 "
-    tools:showIn="@layout/app_bar_daq_simple">
+    tools:context=".new_study"
+    tools:showIn="@layout/app_bar_new_study">
 
 </android.support.constraint.ConstraintLayout>

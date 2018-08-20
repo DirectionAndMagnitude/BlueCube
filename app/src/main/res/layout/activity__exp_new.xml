@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="._exp_new"
+    tools:showIn="@layout/activity__exp_new"
+    android:orientation="vertical"
+    android:id="@+id/parent_linear_layout"
+    >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:inputType="text"/>
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:entries="@array/types"
+            android:gravity="right" />
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_delete"
+            android:onClick="onDelete"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/add_field_button_1"
+            android:drawableBottom="@drawable/ic_menu_slideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#555"
+            android:onClick="onAddField"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/add_field_button_2"
+            android:drawableBottom="@drawable/ic_menu_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#555"
+            android:onClick="onAddField"
+            android:textColor="#FFF"/>
+
+        <Button
+            android:id="@+id/add_field_button_3"
+            android:drawableBottom="@drawable/ic_menu_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#555"
+            android:onClick="onAddField"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

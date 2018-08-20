@@ -27,6 +27,7 @@ import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.Legend;
@@ -91,25 +92,15 @@ public class daq_simple extends AppCompatActivity
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         sItems.setAdapter(adapter);
 
+        FloatingActionButton fab_Home  = (FloatingActionButton) findViewById(R.id.fab_Home);
         FloatingActionButton fab_Start = (FloatingActionButton) findViewById(R.id.fab_Start);
         FloatingActionButton fab_Pause = (FloatingActionButton) findViewById(R.id.fab_Pause);
         FloatingActionButton fab_Reset = (FloatingActionButton) findViewById(R.id.fab_Reset);
         FloatingActionButton fab_Share = (FloatingActionButton) findViewById(R.id.fab_Share);
 
 
-/*
-        fab_Start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startDAQ();
-
-
-            }
-        });
-*/
-
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -123,10 +114,21 @@ public class daq_simple extends AppCompatActivity
         feedMultiple();
 
 
+        fab_Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_main);
+                Intent intent = new Intent(daq_simple.this, MainActivity.class);
+                startActivity(intent);
+
+            }
+
+        });
+
         fab_Start.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "DAQ STARTED", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 
                 // Create writer to write file
@@ -156,6 +158,10 @@ public class daq_simple extends AppCompatActivity
         fab_Pause.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Snackbar.make(view, "DAQ PAUSED", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+
                 isRunning = false;
                 manager.flush(daq_simple.this);
                 manager.unregisterListener(daq_simple.this);
@@ -172,36 +178,38 @@ public class daq_simple extends AppCompatActivity
         fab_Reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                isRunning = false;
-                manager.flush(daq_simple.this);
-                manager.unregisterListener(daq_simple.this);
+                Log.d(TAG, "Resetting Data " + getStorageDir());
                 try {
-                    writer.close();
+                    writer = new FileWriter(new File(getStorageDir(), filename));
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
 
-            }
-        });
 
+                LineData data = mChart.getData();
+                data.removeDataSet(0);
 
-        fab_Reset.setOnTouchListener(new View.OnTouchListener() {
+                ILineDataSet set = createSet();
+                data.addDataSet(set);
 
+//            data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
+                data.notifyDataChanged();
+
+                // let the chart know it's data has changed
+                mChart.notifyDataSetChanged();
+/*
+                // limit the number of visible entries
+                mChart.setVisibleXRangeMaximum(150);
+                // mChart.setVisibleYRange(30, AxisDependency.LEFT);
+
+                // move to the latest entry
+                mChart.moveViewToX(data.getEntryCount());
+ */               }
+            });
+
+        fab_Share.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-
-                return true;
-            }
-
-        });
-
-        fab_Share.setOnTouchListener(new View.OnTouchListener() {
-
-            @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-
-                Snackbar.make(view, "Sharing Data", Snackbar.LENGTH_SHORT)
-                        .setAction("Action", null).show();
+            public void onClick(View view) {
                 //TODO Need to put a try catch here in case directory is wrong
 
                 File newFile = new File(getStorageDir(), filename);
@@ -224,10 +232,7 @@ public class daq_simple extends AppCompatActivity
 
                 startActivity(shareIntent);
 
-
-                return true;
             }
-
         });
 
 
@@ -240,7 +245,9 @@ public class daq_simple extends AppCompatActivity
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            setContentView(R.layout.activity_main);
+            Intent intent = new Intent(this, MainActivity.class);
+            startActivity(intent);
         }
     }
 
@@ -252,55 +259,6 @@ public class daq_simple extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        if (id == R.id.action_start) {
-//            startDAQ();
-            final Spinner sItems                = (Spinner) findViewById(R.id.intsen_spinner);
-            // Create writer to write file
-            Log.d(TAG, "Writing to " + getStorageDir());
-            try {
-                writer = new FileWriter(new File(getStorageDir(), filename));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            List<Sensor> sensorList     = manager.getSensorList( Sensor.TYPE_ALL );
-            //Compare which spinner item is selected with all sensors on device.
-            //Register selected sensor
-            for (Sensor s : sensorList) {
-
-                if (s.getName() == sItems.getSelectedItem()) {
-                    //TODO:  need to get index of accelerometer instead of hard code
-                    manager.registerListener(daq_simple.this, manager.getDefaultSensor(s.getType()), 0);
-                }
-            }
-            isRunning = true;
-
-
-            return true;
-        }
-        if (id == R.id.action_stop) {
-            startDAQ();
-            return true;
-        }
-
-        if (id == R.id.action_share) {
-            startDAQ();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -313,13 +271,13 @@ public class daq_simple extends AppCompatActivity
             setContentView(R.layout.activity_main);
         }
         else if (id == R.id.nav_daq_start) {
-            startDAQ();
+            Toast.makeText(this,"Start",Toast.LENGTH_SHORT).show();
         }
         else if (id == R.id.nav_daq_stop) {
-            stopDAQ();
+            Toast.makeText(this,"Stop",Toast.LENGTH_SHORT).show();
         }
         else if (id == R.id.nav_daq_share) {
-            shareDAQ();
+            Toast.makeText(this,"Share",Toast.LENGTH_SHORT).show();
         }
         else if (id == R.id.nav_bluetooth) {
         }
@@ -332,70 +290,6 @@ public class daq_simple extends AppCompatActivity
         return true;
     }
 
-
-    public boolean startDAQ() {
-
-        final Spinner sItems                = (Spinner) findViewById(R.id.intsen_spinner);
-        // Create writer to write file
-        Log.d(TAG, "Writing to " + getStorageDir());
-        try {
-            writer = new FileWriter(new File(getStorageDir(), filename));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        List<Sensor> sensorList     = manager.getSensorList( Sensor.TYPE_ALL );
-        //Compare which spinner item is selected with all sensors on device.
-        //Register selected sensor
-        for (Sensor s : sensorList) {
-
-            if (s.getName() == sItems.getSelectedItem()) {
-                //TODO:  need to get index of accelerometer instead of hard code
-                manager.registerListener(daq_simple.this, manager.getDefaultSensor(s.getType()), 0);
-            }
-        }
-        isRunning = true;
-        return true;
-    }
-
-    public boolean stopDAQ(){
-        isRunning = false;
-        manager.flush(daq_simple.this);
-        manager.unregisterListener(daq_simple.this);
-        try {
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return true;
-
-    };
-
-    public boolean shareDAQ(){
-        //TODO Need to put a try catch here in case directory is wrong
-
-        File newFile = new File(getStorageDir(), filename);
-
-        String[] emails = {"Jerome.Crocco@gmail.com"};
-
-        Uri contentUri = FileProvider.getUriForFile(daq_simple.this,
-                "com.example.jeromecrocco.bluecube.fileprovider",
-                newFile);
-
-        Intent shareIntent = ShareCompat.IntentBuilder.from(daq_simple.this)
-                .setStream(contentUri)
-                .setText("Attached is Android Sensor Data") // uri from FileProvider
-                .setSubject("Android Sensor Data")
-                .setEmailTo(emails)
-                .setType(getContentResolver().getType(contentUri))
-                .getIntent()
-                .setAction(Intent.ACTION_SEND) //Change if needed
-                .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-
-        startActivity(shareIntent);
-
-        return true;
-    };
 
     @Override
     public void onSensorChanged(SensorEvent evt) {
@@ -437,9 +331,9 @@ public class daq_simple extends AppCompatActivity
     }
 
     private String getStorageDir() {
-        return getCacheDir().toString();
         //  return this.getExternalFilesDir(null).getAbsolutePath();
         //  return "/storage/emulated/0/Android/data/com.iam360.sensorlog/";
+        return getCacheDir().toString();
     }
 
     @Override

@@ -16,25 +16,31 @@ public class MainActivity extends AppCompatActivity {
 
     };
 
-    public void onClk_mb1 (View view){    };
+    public void onClk_mb1 (View view){
+
+        Toast.makeText(this, "New Exp.", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, _exp_new.class);
+        startActivity(intent);
+    };
+
 
     public void onClk_mb2 (View view){    };
+
 
 
     public void onClk_mb3 (View view){
         Toast.makeText(this, "Simple DAQ", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_daq_simple);
-        Intent daq_simple = new Intent(this, daq_simple.class);
-        startActivity(daq_simple);
+        Intent intent = new Intent(this, daq_simple.class);
+        startActivity(intent);
     }
-
 
     public void onClk_mb4 (View view){
         Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
         setContentView(R.layout.activity_daq_ble);
 
-        Intent daq_BLE = new Intent(this, _daq_bluetooth.class);
-        startActivity(daq_BLE);
+        Intent intent = new Intent(this, _daq_bluetooth.class);
+        startActivity(intent);
     }
 
 
