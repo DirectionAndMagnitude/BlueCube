@@ -28,7 +28,7 @@ public class _study_new_intro extends AppCompatActivity {
     }
 
 
-    public void newIntroSave(View view){
+    public void onSave(View view){
         Toast.makeText(this,"Saving Text",Toast.LENGTH_SHORT).show();
 
     }

@@ -18,7 +18,7 @@
             android:layout_height="match_parent"
             android:id="@+id/button_new_intro"
             android:text="Save"
-            android:onClick="newIntroSave"/>
+            android:onClick="onSave"/>
 
         <EditText
             android:layout_width="wrap_content"
