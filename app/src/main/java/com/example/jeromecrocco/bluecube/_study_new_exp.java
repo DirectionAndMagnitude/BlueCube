@@ -23,7 +23,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _exp_new extends AppCompatActivity {
+public class _study_new_exp extends AppCompatActivity {
 
 /*
     ListView mList;

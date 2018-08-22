@@ -1,12 +1,7 @@
 package com.example.jeromecrocco.bluecube;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -19,8 +14,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class _study_new extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener ,
-        frag_intro.OnFragmentInteractionListener  {
+        implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,10 +70,6 @@ public class _study_new extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onFragmentInteraction(Uri uri){
-        //you can leave it empty
-    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -108,18 +98,20 @@ public class _study_new extends AppCompatActivity
 
 
     public void onClkIntro (View v){
+
         Toast.makeText(this,"Add Intro to Project",Toast.LENGTH_SHORT).show();
 
-        // get fragment manager
-        FragmentManager fm = getFragmentManager();
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.replace(R.id.frag_intro_layout, new frag_intro() );
-        ft.commit();
+        Intent intent = new Intent(this, _study_new_intro.class);
+        startActivity(intent);
+
     };
+
 
     public void onClkExp (View v){
         Toast.makeText(this,"Add Exp. Details to Project",Toast.LENGTH_SHORT).show();
 
+        Intent intent = new Intent(this, _study_new_exp.class);
+        startActivity(intent);
     };
 
     public void onClkData (View v){

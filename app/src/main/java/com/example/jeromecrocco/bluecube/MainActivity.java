@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     public void onClk_mb1 (View view){
 
         Toast.makeText(this, "New Exp.", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, _exp_new.class);
+        Intent intent = new Intent(this, _study_new_exp.class);
         startActivity(intent);
     };
 

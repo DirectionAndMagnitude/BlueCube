@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="._exp_new"
+    tools:context="._study_new_exp"
     tools:showIn="@layout/activity__exp_new"
     android:orientation="vertical"
-    android:id="@+id/parent_linear_layout"
+    android:id="@+id/study_new_exp"
     >
 
 
@@ -19,10 +18,14 @@
         android:orientation="horizontal" >
         <EditText
             android:id="@+id/edit_text"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:inputType="text"/>
+            android:layout_weight="1"
+            android:hint="@string/compose_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="10"
+            />
         <Spinner
             android:id="@+id/type_spinner"
             android:layout_width="0dp"

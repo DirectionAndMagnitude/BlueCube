@@ -53,7 +53,7 @@
             android:name="._daq_bluetooth"
             android:label="_daq_bluetooth" />
         <activity
-            android:name="._exp_new"
+            android:name="._study_new_exp"
             android:label="_exp_new"
             android:launchMode="standard" />
         <!--
@@ -77,6 +77,10 @@
         <activity
             android:name="._study_new"
             android:label="@string/title_activity_new_study"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="._study_new_intro"
+            android:label="@string/title_activity__study_new_intro"
             android:theme="@style/AppTheme"></activity>
     </application>
 
