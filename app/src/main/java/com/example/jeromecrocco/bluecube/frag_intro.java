@@ -3,7 +3,7 @@ package com.example.jeromecrocco.bluecube;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -28,20 +28,20 @@ public class frag_intro extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
-    private LinearLayout parentLinearLayout;
-
-
     private OnFragmentInteractionListener mListener;
+
+
+
+
 
     public frag_intro() {
         // Required empty public constructor
+
     }
 
     /**
      * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
+     * this fragment using the provided parameters
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
      * @return A new instance of fragment frag_intro.
@@ -72,6 +72,7 @@ public class frag_intro extends Fragment {
         return inflater.inflate(R.layout.frag_intro, container, false);
     }
 
+
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
@@ -79,9 +80,12 @@ public class frag_intro extends Fragment {
         }
     }
 
+
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
+
         if (context instanceof OnFragmentInteractionListener) {
             mListener = (OnFragmentInteractionListener) context;
         } else {
@@ -89,6 +93,7 @@ public class frag_intro extends Fragment {
                     + " must implement OnFragmentInteractionListener");
         }
     }
+
 
     @Override
     public void onDetach() {
@@ -124,7 +129,6 @@ public class frag_intro extends Fragment {
 
     public void onDelete(View v) {
         //Toast.makeText(this,"Delete Field",Toast.LENGTH_LONG).show();
-        parentLinearLayout.removeView((View) v.getParent());
     }
 
 

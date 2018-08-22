@@ -3,6 +3,7 @@ package com.example.jeromecrocco.bluecube;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,7 +19,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class _study_new extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener ,
+        frag_intro.OnFragmentInteractionListener  {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +28,6 @@ public class _study_new extends AppCompatActivity
         setContentView(R.layout.activity_new_study);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -44,6 +37,9 @@ public class _study_new extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+
     }
 
     @Override
@@ -80,6 +76,11 @@ public class _study_new extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri){
+        //you can leave it empty
+    }
+
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
@@ -105,35 +106,15 @@ public class _study_new extends AppCompatActivity
         return true;
     }
 
+
     public void onClkIntro (View v){
         Toast.makeText(this,"Add Intro to Project",Toast.LENGTH_SHORT).show();
 
         // get fragment manager
         FragmentManager fm = getFragmentManager();
-
-
-        // replace
         FragmentTransaction ft = fm.beginTransaction();
-
         ft.replace(R.id.frag_intro_layout, new frag_intro() );
         ft.commit();
-    /*
-        // remove
-        Fragment fragment = fm.findFragmentById(R.id.your_placehodler);
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.remove(fragment);
-        ft.commit();
-
-        // add
-        FragmentTransaction ft = fm.beginTransaction();
-        ft.add(R.id.your_placehodler, new YourFragment());
-        // alternatively add it with a tag
-        // trx.add(R.id.your_placehodler, new YourFragment(), "detail");
-        ft.commit();
-
-        */
-
-
     };
 
     public void onClkExp (View v){

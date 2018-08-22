@@ -83,7 +83,7 @@ public class _exp_new extends AppCompatActivity {
     public void onAddField(View v) {
         Toast.makeText(this,"Add Field",Toast.LENGTH_LONG).show();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        final View rowView = inflater.inflate(R.layout.content_field, null);
+                final View rowView = inflater.inflate(R.layout.content_field, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
 
