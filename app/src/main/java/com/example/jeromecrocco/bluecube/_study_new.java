@@ -106,7 +106,6 @@ public class _study_new extends AppCompatActivity
 
     };
 
-
     public void onClkExp (View v){
         Toast.makeText(this,"Add Exp. Details to Project",Toast.LENGTH_SHORT).show();
 

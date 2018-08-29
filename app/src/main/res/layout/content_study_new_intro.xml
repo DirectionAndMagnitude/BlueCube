@@ -21,18 +21,21 @@
             android:onClick="onSave"/>
 
         <EditText
+            android:id="@+id/intro_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="The Title of this work is..." />
 
         <EditText
+            android:id="@+id/intro_motivation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:text="The motivation behind this work is" />
 
         <EditText
+            android:id="@+id/intro_objective"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
