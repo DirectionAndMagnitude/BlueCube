@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="._study_new_exp"
-    tools:showIn="@layout/activity__exp_new"
+    tools:showIn="@layout/activity_study_new_exp"
     android:orientation="vertical"
     android:id="@+id/study_new_exp"
     >

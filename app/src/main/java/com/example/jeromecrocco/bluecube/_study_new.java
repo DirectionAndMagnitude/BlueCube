@@ -19,7 +19,7 @@ public class _study_new extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_study);
+        setContentView(R.layout.activity_study_new);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -105,7 +105,6 @@ public class _study_new extends AppCompatActivity
         startActivity(intent);
 
     };
-
 
     public void onClkExp (View v){
         Toast.makeText(this,"Add Exp. Details to Project",Toast.LENGTH_SHORT).show();

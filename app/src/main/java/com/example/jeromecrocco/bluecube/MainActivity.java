@@ -19,14 +19,17 @@ public class MainActivity extends AppCompatActivity {
     public void onClk_mb1 (View view){
 
         Toast.makeText(this, "New Exp.", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, _study_new_exp.class);
+/*        Intent intent = new Intent(this, _study_new_exp.class);
+        startActivity(intent);*/
+
+        Intent intent = new Intent(this, StudentActivity.class);
         startActivity(intent);
     };
 
 
     public void onClk_mb2 (View view){
         Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
-        setContentView(R.layout.activity_new_study);
+        setContentView(R.layout.activity_study_new);
 
         Intent intent = new Intent(this, _study_new.class);
         startActivity(intent);
@@ -64,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-/*
+
 
 
     }
