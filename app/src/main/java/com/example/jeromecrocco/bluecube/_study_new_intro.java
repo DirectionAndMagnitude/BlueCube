@@ -45,7 +45,7 @@ public class _study_new_intro extends AppCompatActivity {
     public void onSave(View view){
         Toast.makeText(this,"Saving Text",Toast.LENGTH_SHORT).show();
 
-        BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
+/*        BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
 
         int id   = 1;
         String t = title.getText().toString();
@@ -60,7 +60,7 @@ public class _study_new_intro extends AppCompatActivity {
 
         i.putExtras("intro_data",dbHandler);
 
-        startActivity(intent);
+        startActivity(intent);*/
 
 
     }

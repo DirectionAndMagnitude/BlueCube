@@ -1,3 +1,4 @@
+/*
 package com.example.jeromecrocco.bluecube;
 
 import android.os.Bundle;
@@ -110,3 +111,4 @@ public class StudentActivity extends AppCompatActivity {
 
 
 }
+*/

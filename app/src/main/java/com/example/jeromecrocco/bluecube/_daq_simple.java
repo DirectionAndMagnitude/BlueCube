@@ -295,6 +295,7 @@ public class _daq_simple extends AppCompatActivity
             if(plotData){
                 addEntry(evt);
                 plotData = false;
+//                TODO
             }
 
             try {

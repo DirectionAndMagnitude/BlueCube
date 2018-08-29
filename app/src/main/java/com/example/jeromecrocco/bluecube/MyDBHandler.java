@@ -1,3 +1,4 @@
+/*
 package com.example.jeromecrocco.bluecube;
 
 
@@ -34,10 +35,12 @@ public class MyDBHandler extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
 
     public String loadHandler() {
+*/
 /*
         Use the rawQuery() method of a SQLiteDatabase object to implement
         SQL statement and display result via a Cursor object.
-*/
+*//*
+
         String result = "";
         String query = "Select*FROM" + TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
@@ -55,12 +58,14 @@ public class MyDBHandler extends SQLiteOpenHelper {
 
     }
     public void addHandler(Student student) {
+*/
 /*
         To add a new record to the database, we must use the ContentValues
         object with the put() method that is used to assign data to ContentsValues
         object and then use insert() method of SQLiteDatabase object to insert
         data to the database.
-*/
+*//*
+
 
         ContentValues values = new ContentValues();
         values.put(COLUMN_ID, student.getID());
@@ -72,11 +77,13 @@ public class MyDBHandler extends SQLiteOpenHelper {
     }
     public Student findHandler(String studentname) {
 
+*/
 /*
         We save the result that is returned from implementation of the rawQuery()
         method of the SQLiteDatabase object into a Cursor object and find the
         matching result in this object.
-*/
+*//*
+
         String query = "Select * FROM " + TABLE_NAME + "WHERE" + COLUMN_NAME + " = " + "'" + studentname + "'";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
@@ -94,13 +101,15 @@ public class MyDBHandler extends SQLiteOpenHelper {
 
     }
     public boolean deleteHandler(int ID) {
+*/
 /*
         We will save the result that is returned from the implementation of the rawQuery()
         method of the SQLiteDatabase object into a Cursor object and find the matching
         result in this object.
         In the final step, we use the delete() method of the SQLiteDatabase object to delete
         the record.
-*/
+*//*
+
         boolean result = false;
         String query = "Select*FROM" + TABLE_NAME + "WHERE" + COLUMN_ID + "= '" + String.valueOf(ID) + "'";
         SQLiteDatabase db = this.getWritableDatabase();
@@ -121,10 +130,12 @@ public class MyDBHandler extends SQLiteOpenHelper {
     }
     public boolean updateHandler(int ID, String name) {
 
+*/
 /*
         To update the information of a record, we can use the ContentValues object
         and the update() method of the SQLiteDatabase object.
-*/
+*//*
+
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues args = new ContentValues();
@@ -135,3 +146,4 @@ public class MyDBHandler extends SQLiteOpenHelper {
 }
 
 
+*/

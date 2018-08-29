@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 /*        Intent intent = new Intent(this, _study_new_exp.class);
         startActivity(intent);*/
 
-        Intent intent = new Intent(this, StudentActivity.class);
-        startActivity(intent);
+/*        Intent intent = new Intent(this, StudentActivity.class);
+        startActivity(intent);*/
     };
 
 
