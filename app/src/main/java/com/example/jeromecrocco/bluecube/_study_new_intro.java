@@ -18,7 +18,6 @@ public class _study_new_intro extends AppCompatActivity {
     EditText objective;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,9 +26,9 @@ public class _study_new_intro extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        title   = (EditText) findViewById(R.id.intro_title);
-        motivation = (EditText) findViewById(R.id.intro_motivation);
-        objective = (EditText) findViewById(R.id.intro_objective);
+        title       = (EditText) findViewById(R.id.intro_title);
+        motivation  = (EditText) findViewById(R.id.intro_motivation);
+        objective   = (EditText) findViewById(R.id.intro_objective);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -37,30 +36,42 @@ public class _study_new_intro extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
             }
         });
+
+        // Here we will set the fields if there is already data present
+
+        _study_class study = _study_class.getInstance();
+
+        if (study.getStudyName() != null)
+            title.setText(study.getStudyName());
+            motivation.setText(study.getMotivation());
+            objective.setText(study.getObjective());
+
     }
 
 
     public void onSave(View view){
         Toast.makeText(this,"Saving Text",Toast.LENGTH_SHORT).show();
 
-/*        BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
+        BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
+        _study_class study = _study_class.getInstance();
+
 
         int id   = 1;
-        String t = title.getText().toString();
-        String m = motivation.getText().toString();
-        String o = objective.getText().toString();
+        String stitle = title.getText().toString();
+        String smotivation = motivation.getText().toString();
+        String sobjective = objective.getText().toString();
 
-        _study_class study = new _study_class(id,t,m,o);
+        study.setIntroData(id, stitle, smotivation, sobjective);
+
         dbHandler.addHandler(study);
 
         setContentView(R.layout.activity_study_new);
-        Intent intent = new Intent(this, MainActivity.class);
 
-        i.putExtras("intro_data",dbHandler);
-
-        startActivity(intent);*/
+        Intent intent = new Intent(this, _study_new.class);
+        startActivity(intent);
 
 
     }

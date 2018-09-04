@@ -41,11 +41,11 @@ public class _daq_bluetooth_PSOC extends Service {
     private final static String TAG = _daq_bluetooth_PSOC.class.getSimpleName();
 
     // Bluetooth objects that we need to interact with
-    private static BluetoothManager mBluetoothManager;
-    private static BluetoothAdapter mBluetoothAdapter;
-    private static BluetoothLeScanner mLEScanner;
-    private static BluetoothDevice mLeDevice;
-    private static BluetoothGatt mBluetoothGatt;
+    private static BluetoothManager     mBluetoothManager;
+    private static BluetoothAdapter     mBluetoothAdapter;
+    private static BluetoothLeScanner   mLEScanner;
+    private static BluetoothDevice      mLeDevice;
+    private static BluetoothGatt        mBluetoothGatt;
 
     // Bluetooth characteristics that we need to read/write
     private static BluetoothGattCharacteristic mLedCharacterisitc;

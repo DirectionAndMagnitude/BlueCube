@@ -8,6 +8,10 @@
     tools:context="._study_new_intro"
     tools:showIn="@layout/activity_study_new_intro">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/button_new_intro"
-            android:text="Save"
+            android:text="Save Introductory Comments"
             android:onClick="onSave"/>
 
         <EditText
@@ -25,21 +29,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="The Title of this work is..." />
+            android:hint="The Title of this work is..." />
 
         <EditText
             android:id="@+id/intro_motivation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="The motivation behind this work is" />
+            android:hint="The motivation behind this work is" />
 
         <EditText
             android:id="@+id/intro_objective"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            android:text="The intent of this work is" />
+            android:hint="The intent of this work is" />
+
     </LinearLayout>
 
+    </ScrollView>
 </android.support.v4.widget.NestedScrollView>

@@ -11,13 +11,12 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-        <include
+<!--        <include
             layout="@layout/app_bar_study_new"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent" />-->
 
         <include
             layout="@layout/content_study_new"
@@ -26,7 +25,7 @@
 
     </LinearLayout>
 
-    <FrameLayout
+<!--    <FrameLayout
         android:id="@+id/f_new_study"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,6 +38,6 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_new_study"
-        app:menu="@menu/activity_new_study_drawer" />
+        app:menu="@menu/activity_new_study_drawer" />-->
 
 </android.support.v4.widget.DrawerLayout>

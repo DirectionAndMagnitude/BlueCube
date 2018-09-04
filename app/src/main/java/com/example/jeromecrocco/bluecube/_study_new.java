@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class _study_new extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,10 +30,10 @@ public class _study_new extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+/*        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);*/
 
-
+        _study_class study = _study_class.getInstance();
 
     }
 
@@ -120,6 +121,11 @@ public class _study_new extends AppCompatActivity
 
     public void onClkNotes (View v){
         Toast.makeText(this,"Add Notes to Project",Toast.LENGTH_SHORT).show();
+
+    };
+
+    public void onClkProcedure (View v){
+        Toast.makeText(this,"Add Steps to Project",Toast.LENGTH_SHORT).show();
 
     };
 }

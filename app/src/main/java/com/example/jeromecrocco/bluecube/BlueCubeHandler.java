@@ -1,4 +1,3 @@
-/*
 package com.example.jeromecrocco.bluecube;
 
 
@@ -13,10 +12,15 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
 
 
-    private static final String DATABASE_NAME = "study.db";
-    public static final String TABLE_NAME = " study";
-    public static final String COLUMN_ID = " studyID";
-    public static final String COLUMN_NAME = " studyName";
+    private static final String DATABASE_NAME =  "study.db";
+    public static final String TABLE_NAME =      " study";
+    public static final String COLUMN_ID =       "studyID";
+    public static final String COLUMN_NAME1 =    "studyName";
+    public static final String COLUMN_NAME2 =    "motivation";
+    public static final String COLUMN_NAME3 =    "objective";
+    public static final String COLUMN_NAME4 =    "expType"; //exp type
+    public static final String COLUMN_NAME5 =    "expText"; //exp text
+    public static final String COLUMN_NAME6 =    "data3";
     //initialize the database
 
 
@@ -27,24 +31,33 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String CREATE_TABLE = "CREATE TABLE" + TABLE_NAME + "(" + COLUMN_ID +
-                "INTEGER PRIMARYKEY," + COLUMN_NAME + "TEXT )";
+        String CREATE_TABLE = " CREATE TABLE" + TABLE_NAME +
+                                "(" +
+                                COLUMN_ID + "INTEGER PRIMARYKEY," +
+                                COLUMN_NAME1 + " " + "TEXT," + " " +
+                                COLUMN_NAME2 + " " + "TEXT," + " " +
+                                COLUMN_NAME3 + " " + "TEXT," + " " +
+                                COLUMN_NAME4 + " " + "TEXT," + " " +
+                                COLUMN_NAME5 + " " + "TEXT," + " " +
+                                COLUMN_NAME6 + " " + "TEXT" +  " " +
+                                ")";
         db.execSQL(CREATE_TABLE);
-    }
+    };
 
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {}
 
     public String loadHandler() {
-        Use the rawQuery() method of a SQLiteDatabase object to implement
-        SQL statement and display result via a Cursor object.
+/*        Use the rawQuery() method of a SQLiteDatabase object to implement
+        SQL statement and display result via a Cursor object.*/
 
 
         String result = "";
         String query = "Select*FROM" + TABLE_NAME;
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
+
         while (cursor.moveToNext()) {
             int result_0 = cursor.getInt(0);
             String result_1 = cursor.getString(1);
@@ -58,16 +71,19 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
 
     }
     public void addHandler(_study_class study) {
-        To add a new record to the database, we must use the ContentValues
+/*        To add a new record to the database, we must use the ContentValues
         object with the put() method that is used to assign data to ContentsValues
         object and then use insert() method of SQLiteDatabase object to insert
-        data to the database.
+        data to the database.*/
 
-
-
+        //TODO:  How to add exp data later?  new function?  try except?  if !null?
         ContentValues values = new ContentValues();
-        values.put(COLUMN_ID, study.getID());
-        values.put(COLUMN_NAME, study.getStudyName());
+
+        values.put(COLUMN_ID,    study.getID()         );
+        values.put(COLUMN_NAME1, study.getStudyName()  );
+        values.put(COLUMN_NAME2, study.getMotivation() );
+        values.put(COLUMN_NAME3, study.getObjective()  );
+
         SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_NAME, null, values);
         db.close();
@@ -75,15 +91,15 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
     }
     public _study_class findHandler(String StudyName) {
 
-        We save the result that is returned from implementation of the rawQuery()
+/*      We save the result that is returned from implementation of the rawQuery()
         method of the SQLiteDatabase object into a Cursor object and find the
-        matching result in this object.
+        matching result in this object.*/
 
-
-        String query = "Select * FROM " + TABLE_NAME + "WHERE" + COLUMN_NAME + " = " + "'" + StudyName + "'";
+        String query = "Select * FROM " + TABLE_NAME + "WHERE" + COLUMN_NAME1 + " = " + "'" + StudyName + "'";
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
-        _study_class study = new _study_class();
+        _study_class study = _study_class.getInstance();
+
         if (cursor.moveToFirst()) {
             cursor.moveToFirst();
             study.setID(Integer.parseInt(cursor.getString(0)));
@@ -93,23 +109,23 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
             study = null;
         }
         db.close();
-        return student;
+        return study;
 
     }
     public boolean deleteHandler(int ID) {
-        We will save the result that is returned from the implementation of the rawQuery()
+/*        We will save the result that is returned from the implementation of the rawQuery()
         method of the SQLiteDatabase object into a Cursor object and find the matching
         result in this object.
         In the final step, we use the delete() method of the SQLiteDatabase object to delete
-        the record.
-
+        the record.*/
 
         boolean result = false;
         String query = "Select*FROM" + TABLE_NAME + "WHERE" + COLUMN_ID + "= '" + String.valueOf(ID) + "'";
+
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery(query, null);
+        _study_class study = _study_class.getInstance();
 
-        _study_class study = new _study_class();
         if (cursor.moveToFirst()) {
             study.setID(Integer.parseInt(cursor.getString(0)));
             db.delete(TABLE_NAME, COLUMN_ID + "=?",
@@ -121,22 +137,18 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
         }
         db.close();
         return result;
-
     }
+
     public boolean updateHandler(int ID, String name) {
-
-        To update the information of a record, we can use the ContentValues object
-        and the update() method of the SQLiteDatabase object.
-
-
+/*        To update the information of a record, we can use the ContentValues object
+        and the update() method of the SQLiteDatabase object*/
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues args = new ContentValues();
         args.put(COLUMN_ID, ID);
-        args.put(COLUMN_NAME, name);
+        args.put(COLUMN_NAME1, name);
         return db.update(TABLE_NAME, args, COLUMN_ID + "=" + ID, null) > 0;
     }
 }
 
 
-*/
