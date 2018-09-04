@@ -66,7 +66,7 @@ public class _study_new_intro extends AppCompatActivity {
 
         study.setIntroData(id, stitle, smotivation, sobjective);
 
-        dbHandler.addHandler(study);
+        dbHandler.addHandler(study,"intro");
 
         setContentView(R.layout.activity_study_new);
 

@@ -70,7 +70,7 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
 
 
     }
-    public void addHandler(_study_class study) {
+    public void addHandler(_study_class study, String datatype) {
 /*        To add a new record to the database, we must use the ContentValues
         object with the put() method that is used to assign data to ContentsValues
         object and then use insert() method of SQLiteDatabase object to insert
@@ -79,10 +79,16 @@ public class BlueCubeHandler extends SQLiteOpenHelper {
         //TODO:  How to add exp data later?  new function?  try except?  if !null?
         ContentValues values = new ContentValues();
 
-        values.put(COLUMN_ID,    study.getID()         );
-        values.put(COLUMN_NAME1, study.getStudyName()  );
-        values.put(COLUMN_NAME2, study.getMotivation() );
-        values.put(COLUMN_NAME3, study.getObjective()  );
+        if (datatype == "intro")
+            values.put(COLUMN_ID,    study.getID()         );
+            values.put(COLUMN_NAME1, study.getStudyName()  );
+            values.put(COLUMN_NAME2, study.getMotivation() );
+            values.put(COLUMN_NAME3, study.getObjective()  );
+
+        if (datatype == "exp")
+            values.put(COLUMN_ID,    study.getID()          );
+            values.put(COLUMN_NAME4, study.getExpType()     );
+            values.put(COLUMN_NAME5, study.getExpText()     );
 
         SQLiteDatabase db = this.getWritableDatabase();
         db.insert(TABLE_NAME, null, values);

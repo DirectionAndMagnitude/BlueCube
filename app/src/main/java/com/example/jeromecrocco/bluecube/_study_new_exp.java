@@ -13,7 +13,9 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +23,11 @@ public class _study_new_exp extends AppCompatActivity {
 
 
     private LinearLayout parentLinearLayout;
+    Type type = new TypeToken<ArrayList<String>>() {}.getType();
+
+    String text;
+    String spinner;
+    Gson gson = new Gson();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,11 +40,21 @@ public class _study_new_exp extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 /*  For loading experimental data from JSON file
-        Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below: outputarray is a String which is get from SQLiteDatabase for this example.
-        Type type = new TypeToken<ArrayList<String>>() {}.getType();
-        ArrayList<String> finalOutputString = gson.fromJson(outputarray, type);
-        //TODO:  Need to add access to DB to reload data, then to turn to list, then to populate child layout with list entries.
-*/
+        Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below:
+        outputarray is a String which is get from SQLiteDatabase for this example.*/
+
+        //
+        _study_class study = _study_class.getInstance();
+
+        if (study.getExpText() != null)
+
+            text = study.getExpText();
+            spinner = study.getExpType();
+            ArrayList<String> finalTextString    =  gson.fromJson(text, type);
+            ArrayList<String> finalSpinnerString =  gson.fromJson(spinner, type);
+
+            
+
 
     }
 
@@ -57,11 +74,13 @@ public class _study_new_exp extends AppCompatActivity {
 
     public void onSaveExpData(View v) {
 
+        BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
+        //Generate a list of Items we hav added, change to JSON, Store in Database
         int count = parentLinearLayout.getChildCount();
 
         _study_class study = _study_class.getInstance();
 
-        List<String> edit_text = new ArrayList<String>();
+        List<String>  edit_text    = new ArrayList<String>();
         List<String>  spinner_text = new ArrayList<String>();
 
         for(int i=0; i<count; i++) {
@@ -71,13 +90,16 @@ public class _study_new_exp extends AppCompatActivity {
             if (vnew instanceof Spinner)
                 spinner_text.add(v.toString());
 
+        //Convert to JSON
         Gson gson = new Gson();
-
         String text= gson.toJson(edit_text);
         String spinner= gson.toJson(spinner_text);
-
         study.setExpData(text,spinner);
 
+        //Update SQLITE Table
+        dbHandler.addHandler(study,"exp");
+
+        //Navigate back to study menu
         setContentView(R.layout.activity_study_new);
         Intent intent = new Intent(this, _study_new.class);
         startActivity(intent);

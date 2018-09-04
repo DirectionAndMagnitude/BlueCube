@@ -78,9 +78,12 @@ public final class _study_class {
         this.expText = text;
     }
 
-/*
-    public String getExp(String text,String spinner){
-        return (this.expType, this.expText);
-*/
+    public String getExpText() {
+        return this.expText;
+    };
+
+    public String getExpType() {
+        return this.expType;
+    };
 
 }
