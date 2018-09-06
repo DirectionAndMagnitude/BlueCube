@@ -21,21 +21,21 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _study_new_exp extends AppCompatActivity {
+public class _study_new_procedure extends AppCompatActivity {
 
     private LinearLayout parentLinearLayout;
 
     Type type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of Exp Value
-    String      expText;                                            // Entered Text Description
-    String      expType;                                            // Spinner Object String
+    String      procedureText;                                           // Entered Text Description
+    String      procedureStep;                                            // Spinner Object String
     Gson        gson = new Gson();                                  // Conversion to / from SQLite
 
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        setContentView(R.layout.activity_study_new_exp);
-        parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_exp);
+        setContentView(R.layout.activity_study_new_procedure);
+        parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_procedure);
 
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -46,30 +46,30 @@ public class _study_new_exp extends AppCompatActivity {
         Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below:
         */
 
-        _study_class study = _study_class.getInstance();
-        expText = study.getExpText();
+        _study_class study  = _study_class.getInstance();
+        procedureText       = study.getExpText();
 
-        if (expText != null) {
+        if (procedureText != null) {
 
             //Retrieve the data from the class
 
-            expType = study.getExpType();
-            ArrayList<String> expTextList = gson.fromJson(expText, type);
-            ArrayList<String> expTypeList = gson.fromJson(expType, type);
+            procedureStep = study.getExpType();
+            ArrayList<String> procedureStepList = gson.fromJson(procedureText, type);
+            ArrayList<String> procedureStepNo = gson.fromJson(procedureStep, type);
 
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
-                    _study_new_exp.this,
+                    _study_new_procedure.this,
                     android.R.layout.simple_spinner_dropdown_item,
-                    expTypeList);
+                    procedureStepNo);
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
             //Re-populate the spinner / text boxes with the previously input data
-            for (int i = 0; i < expTextList.size(); i++) {
+            for (int i = 0; i < procedureStepList.size(); i++) {
 
                 // Get string-pair from each list
-                String expTextEntry = expTextList.get(i);
-                String expTypeEntry = expTypeList.get(i);
+                String expTextEntry = procedureStepList.get(i);
+                String expTypeEntry = procedureStepNo.get(i);
 
 
                 // Insert a new row into the layout
@@ -78,16 +78,14 @@ public class _study_new_exp extends AppCompatActivity {
                 parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
 
                 // Get the objects for each row
-                EditText expTextBox = (EditText) rowView.findViewById(R.id.expText);
-                Spinner expTypeSpinner = (Spinner) rowView.findViewById(R.id.expType);
-
+                EditText procTextBox = (EditText) rowView.findViewById(R.id.procText);
+                Spinner procStepSpinner = (Spinner) rowView.findViewById(R.id.procStep);
 
                 // Set the objects for each row
-
-                expTextBox.setText(expTextEntry);
-                expTypeSpinner.setAdapter(adapter);
+                procTextBox.setText(expTextEntry);
+                procStepSpinner.setAdapter(adapter);
                 int spinnerPosition = adapter.getPosition(expTypeEntry);
-                expTypeSpinner.setSelection(spinnerPosition);
+                procStepSpinner.setSelection(spinnerPosition);
 
             }
         }
@@ -105,14 +103,14 @@ public class _study_new_exp extends AppCompatActivity {
         parentLinearLayout.removeView((View) v.getParent());
     }
 
-    public void onSaveExpData(View v) {
+    public void onSaveProcedure(View v) {
 
         //Generate a list of Items we hav added, change to JSON, Store in Database
         BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
 
         _study_class study = _study_class.getInstance();
-        List<String>  expTextList   = new ArrayList<String>();
-        List<String>  expTypeList   = new ArrayList<String>();
+        List<String>  expTextList   = new ArrayList <String>();
+        List<String>  expTypeList   = new ArrayList <String>();
 
         for(int i=0; i<parentLinearLayout.getChildCount(); i++) {
 

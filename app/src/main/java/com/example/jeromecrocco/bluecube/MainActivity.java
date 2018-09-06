@@ -10,29 +10,19 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
     };
 
-    public void onClk_mb1 (View view){
-
-        Toast.makeText(this, "New Exp.", Toast.LENGTH_LONG).show();
-/*        Intent intent = new Intent(this, _study_new_exp.class);
-        startActivity(intent);*/
-
-/*        Intent intent = new Intent(this, StudentActivity.class);
-        startActivity(intent);*/
-    };
-
-
-    public void onClk_mb2 (View view){
-        Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
+    public void onClk_mb1 (View view) {
+        Toast.makeText(this, "New Study", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_study_new);
-
         Intent intent = new Intent(this, _study_new.class);
         startActivity(intent);
+    }
+
+    public void onClk_mb2 (View view){
+        Toast.makeText(this, "Load Exp.", Toast.LENGTH_SHORT).show();
     };
 
     public void onClk_mb3 (View view){
@@ -43,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClk_mb4 (View view){
-        Toast.makeText(this, "BLE DAQ", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "BLE DAQ", Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_daq_ble);
 
         Intent intent = new Intent(this, _daq_bluetooth.class);

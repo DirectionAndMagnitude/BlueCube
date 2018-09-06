@@ -105,27 +105,29 @@ public class _study_new extends AppCompatActivity
         Intent intent = new Intent(this, _study_new_intro.class);
         startActivity(intent);
 
-    };
+    }
 
     public void onClkExp (View v){
         Toast.makeText(this,"Add Exp. Details to Project",Toast.LENGTH_SHORT).show();
-
         Intent intent = new Intent(this, _study_new_exp.class);
         startActivity(intent);
-    };
+    }
 
     public void onClkData (View v){
-        Toast.makeText(this,"Add Data to Project",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Add Some Data to Project",Toast.LENGTH_SHORT).show();
 
-    };
+    }
 
     public void onClkNotes (View v){
         Toast.makeText(this,"Add Notes to Project",Toast.LENGTH_SHORT).show();
 
-    };
+    }
 
     public void onClkProcedure (View v){
-        Toast.makeText(this,"Add Steps to Project",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Define Procedure",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, _study_new_procedure.class);
+        startActivity(intent);
 
-    };
+
+    }
 }

@@ -23,9 +23,8 @@
     <string name="new_AddNotes">Observations</string>
     <string name="new_AddProcedure">Add Steps</string>
 
-
-
     <string name="compose_hint">Experimental</string>
+    <string name="compose_proc_hint">Experimental</string>
 
     <!--BLE Related Strings-->
     <string name="ConnectBLE">Run All</string>
@@ -40,8 +39,11 @@
     <string name="NoTouch">"0"</string>
     <string name="NotifyOff">"0"</string>
     <string name="Notify">Notify</string>
+
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_daq_simple">daq_simple</string>
+    <string name="title_activity__study_new_procedure">procedure</string>
+
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
@@ -57,6 +59,24 @@
         <item>Lab Supplies</item>
         <item>Hand tools</item>
         <item>Other</item>
+    </string-array>
+
+    <string-array name="procSteps">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
     </string-array>
 
     <string name="title_activity_new_study">new_study</string>

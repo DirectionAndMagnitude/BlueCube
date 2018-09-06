@@ -15,17 +15,21 @@
         android:layout_height="50dp"
         android:orientation="horizontal" >
         <EditText
-            android:id="@+id/expText"
+            android:id="@+id/procText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="5"
-            android:inputType="text"/>
+            android:layout_weight="wrap_content"
+            android:hint="@string/compose_proc_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="2000"
+            android:maxLines="10" />
+
         <Spinner
-            android:id="@+id/expType"
+            android:id="@+id/procStep"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:entries="@array/types"
+            android:entries="@array/procSteps"
             android:gravity="right" />
         <Button
             android:id="@+id/delete_button"
@@ -35,6 +39,8 @@
             android:background="@android:drawable/ic_delete"
             android:onClick="onDelete"/>
     </LinearLayout>
+
+
 
 </android.support.v4.widget.NestedScrollView>
 
