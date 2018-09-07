@@ -25,7 +25,7 @@ public class _study_new_data extends AppCompatActivity {
 
     private LinearLayout parentLinearLayout;
 
-    Type type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of Exp Value
+    Type type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of data Value
     String      dataText;                                           // Entered Text Description
     String      dataType;                                            // Spinner Object String
     Gson        gson = new Gson();                                  // Conversion to / from SQLite
@@ -43,18 +43,18 @@ public class _study_new_data extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         /*  
-        For loading experimental data from JSON file
+        For loading data data from JSON file
         Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below:
         */
 
         _study_class study  = _study_class.getInstance();
-        dataText            = study.getExpText();
+        dataText            = study.getDataText();
 
         if (dataText != null) {
 
             //Retrieve the data from the class
 
-            dataType = study.getExpType();
+            dataType = study.getDataType();
             ArrayList<String> dataList      = gson.fromJson(dataText, type);
             ArrayList<String> dataTypeList  = gson.fromJson(dataType, type);
 

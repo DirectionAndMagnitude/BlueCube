@@ -47,13 +47,13 @@ public class _study_new_procedure extends AppCompatActivity {
         */
 
         _study_class study  = _study_class.getInstance();
-        procedureText       = study.getExpText();
+        procedureText       = study.getProcText();
 
         if (procedureText != null) {
 
             //Retrieve the data from the class
 
-            procedureStep = study.getExpType();
+            procedureStep = study.getProcSteps();
             ArrayList<String> procedureStepList = gson.fromJson(procedureText, type);
             ArrayList<String> procedureStepNo = gson.fromJson(procedureStep, type);
 
@@ -68,9 +68,8 @@ public class _study_new_procedure extends AppCompatActivity {
             for (int i = 0; i < procedureStepList.size(); i++) {
 
                 // Get string-pair from each list
-                String expTextEntry = procedureStepList.get(i);
-                String expTypeEntry = procedureStepNo.get(i);
-
+                String procTextEntry = procedureStepList.get(i);
+                String procTypeEntry = procedureStepNo.get(i);
 
                 // Insert a new row into the layout
                 LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -82,9 +81,9 @@ public class _study_new_procedure extends AppCompatActivity {
                 Spinner procStepSpinner = (Spinner) rowView.findViewById(R.id.procStep);
 
                 // Set the objects for each row
-                procTextBox.setText(expTextEntry);
+                procTextBox.setText(procTextEntry);
                 procStepSpinner.setAdapter(adapter);
-                int spinnerPosition = adapter.getPosition(expTypeEntry);
+                int spinnerPosition = adapter.getPosition(procTypeEntry);
                 procStepSpinner.setSelection(spinnerPosition);
 
             }
@@ -93,7 +92,7 @@ public class _study_new_procedure extends AppCompatActivity {
     public void onAddField(View v) {
         Toast.makeText(this,"Add Field",Toast.LENGTH_SHORT).show();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                final View rowView = inflater.inflate(R.layout.content_field, null);
+                final View rowView = inflater.inflate(R.layout.content_field_procedure, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
     }
@@ -109,8 +108,9 @@ public class _study_new_procedure extends AppCompatActivity {
         BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
 
         _study_class study = _study_class.getInstance();
-        List<String>  expTextList   = new ArrayList <String>();
-        List<String>  expTypeList   = new ArrayList <String>();
+        List<String>  ProcTextList   = new ArrayList <String>();
+        List<String>  ProcTypeList   = new ArrayList <String>();
+
 
         for(int i=0; i<parentLinearLayout.getChildCount(); i++) {
 
@@ -118,26 +118,26 @@ public class _study_new_procedure extends AppCompatActivity {
             View viewNew = parentLinearLayout.getChildAt(i);
 
             // Get the objects for each row
-            EditText expTextBox = (EditText) viewNew.findViewById(R.id.expText);
+            EditText ProcTextBox = (EditText) viewNew.findViewById(R.id.procText);
 
-            if (expTextBox != null) {
-                Spinner expTypeSpinner = (Spinner) viewNew.findViewById(R.id.expType);
-                expTextList.add(expTextBox.getText().toString());
+            if (ProcTextBox != null) {
+                Spinner procTypeSpinner = (Spinner) viewNew.findViewById(R.id.procStep);
+                ProcTextList.add(ProcTextBox.getText().toString());
 
-                TextView expTypeEntry = (TextView) expTypeSpinner.getSelectedView();
-                String result = expTypeEntry.getText().toString();
-                expTypeList.add(result);
+                TextView procTypeEntry = (TextView) procTypeSpinner.getSelectedView();
+                String result = procTypeEntry.getText().toString();
+                ProcTypeList.add(result);
             }
         }
 
        //Convert to JSON
         Gson gson = new Gson();
-        String text = gson.toJson(expTextList);
-        String spinner = gson.toJson(expTypeList);
-        study.setExpData(text, spinner);
+        String text = gson.toJson(ProcTextList);
+        String spinner = gson.toJson(ProcTypeList);
+        study.setProcData(text, spinner);
 
         //Update SQLITE Table
-        dbHandler.addHandler(study, "exp");
+        dbHandler.addHandler(study, "proc");
 
         //Navigate back to study menu
         setContentView(R.layout.activity_study_new);

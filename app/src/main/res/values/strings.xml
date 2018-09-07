@@ -51,7 +51,16 @@
     <string name="title_activity__exp_new">_exp_new</string>
 
 
-    <string-array name="types">
+    <string-array name="dataTypes">
+        <item>Sensor1</item>
+        <item>Sensor2</item>
+        <item>Sensor3</item>
+        <item>Sensor4</item>
+        <item>Sensor5</item>
+    </string-array>
+
+
+    <string-array name="expTypes">
         <item>Equipment</item>
         <item>Chemicals</item>
         <item>Materials</item>

@@ -11,8 +11,12 @@ public final class _study_class {
     private String expType;
     private String expText;
 
-    private String dataType;
+    private String procText;
+    private String procType;
+
     private String dataText;
+    private String dataType;
+
 
 
     private static _study_class study = new _study_class();
@@ -77,23 +81,41 @@ public final class _study_class {
         return this.objective;
     }
 
+
+
     public void setExp(String text,String spinner){
         this.expType = spinner;
         this.expText = text;
     }
+
+    public String getExpText() {
+        return this.expText;
+    }
+
+    public String getExpType() {
+        return this.expType;
+    }
+
+
 
     public void setData(String text,String spinner){
         this.dataType = spinner;
         this.dataText = text;
     }
 
+    public String getDataText(){ return this.dataText;}
+    public String getDataType(){ return this.dataType;}
 
-    public String getExpText() {
-        return this.expText;
-    };
 
-    public String getExpType() {
-        return this.expType;
-    };
+
+
+    public void setProcData(String text, String spinner){
+        this.procText = text;
+        this.procType = spinner;
+    }
+
+    public String getProcSteps(){ return this.procType; }
+
+    public String getProcText(){ return this.procText; }
 
 }
