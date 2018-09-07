@@ -52,10 +52,6 @@
         <activity
             android:name="._daq_bluetooth"
             android:label="_daq_bluetooth" />
-        <activity
-            android:name="._study_new_exp"
-            android:label="_exp_new"
-            android:launchMode="standard" />
         <!--
      ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -86,7 +82,15 @@
             android:name="._study_new_procedure"
             android:label="@string/title_activity__study_new_procedure"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name="._study_new_exp"
+            android:label="_exp_new"
+            android:launchMode="standard" />
 
+        <activity
+            android:name="._study_new_data"
+            android:label="_exp_new"
+            android:launchMode="standard" />
 
     </application>
 

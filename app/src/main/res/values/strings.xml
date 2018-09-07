@@ -24,7 +24,8 @@
     <string name="new_AddProcedure">Add Steps</string>
 
     <string name="compose_hint">Experimental</string>
-    <string name="compose_proc_hint">Experimental</string>
+    <string name="compose_proc_hint">Step 1...</string>
+    <string name="compose_data_hint">Add Data...</string>
 
     <!--BLE Related Strings-->
     <string name="ConnectBLE">Run All</string>

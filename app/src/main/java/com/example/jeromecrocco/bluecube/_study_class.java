@@ -11,6 +11,10 @@ public final class _study_class {
     private String expType;
     private String expText;
 
+    private String dataType;
+    private String dataText;
+
+
     private static _study_class study = new _study_class();
 
     // constructors
@@ -77,6 +81,12 @@ public final class _study_class {
         this.expType = spinner;
         this.expText = text;
     }
+
+    public void setData(String text,String spinner){
+        this.dataType = spinner;
+        this.dataText = text;
+    }
+
 
     public String getExpText() {
         return this.expText;

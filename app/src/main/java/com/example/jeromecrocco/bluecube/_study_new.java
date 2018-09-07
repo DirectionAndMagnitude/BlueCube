@@ -116,6 +116,9 @@ public class _study_new extends AppCompatActivity
     public void onClkData (View v){
         Toast.makeText(this,"Add Some Data to Project",Toast.LENGTH_SHORT).show();
 
+        Intent intent = new Intent(this, _study_new_data.class);
+        startActivity(intent);
+
     }
 
     public void onClkNotes (View v){
