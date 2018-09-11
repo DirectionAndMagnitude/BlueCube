@@ -49,6 +49,18 @@ public class _study_new_procedure extends AppCompatActivity {
         _study_class study  = _study_class.getInstance();
         procedureText       = study.getProcText();
 
+
+        if (procedureText==null){
+            setContentView(R.layout.activity_study_new_procedure);
+            parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_procedure);
+
+            // Insert a new row into the layout
+            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            final View rowView = inflater.inflate(R.layout.content_field_procedure,null);
+            parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+
+        }
+
         if (procedureText != null) {
 
             //Retrieve the data from the class

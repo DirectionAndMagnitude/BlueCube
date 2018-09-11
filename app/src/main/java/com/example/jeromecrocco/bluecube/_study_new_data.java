@@ -2,6 +2,8 @@ package com.example.jeromecrocco.bluecube;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -17,6 +19,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,6 +32,7 @@ public class _study_new_data extends AppCompatActivity {
     String      dataText;                                           // Entered Text Description
     String      dataType;                                            // Spinner Object String
     Gson        gson = new Gson();                                  // Conversion to / from SQLite
+    SensorManager manager;
 
 
 
@@ -42,13 +46,38 @@ public class _study_new_data extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /*  
+        /*
         For loading data data from JSON file
         Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below:
         */
 
         _study_class study  = _study_class.getInstance();
         dataText            = study.getDataText();
+
+
+        if (dataText==null){
+            setContentView(R.layout.activity_study_new_data);
+            parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_data);
+
+            // Insert a new row into the layout
+            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            final View rowView = inflater.inflate(R.layout.content_field_data,null);
+            parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+
+            Spinner  dataTypeSpinner = (Spinner) rowView.findViewById(R.id.dataType);
+
+            manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+            final List<String> sensorArray = new ArrayList<String>();
+            List<Sensor> sensorList = manager.getSensorList(Sensor.TYPE_ALL);
+            for (Sensor s : sensorList) {
+                sensorArray.add(s.getName());
+            }
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, sensorArray);
+            dataTypeSpinner.setAdapter(adapter);
+
+
+        }
 
         if (dataText != null) {
 
@@ -95,6 +124,19 @@ public class _study_new_data extends AppCompatActivity {
                 final View rowView = inflater.inflate(R.layout.content_field_data, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+
+        Spinner  dataTypeSpinner = (Spinner) rowView.findViewById(R.id.dataType);
+
+        manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        final List<String> sensorArray = new ArrayList<String>();
+        List<Sensor> sensorList = manager.getSensorList(Sensor.TYPE_ALL);
+        for (Sensor s : sensorList) {
+            sensorArray.add(s.getName());
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, sensorArray);
+        dataTypeSpinner.setAdapter(adapter);
+
     }
 
     public void onDelete(View v) {

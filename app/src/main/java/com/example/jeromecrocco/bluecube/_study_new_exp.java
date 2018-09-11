@@ -34,8 +34,7 @@ public class _study_new_exp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        setContentView(R.layout.activity_study_new_exp);
-        parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_exp);
+
 
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -49,9 +48,22 @@ public class _study_new_exp extends AppCompatActivity {
         _study_class study = _study_class.getInstance();
         expText = study.getExpText();
 
+        if (expText==null){
+            setContentView(R.layout.activity_study_new_exp);
+            parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_exp);
+
+            // Insert a new row into the layout
+            LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            final View rowView = inflater.inflate(R.layout.content_field_exp, null);
+            parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+
+        }
+
         if (expText != null) {
 
             //Retrieve the data from the class
+            setContentView(R.layout.activity_study_new_exp);
+            parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_exp);
 
             expType = study.getExpType();
             ArrayList<String> expTextList = gson.fromJson(expText, type);
@@ -74,7 +86,7 @@ public class _study_new_exp extends AppCompatActivity {
 
                 // Insert a new row into the layout
                 LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                final View rowView = inflater.inflate(R.layout.content_field, null);
+                final View rowView = inflater.inflate(R.layout.content_field_exp, null);
                 parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
 
                 // Get the objects for each row
@@ -95,7 +107,7 @@ public class _study_new_exp extends AppCompatActivity {
     public void onAddField(View v) {
         Toast.makeText(this,"Add Field",Toast.LENGTH_SHORT).show();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                final View rowView = inflater.inflate(R.layout.content_field, null);
+                final View rowView = inflater.inflate(R.layout.content_field_exp, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
     }

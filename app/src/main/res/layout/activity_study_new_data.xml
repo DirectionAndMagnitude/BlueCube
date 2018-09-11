@@ -19,6 +19,23 @@
         android:onClick="onSaveData"
         />
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/add_field_button_1"
+            android:drawableBottom="@drawable/ic_menu_slideshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#555"
+            android:onClick="onAddField"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+<!--
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -48,24 +65,9 @@
             android:background="@android:drawable/ic_delete"
             android:onClick="onDelete"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
-        <Button
-            android:id="@+id/add_field_button"
-            android:drawableBottom="@drawable/ic_menu_slideshow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#555"
-            android:onClick="onAddField"
-            android:textColor="#FFF"/>
+-->
 
 
-
-    </LinearLayout>
 
 </LinearLayout>
 
