@@ -59,13 +59,11 @@ public class _daq_simple extends AppCompatActivity
     private boolean plotData = true;
 
 
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_daq_simple);
-
 
         manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mSensor = manager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
