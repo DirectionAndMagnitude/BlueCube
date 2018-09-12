@@ -68,13 +68,13 @@
 
         <Button
             android:id="@+id/add_field_button_2"
-            android:drawableBottom="@drawable/ic_menu_manage"
+            android:drawableBottom="@drawable/ic_menu_camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:background="#555"
-            android:onClick="onAddField"
+            android:onClick="DispatchTakePictureIntent"
             android:textColor="#FFF"/>
 
         <Button

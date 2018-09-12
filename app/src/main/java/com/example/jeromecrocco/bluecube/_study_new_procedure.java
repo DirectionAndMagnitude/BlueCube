@@ -30,6 +30,7 @@ public class _study_new_procedure extends AppCompatActivity {
     String      procedureStep;                                            // Spinner Object String
     Gson        gson = new Gson();                                  // Conversion to / from SQLite
 
+    String[] mTypeArray;
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,10 +70,13 @@ public class _study_new_procedure extends AppCompatActivity {
             ArrayList<String> procedureStepList = gson.fromJson(procedureText, type);
             ArrayList<String> procedureStepNo = gson.fromJson(procedureStep, type);
 
+            mTypeArray     = getResources().getStringArray(R.array.procSteps);
+
+            //Correctly populate spinner box with available types
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                     _study_new_procedure.this,
                     android.R.layout.simple_spinner_dropdown_item,
-                    procedureStepNo);
+                    mTypeArray);
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 

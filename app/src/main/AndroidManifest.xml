@@ -8,6 +8,11 @@
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <!-- Location permission required for android 6.0 (Marshmallow) -->
@@ -33,6 +38,7 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_provider_path" />
         </provider>
+
 
         <activity
             android:name=".MainActivity"

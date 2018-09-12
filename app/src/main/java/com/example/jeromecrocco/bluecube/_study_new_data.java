@@ -34,7 +34,7 @@ public class _study_new_data extends AppCompatActivity {
     Gson        gson = new Gson();                                  // Conversion to / from SQLite
     SensorManager manager;
 
-
+    String[] mTypeArray; // Types of entries
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,14 +83,24 @@ public class _study_new_data extends AppCompatActivity {
 
             //Retrieve the data from the class
 
-            dataType = study.getDataType();
+            dataType                        = study.getDataType();
             ArrayList<String> dataList      = gson.fromJson(dataText, type);
             ArrayList<String> dataTypeList  = gson.fromJson(dataType, type);
 
+
+
+            manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+            final List<String> sensorArray = new ArrayList<String>();
+            List<Sensor> sensorList = manager.getSensorList(Sensor.TYPE_ALL);
+            for (Sensor s : sensorList) {
+                sensorArray.add(s.getName());
+            }
+
+            //Correctly populate spinner box with available types
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                     _study_new_data.this,
-                    android.R.layout.simple_spinner_dropdown_item,
-                    dataTypeList);
+                    android.R.layout.simple_spinner_dropdown_item,sensorArray
+                    );
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -125,16 +135,22 @@ public class _study_new_data extends AppCompatActivity {
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
 
-        Spinner  dataTypeSpinner = (Spinner) rowView.findViewById(R.id.dataType);
 
-        manager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        final List<String> sensorArray = new ArrayList<String>();
-        List<Sensor> sensorList = manager.getSensorList(Sensor.TYPE_ALL);
+        //This Ensures that the spinner box is populated with all internal sensors of phone.
+        Spinner  dataTypeSpinner        = (Spinner) rowView.findViewById(R.id.dataType);
+        manager                         = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        final List<String> sensorArray  = new ArrayList<String>();
+        List<Sensor> sensorList         = manager.getSensorList(Sensor.TYPE_ALL);
+        String bluetoothDevice          = (String) "Bluetooth";
+        sensorArray.add(bluetoothDevice);
+
+        //First element is to select possibility for connecting to bluetooth data.
+        // The rest are for internal phone sensor.
         for (Sensor s : sensorList) {
             sensorArray.add(s.getName());
         }
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, sensorArray);
+        ArrayAdapter<String> adapter    = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, sensorArray);
         dataTypeSpinner.setAdapter(adapter);
 
     }

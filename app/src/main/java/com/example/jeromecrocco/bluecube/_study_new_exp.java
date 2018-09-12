@@ -2,13 +2,20 @@ package com.example.jeromecrocco.bluecube;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -17,24 +24,33 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Type;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
+
 
 public class _study_new_exp extends AppCompatActivity {
 
     private LinearLayout parentLinearLayout;
 
-    Type type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of Exp Value
-    String      expText;                                            // Entered Text Description
-    String      expType;                                            // Spinner Object String
-    Gson        gson = new Gson();                                  // Conversion to / from SQLite
+    Type                type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of Exp Value
+    String              expText;                                            // Entered Text Description
+    String              expType;                                            // Spinner Object String
+    Gson                gson = new Gson();                                  // Conversion to / from SQLite
+    String[]            mTypeArray;
+    static final int    REQUEST_PICTURE_CAPTURE = 1;
+    String              mCurrentPhotoPath;
 
-    
+    ImageView image;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-
+        image = (ImageView) findViewById(R.id.image);
 
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -69,10 +85,12 @@ public class _study_new_exp extends AppCompatActivity {
             ArrayList<String> expTextList = gson.fromJson(expText, type);
             ArrayList<String> expTypeList = gson.fromJson(expType, type);
 
+            //Correctly populate spinner box with available types
+            mTypeArray = getResources().getStringArray(R.array.expTypes);
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(
                     _study_new_exp.this,
                     android.R.layout.simple_spinner_dropdown_item,
-                    expTypeList);
+                    mTypeArray);
 
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
@@ -103,6 +121,7 @@ public class _study_new_exp extends AppCompatActivity {
 
             }
         }
+
     }
     public void onAddField(View v) {
         Toast.makeText(this,"Add Field",Toast.LENGTH_SHORT).show();
@@ -116,6 +135,90 @@ public class _study_new_exp extends AppCompatActivity {
         Toast.makeText(this,"Delete Field",Toast.LENGTH_SHORT).show();
         parentLinearLayout.removeView((View) v.getParent());
     }
+
+    // TODO:  CAMERA FEATURES:  Take, Save, Display, Gallery, etc..
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if (requestCode == REQUEST_PICTURE_CAPTURE && resultCode == RESULT_OK) {
+            File imgFile = new  File(mCurrentPhotoPath);
+            if(imgFile.exists())            {
+                image.setImageURI(Uri.fromFile(imgFile));
+            }
+        }
+    }
+
+    public void DispatchTakePictureIntent(){
+        Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if (cameraIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(cameraIntent, REQUEST_PICTURE_CAPTURE);
+
+            File pictureFile = null;
+            try {
+                pictureFile = getPictureFile();
+            } catch (IOException ex) {
+                Toast.makeText(this,
+                        "Photo file can't be created, please try again",
+                        Toast.LENGTH_SHORT).show();
+                return;
+            }
+            if (pictureFile != null) {
+                Uri photoURI = FileProvider.getUriForFile(this,
+                        "com.zoftino.android.fileprovider",
+                        pictureFile);
+                cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI);
+                startActivityForResult(cameraIntent, REQUEST_PICTURE_CAPTURE);
+            }
+        }
+    }
+
+
+
+
+/*
+    private void setPic() {
+        // Get the dimensions of the View
+        int targetW = mImageView.getWidth();
+        int targetH = mImageView.getHeight();
+
+        // Get the dimensions of the bitmap
+        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+        bmOptions.inJustDecodeBounds = true;
+        BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
+        int photoW = bmOptions.outWidth;
+        int photoH = bmOptions.outHeight;
+
+        // Determine how much to scale down the image
+        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
+
+        // Decode the image file into a Bitmap sized to fill the View
+        bmOptions.inJustDecodeBounds = false;
+        bmOptions.inSampleSize = scaleFactor;
+        bmOptions.inPurgeable = true;
+
+        Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
+        mImageView.setImageBitmap(bitmap);
+    }
+*/
+
+    private void galleryAddPic() {
+        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+        File f = new File(mCurrentPhotoPath);
+        Uri contentUri = Uri.fromFile(f);
+        mediaScanIntent.setData(contentUri);
+        this.sendBroadcast(mediaScanIntent);
+    }
+
+    private File getPictureFile() throws IOException {
+        String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+        String pictureFile = "blueCube_" + timeStamp;
+        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
+        File image = File.createTempFile(pictureFile,  ".jpg", storageDir);
+        mCurrentPhotoPath = image.getAbsolutePath();
+        return image;
+    }
+
 
     public void onSaveExpData(View v) {
 
