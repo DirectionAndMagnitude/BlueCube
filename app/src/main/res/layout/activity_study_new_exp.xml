@@ -79,11 +79,11 @@
 
         <Button
             android:id="@+id/add_field_button_3"
-            android:drawableBottom="@drawable/ic_menu_camera"
+            android:drawableBottom="@drawable/ic_menu_gallery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#555"
-            android:onClick="onAddField"
+            android:onClick="galleryAddPic"
             android:textColor="#FFF"/>
 
     </LinearLayout>
