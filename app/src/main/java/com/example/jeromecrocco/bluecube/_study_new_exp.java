@@ -1,18 +1,13 @@
 package com.example.jeromecrocco.bluecube;
 
-import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -41,15 +36,22 @@ import java.util.List;
 
 public class _study_new_exp extends AppCompatActivity {
 
-    private LinearLayout parentLinearLayout;
 
     Type                type = new TypeToken<ArrayList<String>>() {}.getType();    // Type of Exp Value
     String              expText;                                            // Entered Text Description
     String              expType;                                            // Spinner Object String
+    String              expImgUri;                                            // Spinner Object String
+
     Gson                gson = new Gson();                                  // Conversion to / from SQLite
     String[]            mTypeArray;
-    static final int    REQUEST_PICTURE_CAPTURE = 1;
     String              mCurrentPhotoPath;
+    File                photo;
+
+    private LinearLayout parentLinearLayout;
+    private URI         mImageUri;
+    static final int    REQUEST_PICTURE_CAPTURE = 1;
+    private String      pictureImagePath = "";
+    List<String>        expImageUriList;
 
     Button takePictureButton;
     ImageView image;
@@ -59,12 +61,6 @@ public class _study_new_exp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         image = (ImageView) findViewById(R.id.image);
-   //     takePictureButton = (Button) findViewById(R.id.add_field_button_2);
-
-/*        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            takePictureButton.setEnabled(false);
-            ActivityCompat.requestPermissions(this, new String[] { Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE }, 0);
-        }*/
 
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -96,8 +92,11 @@ public class _study_new_exp extends AppCompatActivity {
             parentLinearLayout = (LinearLayout) findViewById(R.id.study_new_exp);
 
             expType = study.getExpType();
+            expImgUri = study.getExpImgUri();
+
             ArrayList<String> expTextList = gson.fromJson(expText, type);
             ArrayList<String> expTypeList = gson.fromJson(expType, type);
+            ArrayList<String> expImageUriList = gson.fromJson(expImgUri, type);
 
             //Correctly populate spinner box with available types
             mTypeArray = getResources().getStringArray(R.array.expTypes);
@@ -114,6 +113,7 @@ public class _study_new_exp extends AppCompatActivity {
                 // Get string-pair from each list
                 String expTextEntry = expTextList.get(i);
                 String expTypeEntry = expTypeList.get(i);
+                String expImageUriEntry = expImageUriList.get(i);
 
 
                 // Insert a new row into the layout
@@ -124,25 +124,36 @@ public class _study_new_exp extends AppCompatActivity {
                 // Get the objects for each row
                 EditText expTextBox = (EditText) rowView.findViewById(R.id.expText);
                 Spinner expTypeSpinner = (Spinner) rowView.findViewById(R.id.expType);
+                image = (ImageView) findViewById(R.id.imageView);
+
 
 
                 // Set the objects for each row
-
                 expTextBox.setText(expTextEntry);
+                //Spinner
                 expTypeSpinner.setAdapter(adapter);
                 int spinnerPosition = adapter.getPosition(expTypeEntry);
                 expTypeSpinner.setSelection(spinnerPosition);
-
+                //Image
+                File imgFile = new  File(expImageUriEntry);
+                Bitmap bmp = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+                image.setImageBitmap(bmp);
             }
         }
 
     }
     public void onAddField(View v) {
+
+        //Every time we take a picture we add the path to the list
+        expImageUriList.add(pictureImagePath);
+
         Toast.makeText(this,"Add Field",Toast.LENGTH_SHORT).show();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 final View rowView = inflater.inflate(R.layout.content_field_exp, null);
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
+
+        pictureImagePath = "";
     }
 
     public void onDelete(View v) {
@@ -164,16 +175,43 @@ public class _study_new_exp extends AppCompatActivity {
             // Get the returned image from extra
             Bitmap bmp = (Bitmap) extras.get("data");
 
+
             image = (ImageView) findViewById(R.id.imageView);
             image.setImageBitmap(bmp);
-        }
+
+
+
+
+
+/*
+            File imgFile = new  File(pictureImagePath);
+            if(imgFile.exists()){
+                Bitmap myBitmap = BitmapFactory.decodeFile(imgFile.getAbsolutePath());
+*/
+
+            }
 
     }
+
 
     public void DispatchTakePictureIntent(View view) {
+
+        // Get the Filename
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = timeStamp + ".jpg";
+        File storageDir = Environment.getExternalStoragePublicDirectory(
+                Environment.DIRECTORY_PICTURES);
+        pictureImagePath = storageDir.getAbsolutePath() + "/" + imageFileName;
+        File file = new File(pictureImagePath);
+        Uri outputFileUri = Uri.fromFile(file);
+
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
+
         startActivityForResult(intent, 100);
-    }
+
+    };
+
 
 
 
@@ -238,12 +276,16 @@ public class _study_new_exp extends AppCompatActivity {
 
     public void onSaveExpData(View v) {
 
+        //Every time we take a picture we add the path to the list
+        expImageUriList.add(pictureImagePath);
+
         //Generate a list of Items we hav added, change to JSON, Store in Database
         BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
 
         _study_class study = _study_class.getInstance();
         List<String>  expTextList   = new ArrayList<String>();
         List<String>  expTypeList   = new ArrayList<String>();
+
 
         for(int i=0; i<parentLinearLayout.getChildCount(); i++) {
 
@@ -260,6 +302,8 @@ public class _study_new_exp extends AppCompatActivity {
                 TextView expTypeEntry = (TextView) expTypeSpinner.getSelectedView();
                 String result = expTypeEntry.getText().toString();
                 expTypeList.add(result);
+
+
             }
         }
 
@@ -267,7 +311,9 @@ public class _study_new_exp extends AppCompatActivity {
         Gson gson = new Gson();
         String text = gson.toJson(expTextList);
         String spinner = gson.toJson(expTypeList);
-        study.setExpData(text, spinner);
+        String expImg = gson.toJson(expImageUriList);
+
+        study.setExpData(text, spinner,expImg);
 
         //Update SQLITE Table
         dbHandler.addHandler(study, "exp");

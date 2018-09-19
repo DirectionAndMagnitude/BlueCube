@@ -8,8 +8,10 @@ public final class _study_class {
     private String title;
     private String motivation;
     private String objective;
+
     private String expType;
     private String expText;
+    private String expImageUri;
 
     private String procText;
     private String procType;
@@ -34,11 +36,6 @@ public final class _study_class {
     }
 
     ;
-
-    public void setExpData(String text,String spinner) {
-        this.setExp(text, spinner);
-
-    }
 
     public void setIntroData(int id, String stitle, String smotivation, String sobjective) {
         this.setID(id);
@@ -83,18 +80,27 @@ public final class _study_class {
 
 
 
-    public void setExp(String text,String spinner){
-        this.expType = spinner;
-        this.expText = text;
+
+
+    public void setExpData(String text,String spinner,String expImgUri) {
+        this.setExp(text, spinner, expImgUri);
     }
 
+    public void setExp(String text,String spinner,String expImgUri){
+        this.expType = spinner;
+        this.expText = text;
+        this.expImageUri = expImgUri;
+    }
     public String getExpText() {
         return this.expText;
     }
-
     public String getExpType() {
         return this.expType;
     }
+    public String getExpImgUri() {
+        return this.expImageUri;
+    }
+
 
 
 
@@ -105,6 +111,7 @@ public final class _study_class {
 
     public String getDataText(){ return this.dataText;}
     public String getDataType(){ return this.dataType;}
+
 
 
 
