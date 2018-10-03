@@ -91,6 +91,9 @@ public final class _study_class {
         this.expText = text;
         this.expImageUri = expImgUri;
     }
+
+
+
     public String getExpText() {
         return this.expText;
     }

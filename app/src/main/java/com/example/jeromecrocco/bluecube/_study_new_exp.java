@@ -44,23 +44,21 @@ public class _study_new_exp extends AppCompatActivity {
 
     Gson                gson = new Gson();                                  // Conversion to / from SQLite
     String[]            mTypeArray;
-    String              mCurrentPhotoPath;
-    File                photo;
 
     private LinearLayout parentLinearLayout;
-    private URI         mImageUri;
-    static final int    REQUEST_PICTURE_CAPTURE = 1;
-    private String      pictureImagePath = "";
-    List<String>        expImageUriList;
+    String              pictureImagePath;
+    public ArrayList<String>        expImage_UriList;
 
-    Button takePictureButton;
     ImageView image;
     //Uri file;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
+        expImage_UriList = new ArrayList<String>();
+
         image = (ImageView) findViewById(R.id.image);
+        pictureImagePath = "";
 
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -71,8 +69,8 @@ public class _study_new_exp extends AppCompatActivity {
         Get the String from the SQLiteDatabse what you saved and changed into ArrayList type like below:
         */
 
-        _study_class study = _study_class.getInstance();
-        expText = study.getExpText();
+        _study_class study  = _study_class.getInstance();
+        expText             = study.getExpText();
 
         if (expText==null){
             setContentView(R.layout.activity_study_new_exp);
@@ -124,9 +122,7 @@ public class _study_new_exp extends AppCompatActivity {
                 // Get the objects for each row
                 EditText expTextBox = (EditText) rowView.findViewById(R.id.expText);
                 Spinner expTypeSpinner = (Spinner) rowView.findViewById(R.id.expType);
-                image = (ImageView) findViewById(R.id.imageView);
-
-
+                ImageView image = (ImageView) findViewById(R.id.imageView);
 
                 // Set the objects for each row
                 expTextBox.setText(expTextEntry);
@@ -145,7 +141,7 @@ public class _study_new_exp extends AppCompatActivity {
     public void onAddField(View v) {
 
         //Every time we take a picture we add the path to the list
-        expImageUriList.add(pictureImagePath);
+        //expImageUriList.add(pictureImagePath.toString());
 
         Toast.makeText(this,"Add Field",Toast.LENGTH_SHORT).show();
         LayoutInflater inflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -153,7 +149,7 @@ public class _study_new_exp extends AppCompatActivity {
         // Add the new row before the add field button.
         parentLinearLayout.addView(rowView, parentLinearLayout.getChildCount() - 1);
 
-        pictureImagePath = "";
+        //pictureImagePath = "";
     }
 
     public void onDelete(View v) {
@@ -176,11 +172,8 @@ public class _study_new_exp extends AppCompatActivity {
             Bitmap bmp = (Bitmap) extras.get("data");
 
 
-            image = (ImageView) findViewById(R.id.imageView);
+            ImageView image = (ImageView) findViewById(R.id.imageView);
             image.setImageBitmap(bmp);
-
-
-
 
 
 /*
@@ -197,7 +190,8 @@ public class _study_new_exp extends AppCompatActivity {
     public void DispatchTakePictureIntent(View view) {
 
         // Get the Filename
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String timeStamp;
+        timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String imageFileName = timeStamp + ".jpg";
         File storageDir = Environment.getExternalStoragePublicDirectory(
                 Environment.DIRECTORY_PICTURES);
@@ -205,8 +199,11 @@ public class _study_new_exp extends AppCompatActivity {
         File file = new File(pictureImagePath);
         Uri outputFileUri = Uri.fromFile(file);
 
+
+        expImage_UriList.add(outputFileUri.toString());
+
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
+//        intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
 
         startActivityForResult(intent, 100);
 
@@ -215,69 +212,9 @@ public class _study_new_exp extends AppCompatActivity {
 
 
 
-    private static File getOutputMediaFile(){
-        File mediaStorageDir = new File(Environment.getExternalStoragePublicDirectory(
-                Environment.DIRECTORY_PICTURES), "CameraDemo");
-
-        if (!mediaStorageDir.exists()){
-            if (!mediaStorageDir.mkdirs()){
-                return null;
-            }
-        }
-
-        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        return new File(mediaStorageDir.getPath() + File.separator +
-                "IMG_"+ timeStamp + ".jpg");
-    }
-
-/*
-    private void setPic() {
-        // Get the dimensions of the View
-        int targetW = mImageView.getWidth();
-        int targetH = mImageView.getHeight();
-
-        // Get the dimensions of the bitmap
-        BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-        bmOptions.inJustDecodeBounds = true;
-        BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
-        int photoW = bmOptions.outWidth;
-        int photoH = bmOptions.outHeight;
-
-        // Determine how much to scale down the image
-        int scaleFactor = Math.min(photoW/targetW, photoH/targetH);
-
-        // Decode the image file into a Bitmap sized to fill the View
-        bmOptions.inJustDecodeBounds = false;
-        bmOptions.inSampleSize = scaleFactor;
-        bmOptions.inPurgeable = true;
-
-        Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
-        mImageView.setImageBitmap(bitmap);
-    }
-*/
-
-    public void galleryAddPic(View view) {
-        Intent mediaScanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
-        File f = new File(mCurrentPhotoPath);
-        Uri contentUri = Uri.fromFile(f);
-        mediaScanIntent.setData(contentUri);
-        this.sendBroadcast(mediaScanIntent);
-    }
-
-    private File getPictureFile() throws IOException {
-        String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-        String pictureFile = "blueCube_" + timeStamp;
-        File storageDir = getExternalFilesDir(Environment.DIRECTORY_PICTURES);
-        File image = File.createTempFile(pictureFile,  ".jpg", storageDir);
-        mCurrentPhotoPath = image.getAbsolutePath();
-        return image;
-    }
-
-
     public void onSaveExpData(View v) {
+        //The Purpose of this function is to assign the data to the study_class
 
-        //Every time we take a picture we add the path to the list
-        expImageUriList.add(pictureImagePath);
 
         //Generate a list of Items we hav added, change to JSON, Store in Database
         BlueCubeHandler dbHandler = new BlueCubeHandler(this, null, null, 1);
@@ -311,7 +248,8 @@ public class _study_new_exp extends AppCompatActivity {
         Gson gson = new Gson();
         String text = gson.toJson(expTextList);
         String spinner = gson.toJson(expTypeList);
-        String expImg = gson.toJson(expImageUriList);
+
+        String expImg = gson.toJson(expImage_UriList);
 
         study.setExpData(text, spinner,expImg);
 
