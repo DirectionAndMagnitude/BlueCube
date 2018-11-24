@@ -5,7 +5,7 @@
     android:orientation="horizontal" >
     <EditText
         android:id="@+id/expText"
-        android:layout_width="30dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/compose_hint"
@@ -15,17 +15,17 @@
         />
     <Spinner
         android:id="@+id/expType"
-        android:layout_width="30dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="3"
         android:entries="@array/expTypes"
         android:gravity="right" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="60dp"
+        android:layout_width="20dp"
         android:layout_height="match_parent"
-        android:contentDescription="cameraImage" />
+        android:contentDescription="cameraImage"/>
 
 
     <Button

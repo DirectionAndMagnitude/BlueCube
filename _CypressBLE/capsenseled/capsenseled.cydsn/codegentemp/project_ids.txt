@@ -1,8 +1,0 @@
-C:\Users\jerome.crocco\Documents\GitHub\bleapp\PSoC_Creator\capsenseled\capsenseled.cydsn\capsenseled.cyprj|35260e57-a04a-4f25-ada5-e58f4129f2a0
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|30cfc6bb-cd73-4feb-bad4-cc17eb01a4b0
-C:\Users\jerome.crocco\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|6f4c3101-474a-44af-b5a0-3e1bc2fec474
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1af18eeb-7905-410a-8c5a-0d37f6a279b1
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|489162c0-8d2d-4d10-90ae-1825a0fcc183
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|b2f86194-7682-4216-8817-6c5713baf374
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\dev\psoc4\PSoC4AnalogDevice\psoc4arch.cydsn\psoc4arch.cyprj|9eca206f-ab69-46c1-8bdb-3ac8d048d680
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|5897b1ed-e44e-489c-b35a-5382d177c70b
