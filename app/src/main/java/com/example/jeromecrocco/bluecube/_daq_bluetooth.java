@@ -403,6 +403,7 @@ public class _daq_bluetooth extends AppCompatActivity {
         cap_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 // Turn CapSense Notifications on/off based on the state of the switch
+
                 mPSoCCapSenseLedService.writeCapSenseNotification(isChecked);
                 CapSenseNotifyState = isChecked;  // Keep track of CapSense notification state
                 if (isChecked) { // Notifications are now on so text has to say "No Touch"
@@ -611,9 +612,10 @@ public class _daq_bluetooth extends AppCompatActivity {
 
                     // Get CapSense Slider Value
                     Log.d(TAG, "Receiving CAP SENSE DATA");
-                    String CapSensePos = mPSoCCapSenseLedService.getCapSenseValue();
+                    //String CapSensePos = mPSoCCapSenseLedService.getCapSenseValue();
+                    String AnalogInVal = mPSoCCapSenseLedService.getAnalogInValue();
 
-                    addEntry(CapSensePos);
+                    addEntry(AnalogInVal);
                     //float val = parseFloat(CapSensePos);
                     //Long tsLong = System.currentTimeMillis()/1000;
                     //String ts = tsLong.toString();
@@ -621,14 +623,14 @@ public class _daq_bluetooth extends AppCompatActivity {
                     //writer.write("DOG");
                     //writer.write(System.lineSeparator()); //new line
 
-                    if (CapSensePos.equals("-1")) {  // No Touch returns 0xFFFF which is -1
+                    if (AnalogInVal.equals("-1")) {  // No Touch returns 0xFFFF which is -1
                         if (!CapSenseNotifyState) { // Notifications are off
                             mCapsenseValue.setText(R.string.NotifyOff);
                         } else { // Notifications are on but there is no finger on the slider
                             mCapsenseValue.setText(R.string.NoTouch);
                         }
                     } else { // Valid CapSense value is returned
-                        mCapsenseValue.setText(CapSensePos);
+                        mCapsenseValue.setText(AnalogInVal);
 
                     }
 

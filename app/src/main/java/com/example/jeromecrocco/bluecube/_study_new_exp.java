@@ -207,21 +207,33 @@ public class _study_new_exp extends AppCompatActivity {
     // TODO:  CAMERA FEATURES:  Take, Save, Display, Gallery, etc..
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
 
-        super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, intent);
 
-        if (RESULT_OK == resultCode) {
+        if (RESULT_OK == resultCode && intent.hasExtra("data")) {
 
             // Get Extra from the intent
-            Bundle extras = data.getExtras();
-            Bitmap bmp = (Bitmap) extras.get("data");
+            //Bitmap bitmap = (Bitmap) intent.getExtras().get("data");
             ImageView image = (ImageView) findViewById(R.id.imageView);
-            image.setImageBitmap(bmp);
+            //image.setImageBitmap(bitmap);
 
+            Uri imageUri = Uri.parse(intent.getExtras().getString("imageUri"));
 
+            Bitmap bitmap = null;
+            try {
+                bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+            image.setImageBitmap(bitmap);
+
+
+
+        }
     }
+
+
 
 
     public void DispatchTakePictureIntent(View view) {
@@ -239,15 +251,14 @@ public class _study_new_exp extends AppCompatActivity {
         expImage_UriList.add(contentUri.toString());
 
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, contentUri);
-        startActivityForResult(intent, 100);
+        intent.putExtra("imageUri", contentUri.toString());
+        startActivityForResult(intent, 1);
     };
 
     private String getStorageDir() {
         //  return this.getExternalFilesDir(null).getAbsolutePath();
         return getCacheDir().toString();
     }
-
 
     public void onSaveExpData(View v) {
         //The Purpose of this function is to assign the data to the study_class
@@ -257,7 +268,6 @@ public class _study_new_exp extends AppCompatActivity {
         _study_class study = _study_class.getInstance();
         List<String>  expTextList   = new ArrayList<String>();
         List<String>  expTypeList   = new ArrayList<String>();
-
 
         for(int i=0; i<parentLinearLayout.getChildCount(); i++) {
 
