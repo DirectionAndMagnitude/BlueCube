@@ -26,12 +26,14 @@ import android.bluetooth.le.ScanSettings;
 
 import android.content.Context;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.os.ParcelUuid;
 import android.util.Log;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -68,10 +70,14 @@ public class _daq_bluetooth_PSOC extends Service {
 
     private final static String CccdUUID =                   "00002902-0000-1000-8000-00805f9b34fb";
 
+    public static int nSamples              =20;
+    private static String[] mAnalogInValue  =new String[20];
+
     // Variables to keep track of the LED switch state and CapSense Value
     private static boolean mLedSwitchState = true;
     private static String mCapSenseValue = "-1"; // This is the No Touch value (0xFFFF)
-    private static String mAnalogInValue = "-1"; // This is the No Voltage value (0xFFFF)
+
+
 
     // Actions used during broadcasts to the main activity
     public final static String ACTION_BLESCAN_CALLBACK =
@@ -194,16 +200,12 @@ public class _daq_bluetooth_PSOC extends Service {
     /**
      * Runs service discovery on the connected device.
      */
-
-
     public void discoverServices() {
         if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
             return;
         }
-
         mBluetoothGatt.discoverServices();
-
     }
 
     /**
@@ -260,22 +262,31 @@ public class _daq_bluetooth_PSOC extends Service {
         }
 
         mLedSwitchState = value;
-
         mLedCharacterisitc.setValue(byteVal);
-
         mBluetoothGatt.writeCharacteristic(mLedCharacterisitc);
 
     }
 
     /**
      * This method enables or disables notifications for the CapSense slider
-     *
-     * @param value Turns notifications on (1) or off (0)
-     */
+     **/
+
+    public void setNotification(BluetoothGattCharacteristic characteristic,boolean enable,BluetoothGattDescriptor descriptor)
+    {
+            Log.i(TAG, "setCharacteristicNotification");
+            mBluetoothGatt.setCharacteristicNotification(characteristic, enable);
+            //descriptor.setValue(enable ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE : new byte[]{0x00, 0x00});
+            descriptor.setValue(enable ? BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE : new byte[]{0x01, 0x00}); //01 is Notification 02 is Indication.
+            mBluetoothGatt.writeDescriptor(descriptor);
+
+            }//descriptor write operation successfully started?
+
     public void writeCapSenseNotification(boolean value) {
         // Set notifications locally in the CCCD
+
         mBluetoothGatt.setCharacteristicNotification(mCapsenseCharacteristic, value);
         mBluetoothGatt.setCharacteristicNotification(mAnalogInCharacteristic, value);
+
         byte[] byteVal = new byte[1];
         if (value) {
             byteVal[0] = 1;
@@ -284,16 +295,22 @@ public class _daq_bluetooth_PSOC extends Service {
         }
         // Write Notification value to the device
         Log.i(TAG, "CapSense Notification " + value);
-        mCapSenseCccd.setValue(byteVal);
+
+/*        mCapSenseCccd.setValue(byteVal);
         mBluetoothGatt.writeDescriptor(mCapSenseCccd);
 
         mAnalogInCccd.setValue(byteVal);
         mBluetoothGatt.writeDescriptor(mAnalogInCccd);
+        Log.i(TAG,"Enabling Updates...");*/
+
+        setNotification(mCapsenseCharacteristic,value,mCapSenseCccd);
+        setNotification(mAnalogInCharacteristic,value,mAnalogInCccd);
+
+        Log.i(TAG,"Enabling Updates...");
     }
 
     /**
      * This method returns the state of the LED switch
-     *
      * @return the value of the LED swtich state
      */
     public boolean getLedSwitchState() {
@@ -302,21 +319,27 @@ public class _daq_bluetooth_PSOC extends Service {
 
     /**
      * This method returns the value of th CapSense Slider
-     *
      * @return the value of the CapSense Slider
      */
     public String getCapSenseValue() {
         return mCapSenseValue;
     }
 
-    public String getAnalogInValue() {
+    public String[] getAnalogInValue() {
+
+        //Initialize Values to -1
+        if (mAnalogInValue[0] == null ){
+            int f;
+            for (f=0;f<nSamples;f=f+1){
+                mAnalogInValue[f]="-1";
+            }
+        }
         return mAnalogInValue;
     }
 
     /**
      * Implements the callback for when scanning for devices has found a device with
-     * the service we are looking for.
-     *
+     * the service we are looking for
      * This is the callback for BLE scanning on versions prior to Lollipop
      */
 
@@ -375,15 +398,16 @@ public class _daq_bluetooth_PSOC extends Service {
         @Override
         public void onServicesDiscovered(BluetoothGatt gatt, int status) {
             // Get just the service that we are looking for
-            BluetoothGattService mService = gatt.getService(UUID.fromString(capsenseLedServiceUUID));
-            /* Get characteristics from our desired service */
-            mLedCharacterisitc = mService.getCharacteristic(UUID.fromString(ledCharacteristicUUID));
-            mCapsenseCharacteristic = mService.getCharacteristic(UUID.fromString(capsenseCharacteristicUUID));
+            BluetoothGattService mService   = gatt.getService(UUID.fromString(capsenseLedServiceUUID));
 
-            mAnalogInCharacteristic = mService.getCharacteristic(UUID.fromString(analogInCharacteristicUUID));
+            /* Get characteristics from our desired service */
+            mLedCharacterisitc              = mService.getCharacteristic(UUID.fromString(ledCharacteristicUUID));
+            mCapsenseCharacteristic         = mService.getCharacteristic(UUID.fromString(capsenseCharacteristicUUID));
+            mAnalogInCharacteristic         = mService.getCharacteristic(UUID.fromString(analogInCharacteristicUUID));
+
             /* Get the CapSense CCCD */
-            mCapSenseCccd = mCapsenseCharacteristic.getDescriptor(UUID.fromString(CccdUUID));
-            mAnalogInCccd = mAnalogInCharacteristic.getDescriptor(UUID.fromString(CccdUUID));
+            mCapSenseCccd                   = mCapsenseCharacteristic.getDescriptor(UUID.fromString(CccdUUID));
+            mAnalogInCccd                   = mAnalogInCharacteristic.getDescriptor(UUID.fromString(CccdUUID));
 
             // Read the current state of the LED from the device
             readLedCharacteristic();
@@ -394,7 +418,6 @@ public class _daq_bluetooth_PSOC extends Service {
 
         /**
          * This is called when a read completes
-         *
          * @param gatt the GATT database object
          * @param characteristic the GATT characteristic that was read
          * @param status the status of the transaction
@@ -441,9 +464,13 @@ public class _daq_bluetooth_PSOC extends Service {
             }
 
             if(uuid.equals(analogInCharacteristicUUID)) {
-                mAnalogInValue = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_SINT16,0).toString();
-            }
+                int i;
 
+                for(i=0;i<nSamples;i=i+1)
+                    {
+                    mAnalogInValue[i] = characteristic.getIntValue(BluetoothGattCharacteristic.FORMAT_SINT8,i).toString();
+                    };
+                };
             // Notify the main activity that new data is available
             broadcastUpdate(ACTION_DATA_RECEIVED);
         }

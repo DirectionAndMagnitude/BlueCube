@@ -45,6 +45,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import static com.example.jeromecrocco.bluecube._daq_bluetooth_PSOC.nSamples;
 import static java.lang.Float.parseFloat;
 
 
@@ -412,6 +413,8 @@ public class _daq_bluetooth extends AppCompatActivity {
                     mCapsenseValue.setText(R.string.NotifyOff);
 
                 }
+
+
             }
 
 
@@ -432,7 +435,7 @@ public class _daq_bluetooth extends AppCompatActivity {
         return getCacheDir().toString();
     }
 
-    private void addEntry(String val) {
+    private void addEntry(String[] val) {
 
         LineData data = mChart.getData();
 
@@ -447,18 +450,21 @@ public class _daq_bluetooth extends AppCompatActivity {
                 data.addDataSet(set);
             }
 
-            float value = parseFloat(val);
+            int v;
 
+            for (v=0;v<nSamples;v=v+1) {
 
-//            data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
-            data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
+                float value = parseFloat(val[v]);
+                //data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
+                data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
+            }
             data.notifyDataChanged();
 
             // let the chart know it's data has changed
             mChart.notifyDataSetChanged();
 
             // limit the number of visible entries
-            mChart.setVisibleXRangeMaximum(150);
+            mChart.setVisibleXRangeMaximum(1500);
             // mChart.setVisibleYRange(30, AxisDependency.LEFT);
 
             // move to the latest entry
@@ -471,7 +477,7 @@ public class _daq_bluetooth extends AppCompatActivity {
 
         LineDataSet set = new LineDataSet(null, "Dynamic Data");
         set.setAxisDependency(YAxis.AxisDependency.LEFT);
-        set.setLineWidth(3f);
+        set.setLineWidth(1f);
         set.setColor(Color.BLUE);
         set.setHighlightEnabled(false);
         set.setDrawValues(false);
@@ -522,8 +528,8 @@ public class _daq_bluetooth extends AppCompatActivity {
         YAxis leftAxis = mChart.getAxisLeft();
         leftAxis.setTextColor(Color.WHITE);
         leftAxis.setDrawGridLines(false);
-        leftAxis.setAxisMaximum(100f);
-        leftAxis.setAxisMinimum(0f);
+        leftAxis.setAxisMaximum(255f);
+        leftAxis.setAxisMinimum(-255f);
         leftAxis.setDrawGridLines(true);
 
         YAxis rightAxis = mChart.getAxisRight();
@@ -613,9 +619,9 @@ public class _daq_bluetooth extends AppCompatActivity {
                     // Get CapSense Slider Value
                     Log.d(TAG, "Receiving CAP SENSE DATA");
                     //String CapSensePos = mPSoCCapSenseLedService.getCapSenseValue();
-                    String AnalogInVal = mPSoCCapSenseLedService.getAnalogInValue();
-
+                    String[] AnalogInVal = mPSoCCapSenseLedService.getAnalogInValue();
                     addEntry(AnalogInVal);
+
                     //float val = parseFloat(CapSensePos);
                     //Long tsLong = System.currentTimeMillis()/1000;
                     //String ts = tsLong.toString();
@@ -623,25 +629,25 @@ public class _daq_bluetooth extends AppCompatActivity {
                     //writer.write("DOG");
                     //writer.write(System.lineSeparator()); //new line
 
-                    if (AnalogInVal.equals("-1")) {  // No Touch returns 0xFFFF which is -1
+/*                    if (AnalogInVal[0] == "-1") {  // No Touch returns 0xFFFF which is -1
                         if (!CapSenseNotifyState) { // Notifications are off
                             mCapsenseValue.setText(R.string.NotifyOff);
                         } else { // Notifications are on but there is no finger on the slider
                             mCapsenseValue.setText(R.string.NoTouch);
                         }
                     } else { // Valid CapSense value is returned
-                        mCapsenseValue.setText(AnalogInVal);
+                        mCapsenseValue.setText(AnalogInVal[0]);
 
-                    }
+                    }*/
 
 
-                  // Check LED switch Setting
+/*                  // Check LED switch Setting
                     Log.d(TAG, "Receiving LED SWITCH DATA");
                     if (!mPSoCCapSenseLedService.getLedSwitchState()) {
                         led_switch.setChecked(true);
                     } else {
                         led_switch.setChecked(false);
-                    }
+                    }*/
 
                 default:
                     break;

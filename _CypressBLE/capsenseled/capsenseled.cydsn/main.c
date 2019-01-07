@@ -3,14 +3,41 @@
 uint16 fingerPos    = 0xFFFF;
 uint16 fingerPosOld = 0xFFFF;
 
-uint16 analogIn     = 0xFFFF;
-uint16 analogInOld  = 0xFFFF;
+
+uint8 nSamples             = 20;
+uint8 analogIn[20]         ={0};
+uint8 analogInOld[20]      ={0};
+uint16 a;
 
 int capsenseNotify;
 
 /***************************************************************
  * Function to update the LED state in the GATT database
  **************************************************************/
+//uint16 analogIn    =  0xFFFF;
+//uint16 analogInOld  = 0xFFFF;
+//void updateAnalogIn()
+//{
+//    
+//    if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
+//        return;
+//    
+//    CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
+//   
+//    tempHandle.attrHandle = CYBLE_LEDCAPSENSE_ANALOGIN_CHAR_HANDLE;
+//  	tempHandle.value.val = (uint8 *) &analogIn;
+//    tempHandle.value.len = 2; 
+//    CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED);  
+//    
+//    /* send notification to client if notifications are enabled and finger location has changed */
+//    if (capsenseNotify  && (analogIn != analogInOld) )//TODO:  Always Updating
+//    
+//        CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
+//        analogInOld = analogIn;
+//    
+//}
+
+
 void updateAnalogIn()
 {
     
@@ -21,16 +48,15 @@ void updateAnalogIn()
    
     tempHandle.attrHandle = CYBLE_LEDCAPSENSE_ANALOGIN_CHAR_HANDLE;
   	tempHandle.value.val = (uint8 *) &analogIn;
-    tempHandle.value.len = 2;
+    tempHandle.value.len = nSamples;  //TODO:  CHANGED TO 23
     CyBle_GattsWriteAttributeValue(&tempHandle,0,&cyBle_connHandle,CYBLE_GATT_DB_LOCALLY_INITIATED);  
     
     /* send notification to client if notifications are enabled and finger location has changed */
-    if (capsenseNotify && (analogIn != analogInOld) )
+    if (capsenseNotify)//&& (analogIn[0] != analogInOld[0]) )//TODO:  Always Updating
         CyBle_GattsNotification(cyBle_connHandle,&tempHandle);
-        analogInOld = analogIn;
+
     
 }
-
 
 
 /***************************************************************
@@ -160,18 +186,32 @@ int main()
     for(;;)
     {        
         /* if Capsense scan is done, read the value and start another scan */
+//        if(!capsense_IsBusy())
+//        {
+//            fingerPos=capsense_GetCentroidPos(capsense_LINEARSLIDER0__LS);
+//            analogIn = ADC_GetResult16(0u);
+//            
+//            capsense_UpdateEnabledBaselines();
+//            capsense_ScanEnabledWidgets();
+//            updateCapsense();
+//            updateAnalogIn();
+//
+//        }
         if(!capsense_IsBusy())
         {
             fingerPos=capsense_GetCentroidPos(capsense_LINEARSLIDER0__LS);
-            analogIn = ADC_GetResult16(0u);
             
+            for ( a = 0 ; a <nSamples; a=a+1)
+                analogIn[a] = ADC_GetResult16(0u);
+                
             capsense_UpdateEnabledBaselines();
             capsense_ScanEnabledWidgets();
             updateCapsense();
             updateAnalogIn();
 
         }
-   
+        
+        
         CyBle_ProcessEvents();
         CyBle_EnterLPM(CYBLE_BLESS_DEEPSLEEP);    
     }
