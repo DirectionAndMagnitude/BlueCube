@@ -20,6 +20,8 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.IBinder;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.ShareCompat;
 import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
@@ -29,6 +31,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -62,12 +65,13 @@ public class _daq_bluetooth extends AppCompatActivity {
     private Button discover_button;
     private Button disconnect_button;
     private Switch led_switch;
-    private Switch cap_switch;
-    private Button menu_Button;
+
+
+
 
 
     private Button led_Button;
-    private Button capsense_Button;
+
     private Button plotdata_button;
 
     // Variables to manage BLE connection
@@ -86,8 +90,6 @@ public class _daq_bluetooth extends AppCompatActivity {
     private FileWriter writer;
 
     String filename = "sensors_" + System.currentTimeMillis() + ".csv";
-    private Button stop_Button;
-    private Button share_Button;
     private LineChart mChart;
     private Thread thread;
     private boolean plotData = true;
@@ -134,18 +136,7 @@ public class _daq_bluetooth extends AppCompatActivity {
         connect_button = (Button) findViewById(R.id.connect_button);
         discover_button = (Button) findViewById(R.id.discoverSvc_button);
         disconnect_button = (Button) findViewById(R.id.disconnect_button);
-        menu_Button = (Button) findViewById(R.id.return_menu);
         feedMultiple();
-
-        //Assign a listener to your button
-        menu_Button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //Start your second activity
-                Intent intent = new Intent(_daq_bluetooth.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
         // Initialize service and connection state variable
@@ -281,45 +272,84 @@ public class _daq_bluetooth extends AppCompatActivity {
         /* That event broadcasts a message which is picked up by the mGattUpdateReceiver */
         setContentView(R.layout.sensor_val);
 
-        menu_Button = (Button) findViewById(R.id.return_menu);
-        stop_Button = (Button) findViewById(R.id.button_stop);
-        share_Button= (Button) findViewById(R.id.button_share);
+
+
+        FloatingActionButton fab_Home  = (FloatingActionButton) findViewById(R.id.fab_Home);
+        FloatingActionButton fab_Start = (FloatingActionButton) findViewById(R.id.fab_Start);
+        FloatingActionButton fab_Pause = (FloatingActionButton) findViewById(R.id.fab_Pause);
+        FloatingActionButton fab_Reset = (FloatingActionButton) findViewById(R.id.fab_Reset);
+        FloatingActionButton fab_Share = (FloatingActionButton) findViewById(R.id.fab_Share);
+
+        Button setMTU = (Button) findViewById(R.id.setMTU);
+
+
         mChart      = buildChart();
 
-
-
-        menu_Button.setOnClickListener(new View.OnClickListener() {
-                                           @Override
-                                           public void onClick(View v) {
-                                               //Start your second activity
-                                               //TODO:  Need to discontinue Services after button is clicked on this view.
-                                               Intent intent = new Intent(_daq_bluetooth.this, MainActivity.class);
-                                               startActivity(intent);
-                                           }
-                                       });
-
-
-        stop_Button.setOnTouchListener(new View.OnTouchListener() {
-
+        setMTU.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                stop_Button.setEnabled(false);
-                share_Button.setEnabled(true);
+            public void onClick(View view) {
+
+                EditText mtuTxt = (EditText) findViewById(R.id.MTU_VAL);
+                int mtuVal = Integer.parseInt(mtuTxt.getText().toString());
+
+                Snackbar.make(view, "SET MTU to " + mtuTxt.getText().toString(), Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+
+                mPSoCCapSenseLedService.negotiateMTU(mtuVal);
+
+
+            }});
+
+
+
+        fab_Start.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "DAQ STARTED", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+
+
+                mPSoCCapSenseLedService.writeCapSenseNotification(true);
+                CapSenseNotifyState = true;  // Keep track of CapSense notification state
+            }});
+
+        fab_Pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "DAQ PAUSED", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+
+
+                mPSoCCapSenseLedService.writeCapSenseNotification(false);
+                CapSenseNotifyState = false;  // Keep track of CapSense notification state
+            }});
+
+        fab_Reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "DAQ RESET", Snackbar.LENGTH_SHORT)
+                        .setAction("Action", null).show();
+
+                mChart.setData(null);
+
+                mPSoCCapSenseLedService.writeCapSenseNotification(false);
+                CapSenseNotifyState = false;  // Keep track of CapSense notification state
+            }});
+
+        fab_Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setContentView(R.layout.activity_main);
 
                 mPSoCCapSenseLedService.disconnect();
 
-                return true;
+                Intent intent = new Intent(_daq_bluetooth.this, MainActivity.class);
+                startActivity(intent);
+            }});
 
-            }
-        });
-
-        share_Button.setOnTouchListener(new View.OnTouchListener() {
-
+        fab_Share.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onTouch(View view, MotionEvent motionEvent) {
-                stop_Button.setEnabled(false);
-                share_Button.setEnabled(true);
-
+            public void onClick(View view) {
 
                 // Create writer to write file
                 Log.d(TAG, "Writing to " + getStorageDir());
@@ -335,7 +365,7 @@ public class _daq_bluetooth extends AppCompatActivity {
 
                 int nvals = val.getEntryCount();
 
-                for (int ii=0 ; ii < nvals; ii++) {
+                for (int ii = 0; ii < nvals; ii++) {
                     Entry v = val.getEntryForIndex(ii);
                     float x = v.getX();
                     float y = v.getY();
@@ -372,55 +402,32 @@ public class _daq_bluetooth extends AppCompatActivity {
                         .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
 
                 startActivity(shareIntent);
-                return true;
 
-            }
-        });
+            }});
 
         LineData data = mChart.getData();
 
         led_switch = (Switch) findViewById(R.id.led_switch);
-        capsense_Button = (Button) findViewById(R.id.capsense_switch);
+
         mPSoCCapSenseLedService.discoverServices();
 
+        mPSoCCapSenseLedService.negotiateMTU(nSamples);
 
         // Set Values
         mCapsenseValue = (TextView) findViewById(R.id.capsense_value);
-        cap_switch = (Switch) findViewById(R.id.capsense_switch);
-
-         /* This will be called when the CapSense Notify On/Off switch is touched */
-
-        led_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // Turn CapSense Notifications on/off based on the state of the switch
 
 
+        /* This will be called when the CapSense Notify On/Off switch is touched */
+
+                led_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        // Turn CapSense Notifications on/off based on the state of the switch
 
 
-
-            }
-        });
-
-        cap_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                // Turn CapSense Notifications on/off based on the state of the switch
-
-                mPSoCCapSenseLedService.writeCapSenseNotification(isChecked);
-                CapSenseNotifyState = isChecked;  // Keep track of CapSense notification state
-                if (isChecked) { // Notifications are now on so text has to say "No Touch"
-                    mCapsenseValue.setText(R.string.NoTouch);
-                } else { // Notifications are now off so text has to say "Notify Off"
-                    mCapsenseValue.setText(R.string.NotifyOff);
-
-                }
-
+                    }
+                });
 
             }
-
-
-        });
-
-    }
 
     /** * This method handles the Disconnect button
      * @param view the view object  */

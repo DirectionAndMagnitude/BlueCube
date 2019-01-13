@@ -24,6 +24,7 @@ import android.bluetooth.le.ScanFilter;
 import android.bluetooth.le.ScanResult;
 import android.bluetooth.le.ScanSettings;
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.nfc.Tag;
@@ -194,6 +195,8 @@ public class _daq_bluetooth_PSOC extends Service {
         // parameter to false.
         mBluetoothGatt = mLeDevice.connectGatt(this, false, mGattCallback);
         Log.d(TAG, "Trying to create a new connection.");
+
+
         return true;
     }
 
@@ -207,6 +210,17 @@ public class _daq_bluetooth_PSOC extends Service {
         }
         mBluetoothGatt.discoverServices();
     }
+
+    public void negotiateMTU(int mtu){
+
+        mBluetoothGatt.requestMtu(mtu);
+    }
+
+
+
+
+
+
 
     /**
      * Disconnects an existing connection or cancel a pending connection. The disconnection result

@@ -164,6 +164,11 @@
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\pwm.lst</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\pwm_PM.lst</v>
 <v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\red.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\red_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\capsenseled.elf</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\capsenseled.hex</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\capsenseled.map</v>
+<v>capsenseled\capsenseled\capsenseled.gpdsc</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -238,7 +243,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1433, 914" SelectedTabbedMdiWindow="40ede7a4-3b53-4afb-9e41-12a91f14b711"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ec5b6c9e-7a47-4a93-bde4-32162a3ec343" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\main.c" Guid="40ede7a4-3b53-4afb-9e41-12a91f14b711" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\TopDesign\TopDesign.cysch" Guid="32a57de5-2269-48d4-9879-0bfc44c09030" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\capsenseled.cydwr" Guid="f05e28e5-e157-449f-ba9d-1ae636f8a9ab" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1433, 962" SelectedTabbedMdiWindow="40ede7a4-3b53-4afb-9e41-12a91f14b711"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ec5b6c9e-7a47-4a93-bde4-32162a3ec343" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\main.c" Guid="40ede7a4-3b53-4afb-9e41-12a91f14b711" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\TopDesign\TopDesign.cysch" Guid="32a57de5-2269-48d4-9879-0bfc44c09030" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled\capsenseled.cydsn\capsenseled.cydwr" Guid="f05e28e5-e157-449f-ba9d-1ae636f8a9ab" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -4,12 +4,31 @@ uint16 fingerPos    = 0xFFFF;
 uint16 fingerPosOld = 0xFFFF;
 
 
-uint8 nSamples             = 20;
-uint8 analogIn[20]         ={0};
-uint8 analogInOld[20]      ={0};
+uint8 nSamples              = 20;
+uint8 analogIn[500]         ={0};
+uint8 analogInOld[500]      ={0};
 uint16 a;
-
 int capsenseNotify;
+
+/*******************************************************************************
+* Macros & Declarations for MTU Exchange
+*******************************************************************************/
+#define MAX_MTU_SIZE                (512)
+#define DEFAULT_MTU_SIZE            (23)
+
+uint8 cccdNotifEnabledValue[] = {0x01, 0x00};
+
+CYBLE_GATT_VALUE_T cccdNotifFlagSetStruct =
+{
+    cccdNotifEnabledValue,
+    2,
+    0
+};
+
+
+
+
+
 
 /***************************************************************
  * Function to update the LED state in the GATT database
@@ -40,11 +59,14 @@ int capsenseNotify;
 
 void updateAnalogIn()
 {
-    
+ 
     if(CyBle_GetState() != CYBLE_STATE_CONNECTED)
         return;
     
     CYBLE_GATTS_HANDLE_VALUE_NTF_T 	tempHandle;
+    
+    //Here we update nSamples with new value from request
+    nSamples = CYBLE_GATT_MTU;
    
     tempHandle.attrHandle = CYBLE_LEDCAPSENSE_ANALOGIN_CHAR_HANDLE;
   	tempHandle.value.val = (uint8 *) &analogIn;
@@ -104,6 +126,14 @@ void updateCapsense()
 void BleCallBack(uint32 event, void* eventParam)
 {
     CYBLE_GATTS_WRITE_REQ_PARAM_T *wrReqParam;
+    
+    
+    /* for MTU Exchange */
+    CYBLE_GATTC_WRITE_REQ_T writeRequestData =
+    {
+        cccdNotifFlagSetStruct,
+        0x000F
+    };
    
     switch(event)
     {
@@ -158,7 +188,36 @@ void BleCallBack(uint32 event, void* eventParam)
             }		
             
 			break;  
-        
+
+            
+        /*  For MTU Exchange */    
+        case CYBLE_EVT_GAP_DEVICE_CONNECTED:
+            /* Once the devices are connected, the Client will not do a service
+             * discovery and will assume that the handles of the Server are 
+             * known. This is because discovery of custom service is not a part
+             * of the BLE component today and will be in the next upgrade to BLE
+             * component. 
+             */
+            
+            /* Initiate an MTU exchange request */
+            CyBle_GattcExchangeMtuReq(cyBle_connHandle, CYBLE_GATT_MTU);
+         
+            break;            
+
+        case CYBLE_EVT_GATTC_XCHNG_MTU_RSP:
+            /* Enable notifications on the characteristic to get data from the 
+             * Server.
+             */
+            CyBle_GattcWriteCharacteristicDescriptors(cyBle_connHandle, &writeRequestData);
+            break;
+            
+        case CYBLE_EVT_GATTS_XCNHG_MTU_REQ:
+
+            CyBle_GattsExchangeMtuRsp(cyBle_connHandle, CYBLE_GATT_MTU);
+
+            break;            
+            
+            
         default:
             break;
     }
