@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
   28:Generated_Source\PSoC4/capsense_PM.c **** *
   29:Generated_Source\PSoC4/capsense_PM.c **** * Summary:
   30:Generated_Source\PSoC4/capsense_PM.c **** *  Saves the customer configuration of CapSense.
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 2
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 2
 
 
   31:Generated_Source\PSoC4/capsense_PM.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
   60              	capsense_Sleep:
   61              	.LFB35:
   53:Generated_Source\PSoC4/capsense_PM.c **** 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 3
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 3
 
 
   54:Generated_Source\PSoC4/capsense_PM.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
   86 001a 5B08     		lsrs	r3, r3, #1
   87 001c 1360     		str	r3, [r2]
   84:Generated_Source\PSoC4/capsense_PM.c ****     #endif /* (capsense_IDAC_CNT == 2u) */
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 4
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 4
 
 
   85:Generated_Source\PSoC4/capsense_PM.c **** 
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  114:Generated_Source\PSoC4/capsense_PM.c **** void capsense_RestoreConfig(void)
  115:Generated_Source\PSoC4/capsense_PM.c **** {
  113              		.loc 1 115 0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 5
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 5
 
 
  114              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  140              		.loc 1 143 0
  141 0002 FF20     		movs	r0, #255
  142 0004 FFF7FEFF 		bl	capsense_SenseClk_StartEx
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 6
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 6
 
 
  143              	.LVL4:
@@ -354,11 +354,11 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  185 0006 00000000 		.4byte	.Ldebug_abbrev0
  186 000a 04       		.byte	0x4
  187 000b 01       		.uleb128 0x1
- 188 000c 7B010000 		.4byte	.LASF28
+ 188 000c D0010000 		.4byte	.LASF28
  189 0010 0C       		.byte	0xc
- 190 0011 56010000 		.4byte	.LASF29
- 191 0015 42020000 		.4byte	.LASF30
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 7
+ 190 0011 AB010000 		.4byte	.LASF29
+ 191 0015 0A010000 		.4byte	.LASF30
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 7
 
 
  192 0019 00000000 		.4byte	.Ldebug_ranges0+0
@@ -367,7 +367,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  195 0025 02       		.uleb128 0x2
  196 0026 01       		.byte	0x1
  197 0027 06       		.byte	0x6
- 198 0028 A0020000 		.4byte	.LASF0
+ 198 0028 C2020000 		.4byte	.LASF0
  199 002c 02       		.uleb128 0x2
  200 002d 01       		.byte	0x1
  201 002e 08       		.byte	0x8
@@ -375,7 +375,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  203 0033 02       		.uleb128 0x2
  204 0034 02       		.byte	0x2
  205 0035 05       		.byte	0x5
- 206 0036 0A010000 		.4byte	.LASF2
+ 206 0036 97020000 		.4byte	.LASF2
  207 003a 02       		.uleb128 0x2
  208 003b 02       		.byte	0x2
  209 003c 07       		.byte	0x7
@@ -383,7 +383,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  211 0041 02       		.uleb128 0x2
  212 0042 04       		.byte	0x4
  213 0043 05       		.byte	0x5
- 214 0044 7F020000 		.4byte	.LASF4
+ 214 0044 A1020000 		.4byte	.LASF4
  215 0048 02       		.uleb128 0x2
  216 0049 04       		.byte	0x4
  217 004a 07       		.byte	0x7
@@ -391,11 +391,11 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  219 004f 02       		.uleb128 0x2
  220 0050 08       		.byte	0x8
  221 0051 05       		.byte	0x5
- 222 0052 22020000 		.4byte	.LASF6
+ 222 0052 77020000 		.4byte	.LASF6
  223 0056 02       		.uleb128 0x2
  224 0057 08       		.byte	0x8
  225 0058 07       		.byte	0x7
- 226 0059 3F010000 		.4byte	.LASF7
+ 226 0059 94010000 		.4byte	.LASF7
  227 005d 03       		.uleb128 0x3
  228 005e 04       		.byte	0x4
  229 005f 05       		.byte	0x5
@@ -403,14 +403,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  231 0064 02       		.uleb128 0x2
  232 0065 04       		.byte	0x4
  233 0066 07       		.byte	0x7
- 234 0067 32010000 		.4byte	.LASF8
+ 234 0067 87010000 		.4byte	.LASF8
  235 006b 04       		.uleb128 0x4
  236 006c E2000000 		.4byte	.LASF9
  237 0070 02       		.byte	0x2
  238 0071 E401     		.2byte	0x1e4
  239 0073 2C000000 		.4byte	0x2c
  240 0077 04       		.uleb128 0x4
- 241 0078 2B010000 		.4byte	.LASF10
+ 241 0078 80010000 		.4byte	.LASF10
  242 007c 02       		.byte	0x2
  243 007d E601     		.2byte	0x1e6
  244 007f 48000000 		.4byte	0x48
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  246 0084 04       		.byte	0x4
  247 0085 04       		.byte	0x4
  248 0086 85000000 		.4byte	.LASF11
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 8
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 8
 
 
  249 008a 02       		.uleb128 0x2
@@ -428,7 +428,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  253 0091 02       		.uleb128 0x2
  254 0092 01       		.byte	0x1
  255 0093 08       		.byte	0x8
- 256 0094 30020000 		.4byte	.LASF13
+ 256 0094 85020000 		.4byte	.LASF13
  257 0098 04       		.uleb128 0x4
  258 0099 32000000 		.4byte	.LASF14
  259 009d 02       		.byte	0x2
@@ -439,18 +439,18 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  264 00a9 02       		.uleb128 0x2
  265 00aa 04       		.byte	0x4
  266 00ab 07       		.byte	0x7
- 267 00ac 19020000 		.4byte	.LASF15
+ 267 00ac 6E020000 		.4byte	.LASF15
  268 00b0 02       		.uleb128 0x2
  269 00b1 08       		.byte	0x8
  270 00b2 04       		.byte	0x4
- 271 00b3 94020000 		.4byte	.LASF16
+ 271 00b3 B6020000 		.4byte	.LASF16
  272 00b7 06       		.uleb128 0x6
  273 00b8 01       		.byte	0x1
  274 00b9 03       		.byte	0x3
  275 00ba 8D       		.byte	0x8d
  276 00bb CC000000 		.4byte	0xcc
  277 00bf 07       		.uleb128 0x7
- 278 00c0 88020000 		.4byte	.LASF31
+ 278 00c0 AA020000 		.4byte	.LASF31
  279 00c4 03       		.byte	0x3
  280 00c5 8F       		.byte	0x8f
  281 00c6 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  303 00f7 01       		.uleb128 0x1
  304 00f8 9C       		.byte	0x9c
  305 00f9 2C010000 		.4byte	0x12c
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 9
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 9
 
 
  306 00fd 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  360 0175 50       		.byte	0x50
  361 0176 02       		.uleb128 0x2
  362 0177 08       		.byte	0x8
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 10
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 10
 
 
  363 0178 FF       		.byte	0xff
@@ -548,7 +548,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  367 017f CC010000 		.4byte	0x1cc
  368 0183 00       		.byte	0
  369 0184 0E       		.uleb128 0xe
- 370 0185 09020000 		.4byte	.LASF32
+ 370 0185 5E020000 		.4byte	.LASF32
  371 0189 01       		.byte	0x1
  372 018a 13       		.byte	0x13
  373 018b CC000000 		.4byte	0xcc
@@ -556,13 +556,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  375 0190 03       		.byte	0x3
  376 0191 00000000 		.4byte	capsense_backup
  377 0195 0F       		.uleb128 0xf
- 378 0196 35020000 		.4byte	.LASF22
- 379 019a 35020000 		.4byte	.LASF22
+ 378 0196 8A020000 		.4byte	.LASF22
+ 379 019a 8A020000 		.4byte	.LASF22
  380 019e 04       		.byte	0x4
  381 019f C5       		.byte	0xc5
  382 01a0 0F       		.uleb128 0xf
- 383 01a1 14010000 		.4byte	.LASF23
- 384 01a5 14010000 		.4byte	.LASF23
+ 383 01a1 69010000 		.4byte	.LASF23
+ 384 01a5 69010000 		.4byte	.LASF23
  385 01a9 05       		.byte	0x5
  386 01aa 27       		.byte	0x27
  387 01ab 0F       		.uleb128 0xf
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  417 0007 03       		.uleb128 0x3
  418 0008 0E       		.uleb128 0xe
  419 0009 1B       		.uleb128 0x1b
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 11
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 11
 
 
  420 000a 0E       		.uleb128 0xe
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  474 0040 0B       		.uleb128 0xb
  475 0041 0B       		.uleb128 0xb
  476 0042 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 12
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 12
 
 
  477 0043 0B       		.uleb128 0xb
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  531 0079 9742     		.uleb128 0x2117
  532 007b 19       		.uleb128 0x19
  533 007c 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 13
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 13
 
 
  534 007d 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  588 00bb 00       		.byte	0
  589 00bc 0E       		.uleb128 0xe
  590 00bd 34       		.uleb128 0x34
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 14
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 14
 
 
  591 00be 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  645 000c 30000000 		.4byte	.LFE35
  646 0010 00000000 		.4byte	.LFB36
  647 0014 02000000 		.4byte	.LFE36
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 15
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 15
 
 
  648 0018 00000000 		.4byte	.LFB37
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  672      656E7365 
  672      5F526573 
  672      746F7265 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 16
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 16
 
 
  672      436F6E66 
@@ -935,104 +935,106 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 1
  685              	.LASF12:
  686 0103 646F7562 		.ascii	"double\000"
  686      6C6500
- 687              	.LASF2:
- 688 010a 73686F72 		.ascii	"short int\000"
- 688      7420696E 
- 688      7400
- 689              	.LASF23:
- 690 0114 63617073 		.ascii	"capsense_SenseClk_Stop\000"
- 690      656E7365 
- 690      5F53656E 
- 690      7365436C 
- 690      6B5F5374 
- 691              	.LASF10:
- 692 012b 75696E74 		.ascii	"uint32\000"
- 692      333200
- 693              	.LASF8:
- 694 0132 756E7369 		.ascii	"unsigned int\000"
- 694      676E6564 
- 694      20696E74 
- 694      00
- 695              	.LASF7:
- 696 013f 6C6F6E67 		.ascii	"long long unsigned int\000"
- 696      206C6F6E 
- 696      6720756E 
- 696      7369676E 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 17
+ 687              	.LASF30:
+ 688 010a 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Documents\\GitHub\\BlueCu"
+ 688      73657273 
+ 688      5C6A6572 
+ 688      6F6D652E 
+ 688      63726F63 
+ 689 0138 62655C5F 		.ascii	"be\\_CypressBLE\\capsenseled_512\\capsenseled.cydsn"
+ 689      43797072 
+ 689      65737342 
+ 689      4C455C63 
+ 689      61707365 
+ 690 0168 00       		.ascii	"\000"
+ 691              	.LASF23:
+ 692 0169 63617073 		.ascii	"capsense_SenseClk_Stop\000"
+ 692      656E7365 
+ 692      5F53656E 
+ 692      7365436C 
+ 692      6B5F5374 
+ 693              	.LASF10:
+ 694 0180 75696E74 		.ascii	"uint32\000"
+ 694      333200
+ 695              	.LASF8:
+ 696 0187 756E7369 		.ascii	"unsigned int\000"
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 17
 
 
- 696      65642069 
- 697              	.LASF29:
- 698 0156 47656E65 		.ascii	"Generated_Source\\PSoC4\\capsense_PM.c\000"
- 698      72617465 
- 698      645F536F 
- 698      75726365 
- 698      5C50536F 
- 699              	.LASF28:
- 700 017b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 700      43313120 
- 700      352E342E 
- 700      31203230 
- 700      31363036 
- 701 01ae 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 701      20726576 
- 701      6973696F 
- 701      6E203233 
- 701      37373135 
- 702 01e1 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 702      66756E63 
- 702      74696F6E 
- 702      2D736563 
- 702      74696F6E 
- 703              	.LASF32:
- 704 0209 63617073 		.ascii	"capsense_backup\000"
- 704      656E7365 
- 704      5F626163 
- 704      6B757000 
- 705              	.LASF15:
- 706 0219 73697A65 		.ascii	"sizetype\000"
- 706      74797065 
- 706      00
- 707              	.LASF6:
- 708 0222 6C6F6E67 		.ascii	"long long int\000"
- 708      206C6F6E 
- 708      6720696E 
- 708      7400
- 709              	.LASF13:
- 710 0230 63686172 		.ascii	"char\000"
- 710      00
- 711              	.LASF22:
- 712 0235 4379496E 		.ascii	"CyIntDisable\000"
- 712      74446973 
- 712      61626C65 
+ 696      676E6564 
+ 696      20696E74 
+ 696      00
+ 697              	.LASF7:
+ 698 0194 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 698      206C6F6E 
+ 698      6720756E 
+ 698      7369676E 
+ 698      65642069 
+ 699              	.LASF29:
+ 700 01ab 47656E65 		.ascii	"Generated_Source\\PSoC4\\capsense_PM.c\000"
+ 700      72617465 
+ 700      645F536F 
+ 700      75726365 
+ 700      5C50536F 
+ 701              	.LASF28:
+ 702 01d0 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 702      43313120 
+ 702      352E342E 
+ 702      31203230 
+ 702      31363036 
+ 703 0203 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 703      20726576 
+ 703      6973696F 
+ 703      6E203233 
+ 703      37373135 
+ 704 0236 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 704      66756E63 
+ 704      74696F6E 
+ 704      2D736563 
+ 704      74696F6E 
+ 705              	.LASF32:
+ 706 025e 63617073 		.ascii	"capsense_backup\000"
+ 706      656E7365 
+ 706      5F626163 
+ 706      6B757000 
+ 707              	.LASF15:
+ 708 026e 73697A65 		.ascii	"sizetype\000"
+ 708      74797065 
+ 708      00
+ 709              	.LASF6:
+ 710 0277 6C6F6E67 		.ascii	"long long int\000"
+ 710      206C6F6E 
+ 710      6720696E 
+ 710      7400
+ 711              	.LASF13:
+ 712 0285 63686172 		.ascii	"char\000"
  712      00
- 713              	.LASF30:
- 714 0242 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Desktop\\capsenseled\\cap"
- 714      73657273 
- 714      5C6A6572 
- 714      6F6D652E 
- 714      63726F63 
- 715 0270 73656E73 		.ascii	"senseled.cydsn\000"
- 715      656C6564 
- 715      2E637964 
- 715      736E00
- 716              	.LASF4:
- 717 027f 6C6F6E67 		.ascii	"long int\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceY5UmV.s 			page 18
+ 713              	.LASF22:
+ 714 028a 4379496E 		.ascii	"CyIntDisable\000"
+ 714      74446973 
+ 714      61626C65 
+ 714      00
+ 715              	.LASF2:
+ 716 0297 73686F72 		.ascii	"short int\000"
+ 716      7420696E 
+ 716      7400
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccjuhRWb.s 			page 18
 
 
- 717      20696E74 
- 717      00
- 718              	.LASF31:
- 719 0288 656E6162 		.ascii	"enableState\000"
- 719      6C655374 
- 719      61746500 
- 720              	.LASF16:
- 721 0294 6C6F6E67 		.ascii	"long double\000"
- 721      20646F75 
- 721      626C6500 
- 722              	.LASF0:
- 723 02a0 7369676E 		.ascii	"signed char\000"
- 723      65642063 
- 723      68617200 
- 724              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 717              	.LASF4:
+ 718 02a1 6C6F6E67 		.ascii	"long int\000"
+ 718      20696E74 
+ 718      00
+ 719              	.LASF31:
+ 720 02aa 656E6162 		.ascii	"enableState\000"
+ 720      6C655374 
+ 720      61746500 
+ 721              	.LASF16:
+ 722 02b6 6C6F6E67 		.ascii	"long double\000"
+ 722      20646F75 
+ 722      626C6500 
+ 723              	.LASF0:
+ 724 02c2 7369676E 		.ascii	"signed char\000"
+ 724      65642063 
+ 724      68617200 
+ 725              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

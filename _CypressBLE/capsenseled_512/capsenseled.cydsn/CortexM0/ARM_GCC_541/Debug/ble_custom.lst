@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
   28:Generated_Source\PSoC4/ble_custom.c ****     /* ledcapsense service */
   29:Generated_Source\PSoC4/ble_custom.c ****     {
   30:Generated_Source\PSoC4/ble_custom.c ****         0x000Cu, /* Handle of the ledcapsense service */ 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 2
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 2
 
 
   31:Generated_Source\PSoC4/ble_custom.c ****         {
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
   85:Generated_Source\PSoC4/ble_custom.c **** *  This function initializes Custom Service.
   86:Generated_Source\PSoC4/ble_custom.c **** * 
   87:Generated_Source\PSoC4/ble_custom.c **** * \return
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 3
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 3
 
 
   88:Generated_Source\PSoC4/ble_custom.c **** *  None
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
   48 0006 0000     		.short	0
   49 0008 1100     		.short	17
   50 000a 1200     		.short	18
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 4
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 4
 
 
   51 000c 1300     		.short	19
@@ -198,47 +198,47 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
   65 0006 00000000 		.4byte	.Ldebug_abbrev0
   66 000a 04       		.byte	0x4
   67 000b 01       		.uleb128 0x1
-  68 000c 0B020000 		.4byte	.LASF94
+  68 000c 09020000 		.4byte	.LASF94
   69 0010 0C       		.byte	0xc
-  70 0011 BC070000 		.4byte	.LASF95
-  71 0015 CE010000 		.4byte	.LASF96
+  70 0011 DE070000 		.4byte	.LASF95
+  71 0015 93000000 		.4byte	.LASF96
   72 0019 00000000 		.4byte	.Ldebug_ranges0+0
   73 001d 00000000 		.4byte	0
   74 0021 00000000 		.4byte	.Ldebug_line0
   75 0025 02       		.uleb128 0x2
   76 0026 01       		.byte	0x1
   77 0027 06       		.byte	0x6
-  78 0028 C9050000 		.4byte	.LASF0
+  78 0028 C7050000 		.4byte	.LASF0
   79 002c 02       		.uleb128 0x2
   80 002d 01       		.byte	0x1
   81 002e 08       		.byte	0x8
-  82 002f 50050000 		.4byte	.LASF1
+  82 002f 4E050000 		.4byte	.LASF1
   83 0033 02       		.uleb128 0x2
   84 0034 02       		.byte	0x2
   85 0035 05       		.byte	0x5
-  86 0036 B7000000 		.4byte	.LASF2
+  86 0036 F2000000 		.4byte	.LASF2
   87 003a 02       		.uleb128 0x2
   88 003b 02       		.byte	0x2
   89 003c 07       		.byte	0x7
-  90 003d A9070000 		.4byte	.LASF3
+  90 003d CB070000 		.4byte	.LASF3
   91 0041 02       		.uleb128 0x2
   92 0042 04       		.byte	0x4
   93 0043 05       		.byte	0x5
-  94 0044 F8030000 		.4byte	.LASF4
+  94 0044 F6030000 		.4byte	.LASF4
   95 0048 02       		.uleb128 0x2
   96 0049 04       		.byte	0x4
   97 004a 07       		.byte	0x7
-  98 004b 5A060000 		.4byte	.LASF5
+  98 004b 58060000 		.4byte	.LASF5
   99 004f 02       		.uleb128 0x2
  100 0050 08       		.byte	0x8
  101 0051 05       		.byte	0x5
- 102 0052 23010000 		.4byte	.LASF6
+ 102 0052 5E010000 		.4byte	.LASF6
  103 0056 02       		.uleb128 0x2
  104 0057 08       		.byte	0x8
  105 0058 07       		.byte	0x7
- 106 0059 AB030000 		.4byte	.LASF7
+ 106 0059 A9030000 		.4byte	.LASF7
  107 005d 03       		.uleb128 0x3
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 5
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 5
 
 
  108 005e 04       		.byte	0x4
@@ -247,32 +247,32 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  111 0064 02       		.uleb128 0x2
  112 0065 04       		.byte	0x4
  113 0066 07       		.byte	0x7
- 114 0067 32060000 		.4byte	.LASF8
+ 114 0067 30060000 		.4byte	.LASF8
  115 006b 04       		.uleb128 0x4
- 116 006c E0070000 		.4byte	.LASF86
+ 116 006c 02080000 		.4byte	.LASF86
  117 0070 02       		.byte	0x2
  118 0071 E501     		.2byte	0x1e5
  119 0073 3A000000 		.4byte	0x3a
  120 0077 02       		.uleb128 0x2
  121 0078 04       		.byte	0x4
  122 0079 04       		.byte	0x4
- 123 007a 42030000 		.4byte	.LASF9
+ 123 007a 40030000 		.4byte	.LASF9
  124 007e 02       		.uleb128 0x2
  125 007f 08       		.byte	0x8
  126 0080 04       		.byte	0x4
- 127 0081 84080000 		.4byte	.LASF10
+ 127 0081 A6080000 		.4byte	.LASF10
  128 0085 02       		.uleb128 0x2
  129 0086 01       		.byte	0x1
  130 0087 08       		.byte	0x8
- 131 0088 88070000 		.4byte	.LASF11
+ 131 0088 86070000 		.4byte	.LASF11
  132 008c 02       		.uleb128 0x2
  133 008d 08       		.byte	0x8
  134 008e 04       		.byte	0x4
- 135 008f 1E050000 		.4byte	.LASF12
+ 135 008f 1C050000 		.4byte	.LASF12
  136 0093 02       		.uleb128 0x2
  137 0094 04       		.byte	0x4
  138 0095 07       		.byte	0x7
- 139 0096 F9000000 		.4byte	.LASF13
+ 139 0096 34010000 		.4byte	.LASF13
  140 009a 05       		.uleb128 0x5
  141 009b 01       		.byte	0x1
  142 009c 2C000000 		.4byte	0x2c
@@ -280,236 +280,236 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  144 00a1 3501     		.2byte	0x135
  145 00a3 58020000 		.4byte	0x258
  146 00a7 06       		.uleb128 0x6
- 147 00a8 EC020000 		.4byte	.LASF14
+ 147 00a8 EA020000 		.4byte	.LASF14
  148 00ac 00       		.byte	0
  149 00ad 06       		.uleb128 0x6
- 150 00ae 68010000 		.4byte	.LASF15
+ 150 00ae A3010000 		.4byte	.LASF15
  151 00b2 01       		.byte	0x1
  152 00b3 06       		.uleb128 0x6
- 153 00b4 0A0A0000 		.4byte	.LASF16
+ 153 00b4 2C0A0000 		.4byte	.LASF16
  154 00b8 02       		.byte	0x2
  155 00b9 06       		.uleb128 0x6
- 156 00ba E0080000 		.4byte	.LASF17
+ 156 00ba 02090000 		.4byte	.LASF17
  157 00be 03       		.byte	0x3
  158 00bf 06       		.uleb128 0x6
- 159 00c0 42010000 		.4byte	.LASF18
+ 159 00c0 7D010000 		.4byte	.LASF18
  160 00c4 04       		.byte	0x4
  161 00c5 06       		.uleb128 0x6
- 162 00c6 8A040000 		.4byte	.LASF19
+ 162 00c6 88040000 		.4byte	.LASF19
  163 00ca 05       		.byte	0x5
  164 00cb 06       		.uleb128 0x6
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 6
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 6
 
 
  165 00cc 3E000000 		.4byte	.LASF20
  166 00d0 06       		.byte	0x6
  167 00d1 06       		.uleb128 0x6
- 168 00d2 3E090000 		.4byte	.LASF21
+ 168 00d2 60090000 		.4byte	.LASF21
  169 00d6 20       		.byte	0x20
  170 00d7 06       		.uleb128 0x6
- 171 00d8 6C060000 		.4byte	.LASF22
+ 171 00d8 6A060000 		.4byte	.LASF22
  172 00dc 21       		.byte	0x21
  173 00dd 06       		.uleb128 0x6
  174 00de 00000000 		.4byte	.LASF23
  175 00e2 22       		.byte	0x22
  176 00e3 06       		.uleb128 0x6
- 177 00e4 A6040000 		.4byte	.LASF24
+ 177 00e4 A4040000 		.4byte	.LASF24
  178 00e8 23       		.byte	0x23
  179 00e9 06       		.uleb128 0x6
- 180 00ea 16060000 		.4byte	.LASF25
+ 180 00ea 14060000 		.4byte	.LASF25
  181 00ee 24       		.byte	0x24
  182 00ef 06       		.uleb128 0x6
- 183 00f0 C1000000 		.4byte	.LASF26
+ 183 00f0 FC000000 		.4byte	.LASF26
  184 00f4 25       		.byte	0x25
  185 00f5 06       		.uleb128 0x6
- 186 00f6 41040000 		.4byte	.LASF27
+ 186 00f6 3F040000 		.4byte	.LASF27
  187 00fa 26       		.byte	0x26
  188 00fb 06       		.uleb128 0x6
- 189 00fc 22040000 		.4byte	.LASF28
+ 189 00fc 20040000 		.4byte	.LASF28
  190 0100 27       		.byte	0x27
  191 0101 06       		.uleb128 0x6
  192 0102 71000000 		.4byte	.LASF29
  193 0106 28       		.byte	0x28
  194 0107 06       		.uleb128 0x6
- 195 0108 A4060000 		.4byte	.LASF30
+ 195 0108 A2060000 		.4byte	.LASF30
  196 010c 29       		.byte	0x29
  197 010d 06       		.uleb128 0x6
- 198 010e 38070000 		.4byte	.LASF31
+ 198 010e 36070000 		.4byte	.LASF31
  199 0112 2A       		.byte	0x2a
  200 0113 06       		.uleb128 0x6
- 201 0114 24080000 		.4byte	.LASF32
+ 201 0114 46080000 		.4byte	.LASF32
  202 0118 2B       		.byte	0x2b
  203 0119 06       		.uleb128 0x6
- 204 011a FC060000 		.4byte	.LASF33
+ 204 011a FA060000 		.4byte	.LASF33
  205 011e 2C       		.byte	0x2c
  206 011f 06       		.uleb128 0x6
- 207 0120 61030000 		.4byte	.LASF34
+ 207 0120 5F030000 		.4byte	.LASF34
  208 0124 2D       		.byte	0x2d
  209 0125 06       		.uleb128 0x6
- 210 0126 93000000 		.4byte	.LASF35
+ 210 0126 8B070000 		.4byte	.LASF35
  211 012a 2E       		.byte	0x2e
  212 012b 06       		.uleb128 0x6
- 213 012c F40A0000 		.4byte	.LASF36
+ 213 012c 160B0000 		.4byte	.LASF36
  214 0130 2F       		.byte	0x2f
  215 0131 06       		.uleb128 0x6
- 216 0132 02010000 		.4byte	.LASF37
+ 216 0132 3D010000 		.4byte	.LASF37
  217 0136 30       		.byte	0x30
  218 0137 06       		.uleb128 0x6
- 219 0138 FA040000 		.4byte	.LASF38
+ 219 0138 F8040000 		.4byte	.LASF38
  220 013c 31       		.byte	0x31
  221 013d 06       		.uleb128 0x6
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 7
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 7
 
 
- 222 013e 8A030000 		.4byte	.LASF39
+ 222 013e 88030000 		.4byte	.LASF39
  223 0142 32       		.byte	0x32
  224 0143 06       		.uleb128 0x6
- 225 0144 61070000 		.4byte	.LASF40
+ 225 0144 5F070000 		.4byte	.LASF40
  226 0148 33       		.byte	0x33
  227 0149 06       		.uleb128 0x6
- 228 014a C1060000 		.4byte	.LASF41
+ 228 014a BF060000 		.4byte	.LASF41
  229 014e 34       		.byte	0x34
  230 014f 06       		.uleb128 0x6
- 231 0150 C3080000 		.4byte	.LASF42
+ 231 0150 E5080000 		.4byte	.LASF42
  232 0154 35       		.byte	0x35
  233 0155 06       		.uleb128 0x6
- 234 0156 D7030000 		.4byte	.LASF43
+ 234 0156 D5030000 		.4byte	.LASF43
  235 015a 36       		.byte	0x36
  236 015b 06       		.uleb128 0x6
- 237 015c 7B010000 		.4byte	.LASF44
+ 237 015c B6010000 		.4byte	.LASF44
  238 0160 37       		.byte	0x37
  239 0161 06       		.uleb128 0x6
  240 0162 57000000 		.4byte	.LASF45
  241 0166 40       		.byte	0x40
  242 0167 06       		.uleb128 0x6
- 243 0168 3F060000 		.4byte	.LASF46
+ 243 0168 3D060000 		.4byte	.LASF46
  244 016c 41       		.byte	0x41
  245 016d 06       		.uleb128 0x6
- 246 016e DB000000 		.4byte	.LASF47
+ 246 016e 16010000 		.4byte	.LASF47
  247 0172 42       		.byte	0x42
  248 0173 06       		.uleb128 0x6
- 249 0174 B0010000 		.4byte	.LASF48
+ 249 0174 EB010000 		.4byte	.LASF48
  250 0178 43       		.byte	0x43
  251 0179 06       		.uleb128 0x6
- 252 017a C8090000 		.4byte	.LASF49
+ 252 017a EA090000 		.4byte	.LASF49
  253 017e 44       		.byte	0x44
  254 017f 06       		.uleb128 0x6
- 255 0180 62090000 		.4byte	.LASF50
+ 255 0180 84090000 		.4byte	.LASF50
  256 0184 45       		.byte	0x45
  257 0185 06       		.uleb128 0x6
- 258 0186 A7090000 		.4byte	.LASF51
+ 258 0186 C9090000 		.4byte	.LASF51
  259 018a 46       		.byte	0x46
  260 018b 06       		.uleb128 0x6
- 261 018c AB050000 		.4byte	.LASF52
+ 261 018c A9050000 		.4byte	.LASF52
  262 0190 47       		.byte	0x47
  263 0191 06       		.uleb128 0x6
- 264 0192 EF050000 		.4byte	.LASF53
+ 264 0192 ED050000 		.4byte	.LASF53
  265 0196 48       		.byte	0x48
  266 0197 06       		.uleb128 0x6
- 267 0198 48030000 		.4byte	.LASF54
+ 267 0198 46030000 		.4byte	.LASF54
  268 019c 49       		.byte	0x49
  269 019d 06       		.uleb128 0x6
- 270 019e E7070000 		.4byte	.LASF55
+ 270 019e 09080000 		.4byte	.LASF55
  271 01a2 4A       		.byte	0x4a
  272 01a3 06       		.uleb128 0x6
- 273 01a4 AC020000 		.4byte	.LASF56
+ 273 01a4 AA020000 		.4byte	.LASF56
  274 01a8 4B       		.byte	0x4b
  275 01a9 06       		.uleb128 0x6
- 276 01aa D5050000 		.4byte	.LASF57
+ 276 01aa D3050000 		.4byte	.LASF57
  277 01ae 4C       		.byte	0x4c
  278 01af 06       		.uleb128 0x6
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 8
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 8
 
 
  279 01b0 24000000 		.4byte	.LASF58
  280 01b4 4D       		.byte	0x4d
  281 01b5 06       		.uleb128 0x6
- 282 01b6 89090000 		.4byte	.LASF59
+ 282 01b6 AB090000 		.4byte	.LASF59
  283 01ba 4E       		.byte	0x4e
  284 01bb 06       		.uleb128 0x6
- 285 01bc 6D050000 		.4byte	.LASF60
+ 285 01bc 6B050000 		.4byte	.LASF60
  286 01c0 4F       		.byte	0x4f
  287 01c1 06       		.uleb128 0x6
- 288 01c2 750A0000 		.4byte	.LASF61
+ 288 01c2 970A0000 		.4byte	.LASF61
  289 01c6 50       		.byte	0x50
  290 01c7 06       		.uleb128 0x6
- 291 01c8 05080000 		.4byte	.LASF62
+ 291 01c8 27080000 		.4byte	.LASF62
  292 01cc 51       		.byte	0x51
  293 01cd 06       		.uleb128 0x6
- 294 01ce 69040000 		.4byte	.LASF63
+ 294 01ce 67040000 		.4byte	.LASF63
  295 01d2 52       		.byte	0x52
  296 01d3 06       		.uleb128 0x6
- 297 01d4 01040000 		.4byte	.LASF64
+ 297 01d4 FF030000 		.4byte	.LASF64
  298 01d8 53       		.byte	0x53
  299 01d9 06       		.uleb128 0x6
- 300 01da CB020000 		.4byte	.LASF65
+ 300 01da C9020000 		.4byte	.LASF65
  301 01de 54       		.byte	0x54
  302 01df 06       		.uleb128 0x6
- 303 01e0 BE0A0000 		.4byte	.LASF66
+ 303 01e0 E00A0000 		.4byte	.LASF66
  304 01e4 55       		.byte	0x55
  305 01e5 06       		.uleb128 0x6
- 306 01e6 530A0000 		.4byte	.LASF67
+ 306 01e6 750A0000 		.4byte	.LASF67
  307 01ea 56       		.byte	0x56
  308 01eb 06       		.uleb128 0x6
- 309 01ec 2A0A0000 		.4byte	.LASF68
+ 309 01ec 4C0A0000 		.4byte	.LASF68
  310 01f0 57       		.byte	0x57
  311 01f1 06       		.uleb128 0x6
- 312 01f2 D9060000 		.4byte	.LASF69
+ 312 01f2 D7060000 		.4byte	.LASF69
  313 01f6 58       		.byte	0x58
  314 01f7 06       		.uleb128 0x6
- 315 01f8 2A050000 		.4byte	.LASF70
+ 315 01f8 28050000 		.4byte	.LASF70
  316 01fc 70       		.byte	0x70
  317 01fd 06       		.uleb128 0x6
- 318 01fe 18090000 		.4byte	.LASF71
+ 318 01fe 3A090000 		.4byte	.LASF71
  319 0202 71       		.byte	0x71
  320 0203 06       		.uleb128 0x6
- 321 0204 8D070000 		.4byte	.LASF72
+ 321 0204 AF070000 		.4byte	.LASF72
  322 0208 72       		.byte	0x72
  323 0209 06       		.uleb128 0x6
- 324 020a 03030000 		.4byte	.LASF73
+ 324 020a 01030000 		.4byte	.LASF73
  325 020e 73       		.byte	0x73
  326 020f 06       		.uleb128 0x6
- 327 0210 DC040000 		.4byte	.LASF74
+ 327 0210 DA040000 		.4byte	.LASF74
  328 0214 74       		.byte	0x74
  329 0215 06       		.uleb128 0x6
- 330 0216 83060000 		.4byte	.LASF75
+ 330 0216 81060000 		.4byte	.LASF75
  331 021a 75       		.byte	0x75
  332 021b 06       		.uleb128 0x6
- 333 021c 21030000 		.4byte	.LASF76
+ 333 021c 1F030000 		.4byte	.LASF76
  334 0220 76       		.byte	0x76
  335 0221 06       		.uleb128 0x6
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 9
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 9
 
 
- 336 0222 F9080000 		.4byte	.LASF77
+ 336 0222 1B090000 		.4byte	.LASF77
  337 0226 77       		.byte	0x77
  338 0227 06       		.uleb128 0x6
- 339 0228 61080000 		.4byte	.LASF78
+ 339 0228 83080000 		.4byte	.LASF78
  340 022c 78       		.byte	0x78
  341 022d 06       		.uleb128 0x6
- 342 022e 8B080000 		.4byte	.LASF79
+ 342 022e AD080000 		.4byte	.LASF79
  343 0232 79       		.byte	0x79
  344 0233 06       		.uleb128 0x6
- 345 0234 E6090000 		.4byte	.LASF80
+ 345 0234 080A0000 		.4byte	.LASF80
  346 0238 7A       		.byte	0x7a
  347 0239 06       		.uleb128 0x6
- 348 023a 43080000 		.4byte	.LASF81
+ 348 023a 65080000 		.4byte	.LASF81
  349 023e FA       		.byte	0xfa
  350 023f 06       		.uleb128 0x6
- 351 0240 8C050000 		.4byte	.LASF82
+ 351 0240 8A050000 		.4byte	.LASF82
  352 0244 FB       		.byte	0xfb
  353 0245 06       		.uleb128 0x6
- 354 0246 E20A0000 		.4byte	.LASF83
+ 354 0246 040B0000 		.4byte	.LASF83
  355 024a FC       		.byte	0xfc
  356 024b 06       		.uleb128 0x6
- 357 024c 20070000 		.4byte	.LASF84
+ 357 024c 1E070000 		.4byte	.LASF84
  358 0250 FD       		.byte	0xfd
  359 0251 06       		.uleb128 0x6
- 360 0252 1C0A0000 		.4byte	.LASF85
+ 360 0252 3E0A0000 		.4byte	.LASF85
  361 0256 FF       		.byte	0xff
  362 0257 00       		.byte	0
  363 0258 04       		.uleb128 0x4
- 364 0259 940A0000 		.4byte	.LASF87
+ 364 0259 B60A0000 		.4byte	.LASF87
  365 025d 03       		.byte	0x3
  366 025e 8901     		.2byte	0x189
  367 0260 6B000000 		.4byte	0x6b
@@ -519,13 +519,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  371 0267 4F       		.byte	0x4f
  372 0268 85020000 		.4byte	0x285
  373 026c 08       		.uleb128 0x8
- 374 026d AE080000 		.4byte	.LASF88
+ 374 026d D0080000 		.4byte	.LASF88
  375 0271 04       		.byte	0x4
  376 0272 52       		.byte	0x52
  377 0273 58020000 		.4byte	0x258
  378 0277 00       		.byte	0
  379 0278 08       		.uleb128 0x8
- 380 0279 99020000 		.4byte	.LASF89
+ 380 0279 97020000 		.4byte	.LASF89
  381 027d 04       		.byte	0x4
  382 027e 54       		.byte	0x54
  383 027f 85020000 		.4byte	0x285
@@ -538,11 +538,11 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  390 028f 93000000 		.4byte	0x93
  391 0293 01       		.byte	0x1
  392 0294 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 10
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 10
 
 
  393 0295 0B       		.uleb128 0xb
- 394 0296 C2030000 		.4byte	.LASF90
+ 394 0296 C0030000 		.4byte	.LASF90
  395 029a 04       		.byte	0x4
  396 029b 56       		.byte	0x56
  397 029c 64020000 		.4byte	0x264
@@ -552,13 +552,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  401 02a3 59       		.byte	0x59
  402 02a4 C1020000 		.4byte	0x2c1
  403 02a8 08       		.uleb128 0x8
- 404 02a9 31010000 		.4byte	.LASF91
+ 404 02a9 6C010000 		.4byte	.LASF91
  405 02ad 04       		.byte	0x4
  406 02ae 5C       		.byte	0x5c
  407 02af 58020000 		.4byte	0x258
  408 02b3 00       		.byte	0
  409 02b4 08       		.uleb128 0x8
- 410 02b5 5E050000 		.4byte	.LASF92
+ 410 02b5 5C050000 		.4byte	.LASF92
  411 02b9 04       		.byte	0x4
  412 02ba 5F       		.byte	0x5f
  413 02bb C1020000 		.4byte	0x2c1
@@ -572,12 +572,12 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  421 02cf 02       		.byte	0x2
  422 02d0 00       		.byte	0
  423 02d1 0B       		.uleb128 0xb
- 424 02d2 CC040000 		.4byte	.LASF93
+ 424 02d2 CA040000 		.4byte	.LASF93
  425 02d6 04       		.byte	0x4
  426 02d7 61       		.byte	0x61
  427 02d8 A0020000 		.4byte	0x2a0
  428 02dc 0C       		.uleb128 0xc
- 429 02dd 57010000 		.4byte	.LASF97
+ 429 02dd 92010000 		.4byte	.LASF97
  430 02e1 01       		.byte	0x1
  431 02e2 5B       		.byte	0x5b
  432 02e3 00000000 		.4byte	.LFB2
@@ -594,11 +594,11 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  443 02fd 0D       		.uleb128 0xd
  444 02fe D1020000 		.4byte	0x2d1
  445 0302 0E       		.uleb128 0xe
- 446 0303 B00A0000 		.4byte	.LASF98
+ 446 0303 D20A0000 		.4byte	.LASF98
  447 0307 01       		.byte	0x1
  448 0308 1A       		.byte	0x1a
  449 0309 13030000 		.4byte	0x313
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 11
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 11
 
 
  450 030d 05       		.uleb128 0x5
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  504 002e 3A       		.uleb128 0x3a
  505 002f 0B       		.uleb128 0xb
  506 0030 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 12
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 12
 
 
  507 0031 05       		.uleb128 0x5
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  561 0067 0B       		.uleb128 0xb
  562 0068 00       		.byte	0
  563 0069 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 13
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 13
 
 
  564 006a 09       		.uleb128 0x9
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  618 00a1 0D       		.uleb128 0xd
  619 00a2 26       		.uleb128 0x26
  620 00a3 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 14
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 14
 
 
  621 00a4 49       		.uleb128 0x49
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  667 0024 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
  667      455F4556 
  667      545F4741 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 15
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 15
 
 
  667      5454435F 
@@ -861,584 +861,586 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 1
  673      545F4741 
  673      505F4445 
  673      56494345 
- 674              	.LASF35:
- 675 0093 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
- 675      455F4556 
- 675      545F4741 
- 675      505F4B45 
- 675      59505245 
- 676              	.LASF2:
- 677 00b7 73686F72 		.ascii	"short int\000"
- 677      7420696E 
- 677      7400
- 678              	.LASF26:
- 679 00c1 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
- 679      455F4556 
- 679      545F4741 
- 679      505F4155 
- 679      54485F46 
- 680              	.LASF47:
- 681 00db 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 674              	.LASF96:
+ 675 0093 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Documents\\GitHub\\BlueCu"
+ 675      73657273 
+ 675      5C6A6572 
+ 675      6F6D652E 
+ 675      63726F63 
+ 676 00c1 62655C5F 		.ascii	"be\\_CypressBLE\\capsenseled_512\\capsenseled.cydsn"
+ 676      43797072 
+ 676      65737342 
+ 676      4C455C63 
+ 676      61707365 
+ 677 00f1 00       		.ascii	"\000"
+ 678              	.LASF2:
+ 679 00f2 73686F72 		.ascii	"short int\000"
+ 679      7420696E 
+ 679      7400
+ 680              	.LASF26:
+ 681 00fc 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
  681      455F4556 
  681      545F4741 
- 681      54545F44 
- 681      4953434F 
- 682              	.LASF13:
- 683 00f9 73697A65 		.ascii	"sizetype\000"
- 683      74797065 
- 683      00
- 684              	.LASF37:
- 685 0102 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
- 685      455F4556 
- 685      545F4741 
- 685      505F4441 
- 685      54415F4C 
- 686              	.LASF6:
- 687 0123 6C6F6E67 		.ascii	"long long int\000"
- 687      206C6F6E 
- 687      6720696E 
- 687      7400
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 16
+ 681      505F4155 
+ 681      54485F46 
+ 682              	.LASF47:
+ 683 0116 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 683      455F4556 
+ 683      545F4741 
+ 683      54545F44 
+ 683      4953434F 
+ 684              	.LASF13:
+ 685 0134 73697A65 		.ascii	"sizetype\000"
+ 685      74797065 
+ 685      00
+ 686              	.LASF37:
+ 687 013d 4359424C 		.ascii	"CYBLE_EVT_GAP_DATA_LENGTH_CHANGE\000"
+ 687      455F4556 
+ 687      545F4741 
+ 687      505F4441 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 16
 
 
- 688              	.LASF91:
- 689 0131 63757374 		.ascii	"customServHandle\000"
- 689      6F6D5365 
- 689      72764861 
- 689      6E646C65 
- 689      00
- 690              	.LASF18:
- 691 0142 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
- 691      455F4556 
- 691      545F4843 
- 691      495F5354 
- 691      41545553 
- 692              	.LASF97:
- 693 0157 4379426C 		.ascii	"CyBle_CustomInit\000"
- 693      655F4375 
- 693      73746F6D 
- 693      496E6974 
- 693      00
- 694              	.LASF15:
- 695 0168 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
- 695      455F4556 
- 695      545F5354 
- 695      41434B5F 
- 695      4F4E00
- 696              	.LASF44:
- 697 017b 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
+ 687      54415F4C 
+ 688              	.LASF6:
+ 689 015e 6C6F6E67 		.ascii	"long long int\000"
+ 689      206C6F6E 
+ 689      6720696E 
+ 689      7400
+ 690              	.LASF91:
+ 691 016c 63757374 		.ascii	"customServHandle\000"
+ 691      6F6D5365 
+ 691      72764861 
+ 691      6E646C65 
+ 691      00
+ 692              	.LASF18:
+ 693 017d 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 693      455F4556 
+ 693      545F4843 
+ 693      495F5354 
+ 693      41545553 
+ 694              	.LASF97:
+ 695 0192 4379426C 		.ascii	"CyBle_CustomInit\000"
+ 695      655F4375 
+ 695      73746F6D 
+ 695      496E6974 
+ 695      00
+ 696              	.LASF15:
+ 697 01a3 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
  697      455F4556 
- 697      545F4741 
- 697      505F534D 
- 697      505F4C4F 
- 698 01ae 4500     		.ascii	"E\000"
- 699              	.LASF48:
- 700 01b0 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
- 700      455F4556 
- 700      545F4741 
- 700      5454535F 
- 700      58434E48 
- 701              	.LASF96:
- 702 01ce 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Desktop\\capsenseled\\cap"
- 702      73657273 
- 702      5C6A6572 
- 702      6F6D652E 
- 702      63726F63 
- 703 01fc 73656E73 		.ascii	"senseled.cydsn\000"
- 703      656C6564 
- 703      2E637964 
- 703      736E00
- 704              	.LASF94:
- 705 020b 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 705      43313120 
- 705      352E342E 
- 705      31203230 
- 705      31363036 
- 706 023e 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 706      20726576 
- 706      6973696F 
- 706      6E203233 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 17
+ 697      545F5354 
+ 697      41434B5F 
+ 697      4F4E00
+ 698              	.LASF44:
+ 699 01b6 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_LOC_P256_KEYS_GEN_AND_SET_COMPLET"
+ 699      455F4556 
+ 699      545F4741 
+ 699      505F534D 
+ 699      505F4C4F 
+ 700 01e9 4500     		.ascii	"E\000"
+ 701              	.LASF48:
+ 702 01eb 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 702      455F4556 
+ 702      545F4741 
+ 702      5454535F 
+ 702      58434E48 
+ 703              	.LASF94:
+ 704 0209 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 704      43313120 
+ 704      352E342E 
+ 704      31203230 
+ 704      31363036 
+ 705 023c 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 705      20726576 
+ 705      6973696F 
+ 705      6E203233 
+ 705      37373135 
+ 706 026f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 706      66756E63 
+ 706      74696F6E 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 17
 
 
- 706      37373135 
- 707 0271 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 707      66756E63 
- 707      74696F6E 
- 707      2D736563 
- 707      74696F6E 
- 708              	.LASF89:
- 709 0299 63757374 		.ascii	"customServCharDesc\000"
- 709      6F6D5365 
- 709      72764368 
- 709      61724465 
- 709      736300
- 710              	.LASF56:
- 711 02ac 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
- 711      455F4556 
- 711      545F4741 
- 711      5454435F 
- 711      52454144 
- 712              	.LASF65:
- 713 02cb 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
- 713      455F4556 
- 713      545F4741 
- 713      5454535F 
- 713      48414E44 
- 714              	.LASF14:
- 715 02ec 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
- 715      455F4556 
- 715      545F484F 
- 715      53545F49 
- 715      4E56414C 
- 716              	.LASF73:
- 717 0303 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 717      455F4556 
- 717      545F4C32 
- 717      4341505F 
- 717      43424643 
- 718              	.LASF76:
- 719 0321 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
- 719      455F4556 
- 719      545F4C32 
- 719      4341505F 
- 719      43424643 
- 720              	.LASF9:
- 721 0342 666C6F61 		.ascii	"float\000"
- 721      7400
- 722              	.LASF54:
- 723 0348 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
- 723      455F4556 
- 723      545F4741 
- 723      5454435F 
- 723      52454144 
- 724              	.LASF34:
- 725 0361 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
- 725      455F4556 
- 725      545F4741 
- 725      505F4E55 
- 725      4D455249 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 18
+ 706      2D736563 
+ 706      74696F6E 
+ 707              	.LASF89:
+ 708 0297 63757374 		.ascii	"customServCharDesc\000"
+ 708      6F6D5365 
+ 708      72764368 
+ 708      61724465 
+ 708      736300
+ 709              	.LASF56:
+ 710 02aa 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 710      455F4556 
+ 710      545F4741 
+ 710      5454435F 
+ 710      52454144 
+ 711              	.LASF65:
+ 712 02c9 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 712      455F4556 
+ 712      545F4741 
+ 712      5454535F 
+ 712      48414E44 
+ 713              	.LASF14:
+ 714 02ea 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 714      455F4556 
+ 714      545F484F 
+ 714      53545F49 
+ 714      4E56414C 
+ 715              	.LASF73:
+ 716 0301 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 716      455F4556 
+ 716      545F4C32 
+ 716      4341505F 
+ 716      43424643 
+ 717              	.LASF76:
+ 718 031f 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 718      455F4556 
+ 718      545F4C32 
+ 718      4341505F 
+ 718      43424643 
+ 719              	.LASF9:
+ 720 0340 666C6F61 		.ascii	"float\000"
+ 720      7400
+ 721              	.LASF54:
+ 722 0346 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 722      455F4556 
+ 722      545F4741 
+ 722      5454435F 
+ 722      52454144 
+ 723              	.LASF34:
+ 724 035f 4359424C 		.ascii	"CYBLE_EVT_GAP_NUMERIC_COMPARISON_REQUEST\000"
+ 724      455F4556 
+ 724      545F4741 
+ 724      505F4E55 
+ 724      4D455249 
+ 725              	.LASF39:
+ 726 0388 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
+ 726      455F4556 
+ 726      545F4741 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 18
 
 
- 726              	.LASF39:
- 727 038a 4359424C 		.ascii	"CYBLE_EVT_GAPC_DIRECT_ADV_REPORT\000"
- 727      455F4556 
- 727      545F4741 
- 727      50435F44 
- 727      49524543 
- 728              	.LASF7:
- 729 03ab 6C6F6E67 		.ascii	"long long unsigned int\000"
- 729      206C6F6E 
- 729      6720756E 
- 729      7369676E 
- 729      65642069 
- 730              	.LASF90:
- 731 03c2 4359424C 		.ascii	"CYBLE_CUSTOMS_INFO_T\000"
- 731      455F4355 
- 731      53544F4D 
- 731      535F494E 
- 731      464F5F54 
- 732              	.LASF43:
- 733 03d7 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ_REPLY_ERR\000"
- 733      455F4556 
- 733      545F4741 
- 733      505F4155 
- 733      54485F52 
- 734              	.LASF4:
- 735 03f8 6C6F6E67 		.ascii	"long int\000"
- 735      20696E74 
- 735      00
- 736              	.LASF64:
- 737 0401 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
- 737      455F4556 
- 737      545F4741 
- 737      5454435F 
- 737      48414E44 
- 738              	.LASF28:
- 739 0422 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
- 739      455F4556 
- 739      545F4741 
- 739      505F4445 
- 739      56494345 
- 740              	.LASF27:
- 741 0441 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
- 741      455F4556 
- 741      545F4741 
- 741      50505F41 
- 741      44564552 
- 742              	.LASF63:
- 743 0469 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
- 743      455F4556 
- 743      545F4741 
- 743      5454435F 
- 743      48414E44 
- 744              	.LASF19:
- 745 048a 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
- 745      455F4556 
- 745      545F5354 
- 745      41434B5F 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 19
+ 726      50435F44 
+ 726      49524543 
+ 727              	.LASF7:
+ 728 03a9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 728      206C6F6E 
+ 728      6720756E 
+ 728      7369676E 
+ 728      65642069 
+ 729              	.LASF90:
+ 730 03c0 4359424C 		.ascii	"CYBLE_CUSTOMS_INFO_T\000"
+ 730      455F4355 
+ 730      53544F4D 
+ 730      535F494E 
+ 730      464F5F54 
+ 731              	.LASF43:
+ 732 03d5 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ_REPLY_ERR\000"
+ 732      455F4556 
+ 732      545F4741 
+ 732      505F4155 
+ 732      54485F52 
+ 733              	.LASF4:
+ 734 03f6 6C6F6E67 		.ascii	"long int\000"
+ 734      20696E74 
+ 734      00
+ 735              	.LASF64:
+ 736 03ff 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 736      455F4556 
+ 736      545F4741 
+ 736      5454435F 
+ 736      48414E44 
+ 737              	.LASF28:
+ 738 0420 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 738      455F4556 
+ 738      545F4741 
+ 738      505F4445 
+ 738      56494345 
+ 739              	.LASF27:
+ 740 043f 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 740      455F4556 
+ 740      545F4741 
+ 740      50505F41 
+ 740      44564552 
+ 741              	.LASF63:
+ 742 0467 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 742      455F4556 
+ 742      545F4741 
+ 742      5454435F 
+ 742      48414E44 
+ 743              	.LASF19:
+ 744 0488 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 744      455F4556 
+ 744      545F5354 
+ 744      41434B5F 
+ 744      42555359 
+ 745              	.LASF24:
+ 746 04a4 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 746      455F4556 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 19
 
 
- 745      42555359 
- 746              	.LASF24:
- 747 04a6 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
- 747      455F4556 
- 747      545F4741 
- 747      505F5041 
- 747      53534B45 
- 748              	.LASF93:
- 749 04cc 4359424C 		.ascii	"CYBLE_CUSTOMS_T\000"
- 749      455F4355 
- 749      53544F4D 
- 749      535F5400 
- 750              	.LASF74:
- 751 04dc 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 751      455F4556 
- 751      545F4C32 
- 751      4341505F 
- 751      43424643 
- 752              	.LASF38:
- 753 04fa 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
- 753      455F4556 
- 753      545F4741 
- 753      505F454E 
- 753      48414E43 
- 754              	.LASF12:
- 755 051e 6C6F6E67 		.ascii	"long double\000"
- 755      20646F75 
- 755      626C6500 
- 756              	.LASF70:
- 757 052a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
- 757      455F4556 
- 757      545F4C32 
- 757      4341505F 
- 757      434F4E4E 
- 758              	.LASF1:
- 759 0550 756E7369 		.ascii	"unsigned char\000"
- 759      676E6564 
- 759      20636861 
- 759      7200
- 760              	.LASF92:
- 761 055e 63757374 		.ascii	"customServInfo\000"
- 761      6F6D5365 
- 761      7276496E 
- 761      666F00
- 762              	.LASF60:
- 763 056d 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 763      455F4556 
- 763      545F4741 
- 763      5454535F 
- 763      50524550 
- 764              	.LASF82:
- 765 058c 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
- 765      455F4556 
- 765      545F4C45 
- 765      5F50494E 
- 765      475F4155 
- 766              	.LASF52:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 20
+ 746      545F4741 
+ 746      505F5041 
+ 746      53534B45 
+ 747              	.LASF93:
+ 748 04ca 4359424C 		.ascii	"CYBLE_CUSTOMS_T\000"
+ 748      455F4355 
+ 748      53544F4D 
+ 748      535F5400 
+ 749              	.LASF74:
+ 750 04da 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 750      455F4556 
+ 750      545F4C32 
+ 750      4341505F 
+ 750      43424643 
+ 751              	.LASF38:
+ 752 04f8 4359424C 		.ascii	"CYBLE_EVT_GAP_ENHANCE_CONN_COMPLETE\000"
+ 752      455F4556 
+ 752      545F4741 
+ 752      505F454E 
+ 752      48414E43 
+ 753              	.LASF12:
+ 754 051c 6C6F6E67 		.ascii	"long double\000"
+ 754      20646F75 
+ 754      626C6500 
+ 755              	.LASF70:
+ 756 0528 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 756      455F4556 
+ 756      545F4C32 
+ 756      4341505F 
+ 756      434F4E4E 
+ 757              	.LASF1:
+ 758 054e 756E7369 		.ascii	"unsigned char\000"
+ 758      676E6564 
+ 758      20636861 
+ 758      7200
+ 759              	.LASF92:
+ 760 055c 63757374 		.ascii	"customServInfo\000"
+ 760      6F6D5365 
+ 760      7276496E 
+ 760      666F00
+ 761              	.LASF60:
+ 762 056b 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 762      455F4556 
+ 762      545F4741 
+ 762      5454535F 
+ 762      50524550 
+ 763              	.LASF82:
+ 764 058a 4359424C 		.ascii	"CYBLE_EVT_LE_PING_AUTH_TIMEOUT\000"
+ 764      455F4556 
+ 764      545F4C45 
+ 764      5F50494E 
+ 764      475F4155 
+ 765              	.LASF52:
+ 766 05a9 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
+ 766      455F4556 
+ 766      545F4741 
+ 766      5454435F 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 20
 
 
- 767 05ab 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
- 767      455F4556 
- 767      545F4741 
- 767      5454435F 
- 767      46494E44 
- 768              	.LASF0:
- 769 05c9 7369676E 		.ascii	"signed char\000"
- 769      65642063 
- 769      68617200 
- 770              	.LASF57:
- 771 05d5 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
- 771      455F4556 
- 771      545F4741 
- 771      5454535F 
- 771      57524954 
- 772              	.LASF53:
- 773 05ef 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
- 773      455F4556 
- 773      545F4741 
- 773      5454435F 
- 773      46494E44 
- 774              	.LASF25:
- 775 0616 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
- 775      455F4556 
- 775      545F4741 
- 775      505F4155 
- 775      54485F43 
- 776              	.LASF8:
- 777 0632 756E7369 		.ascii	"unsigned int\000"
- 777      676E6564 
- 777      20696E74 
- 777      00
- 778              	.LASF46:
- 779 063f 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
- 779      455F4556 
- 779      545F4741 
- 779      54545F43 
- 779      4F4E4E45 
- 780              	.LASF5:
- 781 065a 6C6F6E67 		.ascii	"long unsigned int\000"
- 781      20756E73 
- 781      69676E65 
- 781      6420696E 
- 781      7400
- 782              	.LASF22:
- 783 066c 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
- 783      455F4556 
- 783      545F4741 
- 783      505F4155 
- 783      54485F52 
- 784              	.LASF75:
- 785 0683 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
- 785      455F4556 
- 785      545F4C32 
- 785      4341505F 
- 785      43424643 
- 786              	.LASF30:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 21
+ 766      46494E44 
+ 767              	.LASF0:
+ 768 05c7 7369676E 		.ascii	"signed char\000"
+ 768      65642063 
+ 768      68617200 
+ 769              	.LASF57:
+ 770 05d3 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 770      455F4556 
+ 770      545F4741 
+ 770      5454535F 
+ 770      57524954 
+ 771              	.LASF53:
+ 772 05ed 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 772      455F4556 
+ 772      545F4741 
+ 772      5454435F 
+ 772      46494E44 
+ 773              	.LASF25:
+ 774 0614 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 774      455F4556 
+ 774      545F4741 
+ 774      505F4155 
+ 774      54485F43 
+ 775              	.LASF8:
+ 776 0630 756E7369 		.ascii	"unsigned int\000"
+ 776      676E6564 
+ 776      20696E74 
+ 776      00
+ 777              	.LASF46:
+ 778 063d 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 778      455F4556 
+ 778      545F4741 
+ 778      54545F43 
+ 778      4F4E4E45 
+ 779              	.LASF5:
+ 780 0658 6C6F6E67 		.ascii	"long unsigned int\000"
+ 780      20756E73 
+ 780      69676E65 
+ 780      6420696E 
+ 780      7400
+ 781              	.LASF22:
+ 782 066a 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 782      455F4556 
+ 782      545F4741 
+ 782      505F4155 
+ 782      54485F52 
+ 783              	.LASF75:
+ 784 0681 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 784      455F4556 
+ 784      545F4C32 
+ 784      4341505F 
+ 784      43424643 
+ 785              	.LASF30:
+ 786 06a2 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 786      455F4556 
+ 786      545F4741 
+ 786      505F454E 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 21
 
 
- 787 06a4 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
- 787      455F4556 
- 787      545F4741 
- 787      505F454E 
- 787      43525950 
- 788              	.LASF41:
- 789 06c1 4359424C 		.ascii	"CYBLE_EVT_GAP_CONN_ESTB\000"
- 789      455F4556 
- 789      545F4741 
- 789      505F434F 
- 789      4E4E5F45 
- 790              	.LASF69:
- 791 06d9 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
- 791      455F4556 
- 791      545F4741 
- 791      5454435F 
- 791      4C4F4E47 
- 792              	.LASF33:
- 793 06fc 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
- 793      455F4556 
- 793      545F4741 
- 793      505F4B45 
- 793      59494E46 
- 794              	.LASF84:
- 795 0720 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
- 795      455F4556 
- 795      545F464C 
- 795      4153485F 
- 795      434F5252 
- 796              	.LASF31:
- 797 0738 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
- 797      455F4556 
- 797      545F4741 
- 797      505F434F 
- 797      4E4E4543 
- 798              	.LASF40:
- 799 0761 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
- 799      455F4556 
- 799      545F4741 
- 799      505F534D 
- 799      505F4E45 
- 800              	.LASF11:
- 801 0788 63686172 		.ascii	"char\000"
- 801      00
- 802              	.LASF72:
- 803 078d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
- 803      455F4556 
- 803      545F4C32 
- 803      4341505F 
- 803      434F4D4D 
- 804              	.LASF3:
- 805 07a9 73686F72 		.ascii	"short unsigned int\000"
- 805      7420756E 
- 805      7369676E 
- 805      65642069 
- 805      6E7400
- 806              	.LASF95:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 22
+ 786      43525950 
+ 787              	.LASF41:
+ 788 06bf 4359424C 		.ascii	"CYBLE_EVT_GAP_CONN_ESTB\000"
+ 788      455F4556 
+ 788      545F4741 
+ 788      505F434F 
+ 788      4E4E5F45 
+ 789              	.LASF69:
+ 790 06d7 4359424C 		.ascii	"CYBLE_EVT_GATTC_LONG_PROCEDURE_END\000"
+ 790      455F4556 
+ 790      545F4741 
+ 790      5454435F 
+ 790      4C4F4E47 
+ 791              	.LASF33:
+ 792 06fa 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 792      455F4556 
+ 792      545F4741 
+ 792      505F4B45 
+ 792      59494E46 
+ 793              	.LASF84:
+ 794 071e 4359424C 		.ascii	"CYBLE_EVT_FLASH_CORRUPT\000"
+ 794      455F4556 
+ 794      545F464C 
+ 794      4153485F 
+ 794      434F5252 
+ 795              	.LASF31:
+ 796 0736 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 796      455F4556 
+ 796      545F4741 
+ 796      505F434F 
+ 796      4E4E4543 
+ 797              	.LASF40:
+ 798 075f 4359424C 		.ascii	"CYBLE_EVT_GAP_SMP_NEGOTIATED_AUTH_INFO\000"
+ 798      455F4556 
+ 798      545F4741 
+ 798      505F534D 
+ 798      505F4E45 
+ 799              	.LASF11:
+ 800 0786 63686172 		.ascii	"char\000"
+ 800      00
+ 801              	.LASF35:
+ 802 078b 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYPRESS_NOTIFICATION\000"
+ 802      455F4556 
+ 802      545F4741 
+ 802      505F4B45 
+ 802      59505245 
+ 803              	.LASF72:
+ 804 07af 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 804      455F4556 
+ 804      545F4C32 
+ 804      4341505F 
+ 804      434F4D4D 
+ 805              	.LASF3:
+ 806 07cb 73686F72 		.ascii	"short unsigned int\000"
+ 806      7420756E 
+ 806      7369676E 
+ 806      65642069 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 22
 
 
- 807 07bc 47656E65 		.ascii	"Generated_Source\\PSoC4\\ble_custom.c\000"
- 807      72617465 
- 807      645F536F 
- 807      75726365 
- 807      5C50536F 
- 808              	.LASF86:
- 809 07e0 75696E74 		.ascii	"uint16\000"
- 809      313600
- 810              	.LASF55:
- 811 07e7 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
- 811      455F4556 
- 811      545F4741 
- 811      5454435F 
- 811      52454144 
- 812              	.LASF62:
- 813 0805 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
- 813      455F4556 
- 813      545F4741 
- 813      5454435F 
- 813      45584543 
- 814              	.LASF32:
- 815 0824 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
- 815      455F4556 
- 815      545F4741 
- 815      50435F53 
- 815      43414E5F 
- 816              	.LASF81:
- 817 0843 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
- 817      455F4556 
- 817      545F5045 
- 817      4E44494E 
- 817      475F464C 
- 818              	.LASF78:
- 819 0861 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
- 819      455F4556 
- 819      545F4C32 
- 819      4341505F 
- 819      43424643 
- 820              	.LASF10:
- 821 0884 646F7562 		.ascii	"double\000"
- 821      6C6500
- 822              	.LASF79:
- 823 088b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
- 823      455F4556 
- 823      545F4C32 
- 823      4341505F 
- 823      43424643 
- 824              	.LASF88:
- 825 08ae 63757374 		.ascii	"customServCharHandle\000"
- 825      6F6D5365 
- 825      72764368 
- 825      61724861 
- 825      6E646C65 
- 826              	.LASF42:
- 827 08c3 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
- 827      455F4556 
- 827      545F4741 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 23
+ 806      6E7400
+ 807              	.LASF95:
+ 808 07de 47656E65 		.ascii	"Generated_Source\\PSoC4\\ble_custom.c\000"
+ 808      72617465 
+ 808      645F536F 
+ 808      75726365 
+ 808      5C50536F 
+ 809              	.LASF86:
+ 810 0802 75696E74 		.ascii	"uint16\000"
+ 810      313600
+ 811              	.LASF55:
+ 812 0809 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 812      455F4556 
+ 812      545F4741 
+ 812      5454435F 
+ 812      52454144 
+ 813              	.LASF62:
+ 814 0827 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 814      455F4556 
+ 814      545F4741 
+ 814      5454435F 
+ 814      45584543 
+ 815              	.LASF32:
+ 816 0846 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 816      455F4556 
+ 816      545F4741 
+ 816      50435F53 
+ 816      43414E5F 
+ 817              	.LASF81:
+ 818 0865 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 818      455F4556 
+ 818      545F5045 
+ 818      4E44494E 
+ 818      475F464C 
+ 819              	.LASF78:
+ 820 0883 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 820      455F4556 
+ 820      545F4C32 
+ 820      4341505F 
+ 820      43424643 
+ 821              	.LASF10:
+ 822 08a6 646F7562 		.ascii	"double\000"
+ 822      6C6500
+ 823              	.LASF79:
+ 824 08ad 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 824      455F4556 
+ 824      545F4C32 
+ 824      4341505F 
+ 824      43424643 
+ 825              	.LASF88:
+ 826 08d0 63757374 		.ascii	"customServCharHandle\000"
+ 826      6F6D5365 
+ 826      72764368 
+ 826      61724861 
+ 826      6E646C65 
+ 827              	.LASF42:
+ 828 08e5 4359424C 		.ascii	"CYBLE_EVT_GAP_SCAN_REQ_RECVD\000"
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 23
 
 
- 827      505F5343 
- 827      414E5F52 
- 828              	.LASF17:
- 829 08e0 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
- 829      455F4556 
- 829      545F4841 
- 829      52445741 
- 829      52455F45 
- 830              	.LASF77:
- 831 08f9 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
- 831      455F4556 
- 831      545F4C32 
- 831      4341505F 
- 831      43424643 
- 832              	.LASF71:
- 833 0918 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
- 833      455F4556 
- 833      545F4C32 
- 833      4341505F 
- 833      434F4E4E 
- 834              	.LASF21:
- 835 093e 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
- 835      455F4556 
- 835      545F4741 
- 835      50435F53 
- 835      43414E5F 
- 836              	.LASF50:
- 837 0962 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
- 837      455F4556 
- 837      545F4741 
- 837      5454435F 
- 837      52454144 
- 838              	.LASF59:
- 839 0989 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
- 839      455F4556 
- 839      545F4741 
- 839      5454535F 
- 839      57524954 
- 840              	.LASF51:
- 841 09a7 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
- 841      455F4556 
- 841      545F4741 
- 841      5454435F 
- 841      52454144 
- 842              	.LASF49:
- 843 09c8 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
- 843      455F4556 
- 843      545F4741 
- 843      5454435F 
- 843      5843484E 
- 844              	.LASF80:
- 845 09e6 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 845      455F4556 
- 845      545F4C32 
- 845      4341505F 
- 845      43424643 
- 846              	.LASF16:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 24
+ 828      455F4556 
+ 828      545F4741 
+ 828      505F5343 
+ 828      414E5F52 
+ 829              	.LASF17:
+ 830 0902 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 830      455F4556 
+ 830      545F4841 
+ 830      52445741 
+ 830      52455F45 
+ 831              	.LASF77:
+ 832 091b 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 832      455F4556 
+ 832      545F4C32 
+ 832      4341505F 
+ 832      43424643 
+ 833              	.LASF71:
+ 834 093a 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 834      455F4556 
+ 834      545F4C32 
+ 834      4341505F 
+ 834      434F4E4E 
+ 835              	.LASF21:
+ 836 0960 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 836      455F4556 
+ 836      545F4741 
+ 836      50435F53 
+ 836      43414E5F 
+ 837              	.LASF50:
+ 838 0984 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ 838      455F4556 
+ 838      545F4741 
+ 838      5454435F 
+ 838      52454144 
+ 839              	.LASF59:
+ 840 09ab 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 840      455F4556 
+ 840      545F4741 
+ 840      5454535F 
+ 840      57524954 
+ 841              	.LASF51:
+ 842 09c9 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 842      455F4556 
+ 842      545F4741 
+ 842      5454435F 
+ 842      52454144 
+ 843              	.LASF49:
+ 844 09ea 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 844      455F4556 
+ 844      545F4741 
+ 844      5454435F 
+ 844      5843484E 
+ 845              	.LASF80:
+ 846 0a08 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 846      455F4556 
+ 846      545F4C32 
+ 846      4341505F 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 24
 
 
- 847 0a0a 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
- 847      455F4556 
- 847      545F5449 
- 847      4D454F55 
- 847      5400
- 848              	.LASF85:
- 849 0a1c 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
- 849      455F4556 
- 849      545F4D41 
- 849      5800
- 850              	.LASF68:
- 851 0a2a 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
- 851      455F4556 
- 851      545F4741 
- 851      5454535F 
- 851      52454144 
- 852              	.LASF67:
- 853 0a53 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
- 853      455F4556 
- 853      545F4741 
- 853      5454435F 
- 853      53544F50 
- 854              	.LASF61:
- 855 0a75 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
- 855      455F4556 
- 855      545F4741 
- 855      5454535F 
- 855      45584543 
- 856              	.LASF87:
- 857 0a94 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
- 857      455F4741 
- 857      54545F44 
- 857      425F4154 
- 857      54525F48 
- 858              	.LASF98:
- 859 0ab0 6379426C 		.ascii	"cyBle_customs\000"
- 859      655F6375 
- 859      73746F6D 
- 859      7300
- 860              	.LASF66:
- 861 0abe 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
- 861      455F4556 
- 861      545F4741 
- 861      5454535F 
- 861      44415441 
- 862              	.LASF83:
- 863 0ae2 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
- 863      455F4556 
- 863      545F4843 
- 863      495F504B 
- 863      5400
- 864              	.LASF36:
- 865 0af4 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
- 865      455F4556 
- 865      545F4741 
- 865      505F4F4F 
- 865      425F4745 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccWjx5jp.s 			page 25
+ 846      43424643 
+ 847              	.LASF16:
+ 848 0a2c 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 848      455F4556 
+ 848      545F5449 
+ 848      4D454F55 
+ 848      5400
+ 849              	.LASF85:
+ 850 0a3e 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 850      455F4556 
+ 850      545F4D41 
+ 850      5800
+ 851              	.LASF68:
+ 852 0a4c 4359424C 		.ascii	"CYBLE_EVT_GATTS_READ_CHAR_VAL_ACCESS_REQ\000"
+ 852      455F4556 
+ 852      545F4741 
+ 852      5454535F 
+ 852      52454144 
+ 853              	.LASF67:
+ 854 0a75 4359424C 		.ascii	"CYBLE_EVT_GATTC_STOP_CMD_COMPLETE\000"
+ 854      455F4556 
+ 854      545F4741 
+ 854      5454435F 
+ 854      53544F50 
+ 855              	.LASF61:
+ 856 0a97 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 856      455F4556 
+ 856      545F4741 
+ 856      5454535F 
+ 856      45584543 
+ 857              	.LASF87:
+ 858 0ab6 4359424C 		.ascii	"CYBLE_GATT_DB_ATTR_HANDLE_T\000"
+ 858      455F4741 
+ 858      54545F44 
+ 858      425F4154 
+ 858      54525F48 
+ 859              	.LASF98:
+ 860 0ad2 6379426C 		.ascii	"cyBle_customs\000"
+ 860      655F6375 
+ 860      73746F6D 
+ 860      7300
+ 861              	.LASF66:
+ 862 0ae0 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 862      455F4556 
+ 862      545F4741 
+ 862      5454535F 
+ 862      44415441 
+ 863              	.LASF83:
+ 864 0b04 4359424C 		.ascii	"CYBLE_EVT_HCI_PKT\000"
+ 864      455F4556 
+ 864      545F4843 
+ 864      495F504B 
+ 864      5400
+ 865              	.LASF36:
+ 866 0b16 4359424C 		.ascii	"CYBLE_EVT_GAP_OOB_GENERATED_NOTIFICATION\000"
+ 866      455F4556 
+ 866      545F4741 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccJswexJ.s 			page 25
 
 
- 866              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 866      505F4F4F 
+ 866      425F4745 
+ 867              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

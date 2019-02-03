@@ -13,7 +13,7 @@
 <v>Output</v>
 </TreeKeys>
 <TreeStates>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="capsenseled">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="capsenseled\capsenseled\TopDesign">
 <ExpandedNodeIds>
 <v>capsenseled</v>
 <v>capsenseled\capsenseled</v>
@@ -121,6 +121,49 @@
 <VisibleNodeIds>
 <v>capsenseled</v>
 <v>capsenseled\capsenseled</v>
+<v>capsenseled\capsenseled\CortexM0</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_intClock.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_IRQ.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ADC_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\analogIn.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\analogIn_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_bless_isr.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_custom.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_eventHandler.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_gatt.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_HAL_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\ble_HAL_PVT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\blue.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\blue_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_CSHL.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_INT.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_SampleClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_SenseClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_SMS.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\capsense_TunerHelper.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\Clock_1.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\Cm0Start.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\cy_em_eeprom.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\CyFlash.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLFClk.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\CyLib.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\cymetadata.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\cyPm.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\cyutils.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\main.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\pwm.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\pwm_PM.lst</v>
+<v>capsenseled\capsenseled\CortexM0\ARM_GCC_541\Debug\Listing Files\red.lst</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 </TreeStates>
@@ -185,8 +228,9 @@
 </CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
 <Unloaded />
 <OpenDocs>
-<name v=".\capsenseled.cydsn\main.c" />
+<name v=".\capsenseled.cydsn\capsenseled.cydwr" />
 <name v=".\capsenseled.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\capsenseled.cydsn\main.c" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -194,7 +238,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1433, 914" SelectedTabbedMdiWindow="7e986f54-3851-4ba6-8b2d-4a9199dc1f93"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ec5b6c9e-7a47-4a93-bde4-32162a3ec343" /><DocumentWindow Key="C:\Users\jerome.crocco\Desktop\capsenseled\capsenseled.cydsn\main.c" Guid="7e986f54-3851-4ba6-8b2d-4a9199dc1f93" /><DocumentWindow Key="C:\Users\jerome.crocco\Desktop\capsenseled\capsenseled.cydsn\TopDesign\TopDesign.cysch" Guid="dd7a5bca-5f1f-498b-b67e-5bfe7d22e6c7" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1457, 914" SelectedTabbedMdiWindow="2c7e55a0-a224-4e29-9cdc-225c460f55db"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="ec5b6c9e-7a47-4a93-bde4-32162a3ec343" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled_512\capsenseled.cydsn\capsenseled.cydwr" Guid="cfe98ddc-af6f-4f1e-8a9a-046bdb22501c" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled_512\capsenseled.cydsn\TopDesign\TopDesign.cysch" Guid="39178b7c-61b7-4bda-bcbd-cefdd1272d6e" /><DocumentWindow Key="C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled_512\capsenseled.cydsn\main.c" Guid="2c7e55a0-a224-4e29-9cdc-225c460f55db" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

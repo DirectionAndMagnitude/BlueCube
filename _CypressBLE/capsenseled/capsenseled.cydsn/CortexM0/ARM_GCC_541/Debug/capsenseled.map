@@ -8634,7 +8634,7 @@ i.CyBle_BleSSInterruptHandler
                 0x00014430        0x4 LONG 0x14f20 __cy_region_init_ram
                 0x00014434        0x4 LONG 0x20000ba0 __cy_region_start_data
                 0x00014438        0x4 LONG 0x548 __cy_region_init_size_ram
-                0x0001443c        0x4 LONG 0x12d8 __cy_region_zero_size_ram
+                0x0001443c        0x4 LONG 0x1698 __cy_region_zero_size_ram
                 0x00014440                __cy_regions_end = .
                 0x00014440                . = ALIGN (0x8)
                 0x00014440                _etext = .
@@ -8985,172 +8985,172 @@ i.CyBle_BleSSInterruptHandler
 .igot.plt       0x200010e8        0x0 load address 0x00015468
  .igot.plt      0x200010e8        0x0 c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
 
-.bss            0x200010e8     0x12d8 load address 0x00015468
+.bss            0x200010e8     0x1698 load address 0x00015468
                 0x200010e8                PROVIDE (__bss_start__, .)
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
  .bss           0x200010e8       0x1c c:/program files (x86)/cypress/psoc creator/4.2/psoc creator/import/gnu/arm/5.4.1/bin/../lib/gcc/arm-none-eabi/5.4.1/armv6-m/crtbegin.o
- .bss           0x20001104       0x28 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .bss           0x20001104      0x3e8 .\CortexM0\ARM_GCC_541\Debug\main.o
                 0x20001104                analogIn
-                0x20001118                analogInOld
- .bss           0x2000112c       0x11 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
-                0x2000112c                capsense_csdStatusVar
-                0x20001130                capsense_sensorRaw
-                0x2000113a                capsense_sensorIndex
-                0x2000113c                capsense_lowLevelTuningDone
- *fill*         0x2000113d        0x3 
- .bss           0x20001140       0x27 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
-                0x20001140                capsense_sensorBaseline
-                0x2000114c                capsense_sensorBaselineLow
-                0x20001154                capsense_sensorSignal
-                0x20001160                capsense_sensorOnMask
- .bss           0x20001167        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
- .bss           0x20001168       0x22 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
-                0x20001168                cyBle_scanRspData
-                0x20001188                cyBle_initVar
- *fill*         0x2000118a        0x2 
- .bss           0x2000118c        0x8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
- .bss           0x20001194        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
-                0x20001194                pwm_initVar
- *fill*         0x20001195        0x3 
- .bss           0x20001198       0x28 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
- .bss           0x200011c0        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
-                0x200011c0                ADC_initVar
- *fill*         0x200011c1        0x3 
- .bss           0x200011c4       0x18 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBle.o)
- .bss           0x200011dc        0xc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleStackMgrIP_Interface.o)
-                0x200011dc                cyBleStackHeap
- .bss           0x200011e8       0x40 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(BT_timer.o)
-                0x200011e8                timer_entity
- .bss           0x20001228        0xc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(transport_sf.o)
- .bss           0x20001234       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleStackMgr_PSoCHal.o)
-                0x20001234                cyBleStackTimer
- .bss           0x20001244      0x2c4 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(storage_pl.o)
-                0x20001244                p_sp_ram_storage
-                0x200014c0                flashBlocks
- .bss           0x20001508      0x130 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(mint_os.o)
-                0x20001608                g_queue_array
-                0x2000161c                g_task_array
- .bss           0x20001638       0x4c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleControllerIP_Interface.o)
-                0x20001638                bt_config
- .bss           0x20001684       0xea ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(ll.o)
-                0x20001684                ll_self_device_data
-                0x20001754                lec_self_device_data
- *fill*         0x2000176e        0x2 
- .bss           0x20001770       0x14 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(llh_utils.o)
-                0x20001770                g_chip_rev_specific_data
- .bss           0x20001784       0x30 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(ll_utils.o)
-                0x20001784                g_lec_event_buffer
- .bss           0x200017b4      0x168 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(llf_task.o)
- .bss           0x2000191c       0x44 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(lec_hci_le.o)
-                0x2000191c                g_lec_command_array
- .bss           0x20001960       0x38 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(lec_hci_le_utils.o)
-                0x20001960                hci_received_data_Q
- .bss           0x20001998       0x64 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_td_api.o)
-                0x20001998                hci_td_struct
- .bss           0x200019fc       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(att_init.o)
-                0x200019fc                att_connections
- .bss           0x20001a0c       0x52 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(device_queue.o)
-                0x20001a0c                device_queue
-                0x20001a52                device_queue_current_extension_rpa
- *fill*         0x20001a5e        0x2 
- .bss           0x20001a60      0x14c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(l2cap_init.o)
-                0x20001a60                l2cap_sigch_list
-                0x20001a78                l2cap_buffer_list
-                0x20001b40                l2cap_tx_pdu
-                0x20001b50                l2cap_fixed_channel
-                0x20001b68                l2cap_command_list
- .bss           0x20001bac       0x60 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gap.o)
- .bss           0x20001c0c       0x68 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gatt.o)
-                0x20001c0c                gServerSignedwriteParam
-                0x20001c40                gClientSignedwriteParam
- .bss           0x20001c74       0x5c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gattClient.o)
- .bss           0x20001cd0       0x40 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gattDbHandler.o)
-                0x20001cd0                GattDbAttrStatusBitMask
- .bss           0x20001d10       0x48 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_events.o)
- .bss           0x20001d58       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_init.o)
-                0x20001d58                hci_command_queue
- .bss           0x20001d68      0x388 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_init.o)
-                0x20001d68                smp_devices
-                0x2000209c                smp_pvt_addr
-                0x200020b0                smp_cmac_context
- .bss           0x200020f0       0x90 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_init.o)
-                0x200020f0                smp_context
- .bss           0x20002180       0x58 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(write_task.o)
- .bss           0x200021d8       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(storage.o)
- .bss           0x200021e8       0xbc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(drbg.o)
-                0x200021e8                gbuffin
-                0x20002204                gbuffout
-                0x20002244                g_buffer3
-                0x20002284                g_buffer4
- .bss           0x200022a4       0x4b ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_pl.o)
+                0x200012f8                analogInOld
+ .bss           0x200014ec       0x11 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
+                0x200014ec                capsense_csdStatusVar
+                0x200014f0                capsense_sensorRaw
+                0x200014fa                capsense_sensorIndex
+                0x200014fc                capsense_lowLevelTuningDone
+ *fill*         0x200014fd        0x3 
+ .bss           0x20001500       0x27 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
+                0x20001500                capsense_sensorBaseline
+                0x2000150c                capsense_sensorBaselineLow
+                0x20001514                capsense_sensorSignal
+                0x20001520                capsense_sensorOnMask
+ .bss           0x20001527        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
+ .bss           0x20001528       0x22 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
+                0x20001528                cyBle_scanRspData
+                0x20001548                cyBle_initVar
+ *fill*         0x2000154a        0x2 
+ .bss           0x2000154c        0x8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
+ .bss           0x20001554        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
+                0x20001554                pwm_initVar
+ *fill*         0x20001555        0x3 
+ .bss           0x20001558       0x28 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
+ .bss           0x20001580        0x1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
+                0x20001580                ADC_initVar
+ *fill*         0x20001581        0x3 
+ .bss           0x20001584       0x18 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBle.o)
+ .bss           0x2000159c        0xc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleStackMgrIP_Interface.o)
+                0x2000159c                cyBleStackHeap
+ .bss           0x200015a8       0x40 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(BT_timer.o)
+                0x200015a8                timer_entity
+ .bss           0x200015e8        0xc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(transport_sf.o)
+ .bss           0x200015f4       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleStackMgr_PSoCHal.o)
+                0x200015f4                cyBleStackTimer
+ .bss           0x20001604      0x2c4 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(storage_pl.o)
+                0x20001604                p_sp_ram_storage
+                0x20001880                flashBlocks
+ .bss           0x200018c8      0x130 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(mint_os.o)
+                0x200019c8                g_queue_array
+                0x200019dc                g_task_array
+ .bss           0x200019f8       0x4c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(CyBleControllerIP_Interface.o)
+                0x200019f8                bt_config
+ .bss           0x20001a44       0xea ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(ll.o)
+                0x20001a44                ll_self_device_data
+                0x20001b14                lec_self_device_data
+ *fill*         0x20001b2e        0x2 
+ .bss           0x20001b30       0x14 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(llh_utils.o)
+                0x20001b30                g_chip_rev_specific_data
+ .bss           0x20001b44       0x30 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(ll_utils.o)
+                0x20001b44                g_lec_event_buffer
+ .bss           0x20001b74      0x168 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(llf_task.o)
+ .bss           0x20001cdc       0x44 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(lec_hci_le.o)
+                0x20001cdc                g_lec_command_array
+ .bss           0x20001d20       0x38 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(lec_hci_le_utils.o)
+                0x20001d20                hci_received_data_Q
+ .bss           0x20001d58       0x64 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_td_api.o)
+                0x20001d58                hci_td_struct
+ .bss           0x20001dbc       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(att_init.o)
+                0x20001dbc                att_connections
+ .bss           0x20001dcc       0x52 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(device_queue.o)
+                0x20001dcc                device_queue
+                0x20001e12                device_queue_current_extension_rpa
+ *fill*         0x20001e1e        0x2 
+ .bss           0x20001e20      0x14c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(l2cap_init.o)
+                0x20001e20                l2cap_sigch_list
+                0x20001e38                l2cap_buffer_list
+                0x20001f00                l2cap_tx_pdu
+                0x20001f10                l2cap_fixed_channel
+                0x20001f28                l2cap_command_list
+ .bss           0x20001f6c       0x60 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gap.o)
+ .bss           0x20001fcc       0x68 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gatt.o)
+                0x20001fcc                gServerSignedwriteParam
+                0x20002000                gClientSignedwriteParam
+ .bss           0x20002034       0x5c ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gattClient.o)
+ .bss           0x20002090       0x40 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(gattDbHandler.o)
+                0x20002090                GattDbAttrStatusBitMask
+ .bss           0x200020d0       0x48 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_events.o)
+ .bss           0x20002118       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(hci_init.o)
+                0x20002118                hci_command_queue
+ .bss           0x20002128      0x388 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_init.o)
+                0x20002128                smp_devices
+                0x2000245c                smp_pvt_addr
+                0x20002470                smp_cmac_context
+ .bss           0x200024b0       0x90 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_init.o)
+                0x200024b0                smp_context
+ .bss           0x20002540       0x58 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(write_task.o)
+ .bss           0x20002598       0x10 ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(storage.o)
+ .bss           0x200025a8       0xbc ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(drbg.o)
+                0x200025a8                gbuffin
+                0x200025c4                gbuffout
+                0x20002604                g_buffer3
+                0x20002644                g_buffer4
+ .bss           0x20002664       0x4b ..\..\..\..\..\PSoC Creator\4.2\Downloads ( 4.2).cylib\BLE_v3_54\Library\gccCyBLEStack_BLE_SOC_PERIPHERAL.a(smp_pl.o)
  *(COMMON)
- *fill*         0x200022ef        0x1 
- COMMON         0x200022f0        0x6 .\CortexM0\ARM_GCC_541\Debug\main.o
-                0x200022f0                capsenseNotify
-                0x200022f4                a
- *fill*         0x200022f6        0x2 
- COMMON         0x200022f8       0x2d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
-                0x200022f8                capsense_sensorEnableMaskBackup
-                0x200022fc                capsense_modulationIDAC
-                0x20002304                capsense_scanSpeedTbl
-                0x20002305                capsense_csdTrim1
-                0x20002308                capsense_compensationIDAC
-                0x20002310                capsense_unscannedSnsDriveMode
-                0x20002318                capsense_sampleClkDividerVal
-                0x20002320                capsense_senseClkDividerVal
- *fill*         0x20002325        0x3 
- COMMON         0x20002328       0x21 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
-                0x20002328                capsense_fingerThreshold
-                0x2000232c                capsense_rawFilterData1
-                0x20002338                capsense_hysteresis
-                0x2000233c                capsense_noiseThreshold
-                0x20002340                capsense_negativeNoiseThreshold
-                0x20002344                capsense_lowBaselineResetCnt
- *fill*         0x20002349        0x3 
- COMMON         0x2000234c       0x4d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
-                0x2000234c                capsense_sampleMinTbl
-                0x20002358                capsense_config
-                0x20002364                capsense_noiseEnvelopeTbl
-                0x2000236c                capsense_previousSampleTbl
-                0x20002378                capsense_kValueTbl
-                0x20002380                capsense_signRegisterTbl
-                0x20002388                capsense_sampleMaxTbl
-                0x20002394                capsense_runningDifferenceTbl
- *fill*         0x20002399        0x3 
- COMMON         0x2000239c        0x9 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
-                0x2000239c                cyBle_pendingFlashWrite
-                0x200023a0                CyBle_ApplCallback
-                0x200023a4                cyBle_peerBonding
- *fill*         0x200023a5        0x3 
- COMMON         0x200023a8        0x7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
-                0x200023a8                cyBle_attValuesCCCD
-                0x200023ae                cyBle_state
- *fill*         0x200023af        0x1 
- COMMON         0x200023b0        0x8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
-                0x200023b0                cyBle_busyStatus
-                0x200023b4                cyBle_connHandle
-                0x200023b6                cyBle_advertisingIntervalType
-                0x200023b7                cyBle_eventHandlerFlag
- COMMON         0x200023b8        0x6 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
-                0x200023b8                ADC_countsPer10Volt
-                0x200023bc                ADC_offset
-                0x200023c0                . = ALIGN (0x8)
- *fill*         0x200023be        0x2 
+ *fill*         0x200026af        0x1 
+ COMMON         0x200026b0        0x6 .\CortexM0\ARM_GCC_541\Debug\main.o
+                0x200026b0                capsenseNotify
+                0x200026b4                a
+ *fill*         0x200026b6        0x2 
+ COMMON         0x200026b8       0x2d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
+                0x200026b8                capsense_sensorEnableMaskBackup
+                0x200026bc                capsense_modulationIDAC
+                0x200026c4                capsense_scanSpeedTbl
+                0x200026c5                capsense_csdTrim1
+                0x200026c8                capsense_compensationIDAC
+                0x200026d0                capsense_unscannedSnsDriveMode
+                0x200026d8                capsense_sampleClkDividerVal
+                0x200026e0                capsense_senseClkDividerVal
+ *fill*         0x200026e5        0x3 
+ COMMON         0x200026e8       0x21 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
+                0x200026e8                capsense_fingerThreshold
+                0x200026ec                capsense_rawFilterData1
+                0x200026f8                capsense_hysteresis
+                0x200026fc                capsense_noiseThreshold
+                0x20002700                capsense_negativeNoiseThreshold
+                0x20002704                capsense_lowBaselineResetCnt
+ *fill*         0x20002709        0x3 
+ COMMON         0x2000270c       0x4d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
+                0x2000270c                capsense_sampleMinTbl
+                0x20002718                capsense_config
+                0x20002724                capsense_noiseEnvelopeTbl
+                0x2000272c                capsense_previousSampleTbl
+                0x20002738                capsense_kValueTbl
+                0x20002740                capsense_signRegisterTbl
+                0x20002748                capsense_sampleMaxTbl
+                0x20002754                capsense_runningDifferenceTbl
+ *fill*         0x20002759        0x3 
+ COMMON         0x2000275c        0x9 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
+                0x2000275c                cyBle_pendingFlashWrite
+                0x20002760                CyBle_ApplCallback
+                0x20002764                cyBle_peerBonding
+ *fill*         0x20002765        0x3 
+ COMMON         0x20002768        0x7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
+                0x20002768                cyBle_attValuesCCCD
+                0x2000276e                cyBle_state
+ *fill*         0x2000276f        0x1 
+ COMMON         0x20002770        0x8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
+                0x20002770                cyBle_busyStatus
+                0x20002774                cyBle_connHandle
+                0x20002776                cyBle_advertisingIntervalType
+                0x20002777                cyBle_eventHandlerFlag
+ COMMON         0x20002778        0x6 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
+                0x20002778                ADC_countsPer10Volt
+                0x2000277c                ADC_offset
+                0x20002780                . = ALIGN (0x8)
+ *fill*         0x2000277e        0x2 
  *(.ram.b)
-                0x200023c0                _end = .
-                0x200023c0                __end = .
-                0x200023c0                PROVIDE (end, .)
-                0x200023c0                PROVIDE (__bss_end__, .)
+                0x20002780                _end = .
+                0x20002780                __end = .
+                0x20002780                PROVIDE (end, .)
+                0x20002780                PROVIDE (__bss_end__, .)
                 0x00014f20                __cy_region_init_ram = LOADADDR (.data)
                 0x00000548                __cy_region_init_size_ram = (_edata - ADDR (.data))
-                0x000012d8                __cy_region_zero_size_ram = (_end - _edata)
+                0x00001698                __cy_region_zero_size_ram = (_end - _edata)
 
-.heap           0x200023c0       0x80 load address 0x00015468
-                0x200023c0                . = _end
-                0x20002440                . = (. + 0x80)
- *fill*         0x200023c0       0x80 
-                0x20002440                __cy_heap_limit = .
+.heap           0x20002780       0x80 load address 0x00015468
+                0x20002780                . = _end
+                0x20002800                . = (. + 0x80)
+ *fill*         0x20002780       0x80 
+                0x20002800                __cy_heap_limit = .
 
 .stack          0x20003800      0x800
                 0x20003800                __cy_stack_limit = .
@@ -9267,95 +9267,95 @@ i.CyBle_BleSSInterruptHandler
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0xb785
+.debug_info     0x00000000     0xb786
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x98b .\CortexM0\ARM_GCC_541\Debug\main.o
- .debug_info    0x0000098b      0x499 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_info    0x00000e24       0xf8 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
- .debug_info    0x00000f1c      0x3a2 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
- .debug_info    0x000012be      0x19d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
- .debug_info    0x0000145b     0x1111 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
- .debug_info    0x0000256c     0x1116 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
- .debug_info    0x00003682      0x198 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
- .debug_info    0x0000381a      0x7ca .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
- .debug_info    0x00003fe4     0x10a6 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
- .debug_info    0x0000508a     0x1147 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
- .debug_info    0x000061d1      0xfaf .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
- .debug_info    0x00007180      0x319 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
- .debug_info    0x00007499      0x334 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
- .debug_info    0x000077cd      0x166 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
- .debug_info    0x00007933      0x166 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
- .debug_info    0x00007a99      0xbd0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
- .debug_info    0x00008669     0x1071 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
- .debug_info    0x000096da      0x579 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
- .debug_info    0x00009c53       0xcb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
- .debug_info    0x00009d1e       0xa8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
- .debug_info    0x00009dc6      0x5e2 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
- .debug_info    0x0000a3a8      0x91b .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
- .debug_info    0x0000acc3      0x305 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
- .debug_info    0x0000afc8      0x41c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
- .debug_info    0x0000b3e4      0x2e8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
- .debug_info    0x0000b6cc       0xb9 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
+ .debug_info    0x00000000      0x98c .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_info    0x0000098c      0x499 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_info    0x00000e25       0xf8 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_info    0x00000f1d      0x3a2 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_info    0x000012bf      0x19d .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
+ .debug_info    0x0000145c     0x1111 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
+ .debug_info    0x0000256d     0x1116 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
+ .debug_info    0x00003683      0x198 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
+ .debug_info    0x0000381b      0x7ca .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
+ .debug_info    0x00003fe5     0x10a6 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
+ .debug_info    0x0000508b     0x1147 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
+ .debug_info    0x000061d2      0xfaf .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
+ .debug_info    0x00007181      0x319 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
+ .debug_info    0x0000749a      0x334 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
+ .debug_info    0x000077ce      0x166 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
+ .debug_info    0x00007934      0x166 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
+ .debug_info    0x00007a9a      0xbd0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
+ .debug_info    0x0000866a     0x1071 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
+ .debug_info    0x000096db      0x579 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
+ .debug_info    0x00009c54       0xcb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
+ .debug_info    0x00009d1f       0xa8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
+ .debug_info    0x00009dc7      0x5e2 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
+ .debug_info    0x0000a3a9      0x91b .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
+ .debug_info    0x0000acc4      0x305 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
+ .debug_info    0x0000afc9      0x41c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
+ .debug_info    0x0000b3e5      0x2e8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
+ .debug_info    0x0000b6cd       0xb9 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
 
-.debug_abbrev   0x00000000     0x25f5
+.debug_abbrev   0x00000000     0x25fe
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x1d4 .\CortexM0\ARM_GCC_541\Debug\main.o
- .debug_abbrev  0x000001d4      0x1cf .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_abbrev  0x000003a3       0x5d .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
- .debug_abbrev  0x00000400      0x1d7 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
- .debug_abbrev  0x000005d7       0xc8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
- .debug_abbrev  0x0000069f      0x188 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
- .debug_abbrev  0x00000827      0x242 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
- .debug_abbrev  0x00000a69       0xca .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
- .debug_abbrev  0x00000b33      0x1d5 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
- .debug_abbrev  0x00000d08      0x2cc .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
- .debug_abbrev  0x00000fd4      0x224 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
- .debug_abbrev  0x000011f8      0x28c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
- .debug_abbrev  0x00001484       0xba .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
- .debug_abbrev  0x0000153e      0x133 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
- .debug_abbrev  0x00001671       0xb7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
- .debug_abbrev  0x00001728       0xb7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
- .debug_abbrev  0x000017df      0x1e0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
- .debug_abbrev  0x000019bf      0x248 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
- .debug_abbrev  0x00001c07      0x184 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
- .debug_abbrev  0x00001d8b       0x65 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
- .debug_abbrev  0x00001df0       0x14 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
- .debug_abbrev  0x00001e04      0x160 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
- .debug_abbrev  0x00001f64      0x1d1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
- .debug_abbrev  0x00002135      0x19a .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
- .debug_abbrev  0x000022cf      0x19e .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
- .debug_abbrev  0x0000246d      0x128 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
- .debug_abbrev  0x00002595       0x60 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
+ .debug_abbrev  0x00000000      0x1dd .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_abbrev  0x000001dd      0x1cf .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_abbrev  0x000003ac       0x5d .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_abbrev  0x00000409      0x1d7 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_abbrev  0x000005e0       0xc8 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
+ .debug_abbrev  0x000006a8      0x188 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
+ .debug_abbrev  0x00000830      0x242 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
+ .debug_abbrev  0x00000a72       0xca .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
+ .debug_abbrev  0x00000b3c      0x1d5 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
+ .debug_abbrev  0x00000d11      0x2cc .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
+ .debug_abbrev  0x00000fdd      0x224 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
+ .debug_abbrev  0x00001201      0x28c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
+ .debug_abbrev  0x0000148d       0xba .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
+ .debug_abbrev  0x00001547      0x133 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
+ .debug_abbrev  0x0000167a       0xb7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
+ .debug_abbrev  0x00001731       0xb7 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
+ .debug_abbrev  0x000017e8      0x1e0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
+ .debug_abbrev  0x000019c8      0x248 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
+ .debug_abbrev  0x00001c10      0x184 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
+ .debug_abbrev  0x00001d94       0x65 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
+ .debug_abbrev  0x00001df9       0x14 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
+ .debug_abbrev  0x00001e0d      0x160 C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
+ .debug_abbrev  0x00001f6d      0x1d1 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
+ .debug_abbrev  0x0000213e      0x19a .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
+ .debug_abbrev  0x000022d8      0x19e .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
+ .debug_abbrev  0x00002476      0x128 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
+ .debug_abbrev  0x0000259e       0x60 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
 
-.debug_line     0x00000000     0x3531
+.debug_line     0x00000000     0x3532
  *(.debug_line)
- .debug_line    0x00000000      0x1c0 .\CortexM0\ARM_GCC_541\Debug\main.o
- .debug_line    0x000001c0      0x1b7 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
- .debug_line    0x00000377      0x141 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
- .debug_line    0x000004b8      0x236 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
- .debug_line    0x000006ee       0xbb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
- .debug_line    0x000007a9      0x4fb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
- .debug_line    0x00000ca4      0x47a .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
- .debug_line    0x0000111e       0xac .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
- .debug_line    0x000011ca      0x1ab .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
- .debug_line    0x00001375      0x35c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
- .debug_line    0x000016d1       0xfd .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
- .debug_line    0x000017ce      0x1bc .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
- .debug_line    0x0000198a       0x96 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
- .debug_line    0x00001a20      0x18e .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
- .debug_line    0x00001bae       0xc5 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
- .debug_line    0x00001c73       0xc4 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
- .debug_line    0x00001d37      0x4d0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
- .debug_line    0x00002207      0x5db .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
- .debug_line    0x000027e2      0x275 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
- .debug_line    0x00002a57       0x62 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
- .debug_line    0x00002ab9       0x68 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
- .debug_line    0x00002b21      0x1cf C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
- .debug_line    0x00002cf0      0x353 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
- .debug_line    0x00003043      0x159 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
- .debug_line    0x0000319c      0x1e3 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
- .debug_line    0x0000337f      0x149 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
- .debug_line    0x000034c8       0x69 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
+ .debug_line    0x00000000      0x1c1 .\CortexM0\ARM_GCC_541\Debug\main.o
+ .debug_line    0x000001c1      0x1b7 .\CortexM0\ARM_GCC_541\Debug\cyfitter_cfg.o
+ .debug_line    0x00000378      0x141 .\CortexM0\ARM_GCC_541\Debug\cymetadata.o
+ .debug_line    0x000004b9      0x236 .\CortexM0\ARM_GCC_541\Debug\Cm0Start.o
+ .debug_line    0x000006ef       0xbb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(red.o)
+ .debug_line    0x000007aa      0x4fb .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense.o)
+ .debug_line    0x00000ca5      0x47a .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_CSHL.o)
+ .debug_line    0x0000111f       0xac .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_INT.o)
+ .debug_line    0x000011cb      0x1ab .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SMS.o)
+ .debug_line    0x00001376      0x35c .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble.o)
+ .debug_line    0x000016d2       0xfd .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_gatt.o)
+ .debug_line    0x000017cf      0x1bc .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_eventHandler.o)
+ .debug_line    0x0000198b       0x96 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_custom.o)
+ .debug_line    0x00001a21      0x18e .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(pwm.o)
+ .debug_line    0x00001baf       0xc5 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SampleClk.o)
+ .debug_line    0x00001c74       0xc4 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(capsense_SenseClk.o)
+ .debug_line    0x00001d38      0x4d0 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLib.o)
+ .debug_line    0x00002208      0x5db .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyLFClk.o)
+ .debug_line    0x000027e3      0x275 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC.o)
+ .debug_line    0x00002a58       0x62 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ADC_INT.o)
+ .debug_line    0x00002aba       0x68 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyBootAsmGnu.o)
+ .debug_line    0x00002b22      0x1cf C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\CyComponentLibrary\CyComponentLibrary.cylib\CapSense_CSD_P4_v2_60\PSoC4\Library\CapsenseP4Library_GCC.a(CSD_P4_SmartSense_v2_60.o)
+ .debug_line    0x00002cf1      0x353 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_PVT.o)
+ .debug_line    0x00003044      0x159 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_bless_isr.o)
+ .debug_line    0x0000319d      0x1e3 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(CyFlash.o)
+ .debug_line    0x00003380      0x149 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(cyPm.o)
+ .debug_line    0x000034c9       0x69 .\CortexM0\ARM_GCC_541\Debug\capsenseled.a(ble_HAL_INT.o)
 
 .debug_frame    0x00000000    0x1bafc
  *(.debug_frame)

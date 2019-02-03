@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
   29:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED 
   30:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYPACKED_ATTR __attribute__ ((packed))
   31:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CYALIGNED __attribute__ ((aligned))
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 2
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 2
 
 
   32:Generated_Source\PSoC4/cyfitter_cfg.c ****     #define CY_CFG_UNUSED __attribute__ ((unused))
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
   86:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
   87:Generated_Source\PSoC4/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n);
   88:Generated_Source\PSoC4/cyfitter_cfg.c **** CY_CFG_UNUSED
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 3
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 3
 
 
   89:Generated_Source\PSoC4/cyfitter_cfg.c **** static void CYCONFIGCPYCODE(void *dest, const void *src, size_t n)
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  143:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  144:Generated_Source\PSoC4/cyfitter_cfg.c ****     /* `#END` */
  145:Generated_Source\PSoC4/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 4
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 4
 
 
  146:Generated_Source\PSoC4/cyfitter_cfg.c ****     while(1) {}
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
   47              	.LBB2:
  180:Generated_Source\PSoC4/cyfitter_cfg.c **** 	{
  181:Generated_Source\PSoC4/cyfitter_cfg.c **** 		uint32 baseAddr = addr_table[i];
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 5
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 5
 
 
   48              		.loc 1 181 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
   89              		.loc 1 191 0 is_stmt 1
   90              		@ sp needed
   91              	.LVL10:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 6
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 6
 
 
   92              	.LVL11:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  203:Generated_Source\PSoC4/cyfitter_cfg.c **** * Parameters:
  204:Generated_Source\PSoC4/cyfitter_cfg.c **** *   void
  205:Generated_Source\PSoC4/cyfitter_cfg.c **** *
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 7
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 7
 
 
  206:Generated_Source\PSoC4/cyfitter_cfg.c **** * Return:
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  227:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  228:Generated_Source\PSoC4/cyfitter_cfg.c **** 	/* CYDEV_WDT_CONFIG Starting address: CYDEV_WDT_CONFIG */
  229:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_WDT_CONFIG), 0x40000000u);
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 8
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 8
 
 
  165              		.loc 1 229 0
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  203              		.loc 1 245 0
  204 0060 244B     		ldr	r3, .L8+52
  205 0062 254A     		ldr	r2, .L8+56
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 9
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 9
 
 
  206 0064 1A60     		str	r2, [r3]
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  263:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_PERI_PCLK_CTL6), 0x00000042u);
  243              		.loc 1 263 0
  244 009c 013A     		subs	r2, r2, #1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 10
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 10
 
 
  245 009e 204B     		ldr	r3, .L8+96
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  288 0100 42FF0080 		.word	-2147418302
  289 0104 00030140 		.word	1073808128
  290 0108 40FF0080 		.word	-2147418304
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 11
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 11
 
 
  291 010c 04030140 		.word	1073808132
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  309:Generated_Source\PSoC4/cyfitter_cfg.c **** ********************************************************************************
  310:Generated_Source\PSoC4/cyfitter_cfg.c **** *
  311:Generated_Source\PSoC4/cyfitter_cfg.c **** * Summary:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 12
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 12
 
 
  312:Generated_Source\PSoC4/cyfitter_cfg.c **** * Enables or disables the analog pumps feeding analog routing switches.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  341              		@ sp needed
  342 0018 7047     		bx	lr
  343              	.L14:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 13
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 13
 
 
  344 001a C046     		.align	2
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  390              		@ sp needed
  391 0026 10BD     		pop	{r4, pc}
  392              	.L17:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 14
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 14
 
 
  393              		.align	2
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  422 0132 72B6     		CPSID   i
  423              	@ 0 "" 2
  361:Generated_Source\PSoC4/cyfitter_cfg.c **** 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 15
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 15
 
 
  362:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_BLE_BLESS_LL_DSM_CTRL), 0x00000000u);
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  408:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x5Fu, 0x01u},
  409:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x60u, 0x40u},
  410:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x62u, 0xC0u},
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 16
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 16
 
 
  411:Generated_Source\PSoC4/cyfitter_cfg.c **** 			{0x64u, 0x40u},
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  465:Generated_Source\PSoC4/cyfitter_cfg.c **** 
  466:Generated_Source\PSoC4/cyfitter_cfg.c **** 		CYPACKED typedef struct {
  467:Generated_Source\PSoC4/cyfitter_cfg.c **** 			void CYFAR *address;
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 17
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 17
 
 
  468:Generated_Source\PSoC4/cyfitter_cfg.c **** 			uint16 size;
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  465 0164 0C31     		adds	r1, r1, #12
  466 0166 2848     		ldr	r0, .L21+8
  467 0168 3C30     		adds	r0, r0, #60
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 18
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 18
 
 
  468 016a FFF7FEFF 		bl	cfg_write_bytes32
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  502 019e 2249     		ldr	r1, .L21+40
  503 01a0 0B78     		ldrb	r3, [r1]
  504 01a2 3C22     		movs	r2, #60
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 19
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 19
 
 
  505 01a4 9343     		bics	r3, r2
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  544 01e2 1A60     		str	r2, [r3]
  522:Generated_Source\PSoC4/cyfitter_cfg.c **** 	CY_SET_REG32((void *)(CYREG_GPIO_PRT3_PC2), 0x00000008u);
  545              		.loc 1 522 0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 20
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 20
 
 
  546 01e4 0822     		movs	r2, #8
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  587 0248 18030440 		.word	1074004760
  588 024c 00040440 		.word	1074004992
  589 0250 18040440 		.word	1074005016
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 21
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 21
 
 
  590              		.cfi_endproc
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  644 0031 D1       		.byte	-47
  645 0032 46       		.byte	70
  646 0033 02       		.byte	2
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 22
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 22
 
 
  647 0034 48       		.byte	72
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  701 006a 05       		.byte	5
  702 006b 01       		.byte	1
  703 006c 0E       		.byte	14
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 23
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 23
 
 
  704 006d 20       		.byte	32
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  758 00a3 D0       		.byte	-48
  759 00a4 3B       		.byte	59
  760 00a5 04       		.byte	4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 24
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 24
 
 
  761 00a6 3F       		.byte	63
@@ -1424,10 +1424,10 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  801 0006 00000000 		.4byte	.Ldebug_abbrev0
  802 000a 04       		.byte	0x4
  803 000b 01       		.uleb128 0x1
- 804 000c 8C010000 		.4byte	.LASF49
+ 804 000c ED010000 		.4byte	.LASF49
  805 0010 0C       		.byte	0xc
- 806 0011 1B030000 		.4byte	.LASF50
- 807 0015 9C020000 		.4byte	.LASF51
+ 806 0011 3D030000 		.4byte	.LASF50
+ 807 0015 8E010000 		.4byte	.LASF51
  808 0019 00000000 		.4byte	.Ldebug_ranges0+0
  809 001d 00000000 		.4byte	0
  810 0021 00000000 		.4byte	.Ldebug_line0
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  815 002c 03       		.uleb128 0x3
  816 002d 14000000 		.4byte	.LASF12
  817 0031 02       		.byte	0x2
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 25
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 25
 
 
  818 0032 D8       		.byte	0xd8
@@ -1446,19 +1446,19 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  820 0037 04       		.uleb128 0x4
  821 0038 04       		.byte	0x4
  822 0039 07       		.byte	0x7
- 823 003a 53010000 		.4byte	.LASF0
+ 823 003a 55010000 		.4byte	.LASF0
  824 003e 04       		.uleb128 0x4
  825 003f 08       		.byte	0x8
  826 0040 05       		.byte	0x5
- 827 0041 4C020000 		.4byte	.LASF1
+ 827 0041 AD020000 		.4byte	.LASF1
  828 0045 04       		.uleb128 0x4
  829 0046 08       		.byte	0x8
  830 0047 04       		.byte	0x4
- 831 0048 F7020000 		.4byte	.LASF2
+ 831 0048 25030000 		.4byte	.LASF2
  832 004c 04       		.uleb128 0x4
  833 004d 01       		.byte	0x1
  834 004e 06       		.byte	0x6
- 835 004f 0F030000 		.4byte	.LASF3
+ 835 004f 31030000 		.4byte	.LASF3
  836 0053 04       		.uleb128 0x4
  837 0054 01       		.byte	0x1
  838 0055 08       		.byte	0x8
@@ -1466,15 +1466,15 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  840 005a 04       		.uleb128 0x4
  841 005b 02       		.byte	0x2
  842 005c 05       		.byte	0x5
- 843 005d 25010000 		.4byte	.LASF5
+ 843 005d FD020000 		.4byte	.LASF5
  844 0061 04       		.uleb128 0x4
  845 0062 02       		.byte	0x2
  846 0063 07       		.byte	0x7
- 847 0064 39020000 		.4byte	.LASF6
+ 847 0064 9A020000 		.4byte	.LASF6
  848 0068 04       		.uleb128 0x4
  849 0069 04       		.byte	0x4
  850 006a 05       		.byte	0x5
- 851 006b EE020000 		.4byte	.LASF7
+ 851 006b 1C030000 		.4byte	.LASF7
  852 006f 04       		.uleb128 0x4
  853 0070 04       		.byte	0x4
  854 0071 07       		.byte	0x7
@@ -1482,32 +1482,32 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  856 0076 04       		.uleb128 0x4
  857 0077 08       		.byte	0x8
  858 0078 07       		.byte	0x7
- 859 0079 75010000 		.4byte	.LASF9
+ 859 0079 77010000 		.4byte	.LASF9
  860 007d 04       		.uleb128 0x4
  861 007e 04       		.byte	0x4
  862 007f 07       		.byte	0x7
- 863 0080 30020000 		.4byte	.LASF10
+ 863 0080 91020000 		.4byte	.LASF10
  864 0084 05       		.uleb128 0x5
  865 0085 04       		.byte	0x4
  866 0086 04       		.uleb128 0x4
  867 0087 01       		.byte	0x1
  868 0088 08       		.byte	0x8
- 869 0089 64020000 		.4byte	.LASF11
+ 869 0089 C5020000 		.4byte	.LASF11
  870 008d 06       		.uleb128 0x6
  871 008e C0000000 		.4byte	.LASF13
  872 0092 03       		.byte	0x3
  873 0093 E401     		.2byte	0x1e4
  874 0095 53000000 		.4byte	0x53
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 26
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 26
 
 
  875 0099 06       		.uleb128 0x6
- 876 009a 3A010000 		.4byte	.LASF14
+ 876 009a 3C010000 		.4byte	.LASF14
  877 009e 03       		.byte	0x3
  878 009f E501     		.2byte	0x1e5
  879 00a1 61000000 		.4byte	0x61
  880 00a5 06       		.uleb128 0x6
- 881 00a6 4C010000 		.4byte	.LASF15
+ 881 00a6 4E010000 		.4byte	.LASF15
  882 00aa 03       		.byte	0x3
  883 00ab E601     		.2byte	0x1e6
  884 00ad 6F000000 		.4byte	0x6f
@@ -1539,7 +1539,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  910 00e4 98       		.byte	0x98
  911 00e5 02010000 		.4byte	0x102
  912 00e9 09       		.uleb128 0x9
- 913 00ea 8D020000 		.4byte	.LASF20
+ 913 00ea EE020000 		.4byte	.LASF20
  914 00ee 01       		.byte	0x1
  915 00ef 9A       		.byte	0x9a
  916 00f0 8D000000 		.4byte	0x8d
@@ -1552,13 +1552,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  923 0100 01       		.byte	0x1
  924 0101 00       		.byte	0
  925 0102 03       		.uleb128 0x3
- 926 0103 7A020000 		.4byte	.LASF22
+ 926 0103 DB020000 		.4byte	.LASF22
  927 0107 01       		.byte	0x1
  928 0108 9C       		.byte	0x9c
  929 0109 E1000000 		.4byte	0xe1
  930 010d 0A       		.uleb128 0xa
  931 010e 13010000 		.4byte	.LASF27
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 27
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 27
 
 
  932 0112 01       		.byte	0x1
@@ -1569,14 +1569,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  937 011d 9C       		.byte	0x9c
  938 011e 7F010000 		.4byte	0x17f
  939 0122 0B       		.uleb128 0xb
- 940 0123 2F010000 		.4byte	.LASF23
+ 940 0123 31010000 		.4byte	.LASF23
  941 0127 01       		.byte	0x1
  942 0128 AF       		.byte	0xaf
  943 0129 7F010000 		.4byte	0x17f
  944 012d 01       		.uleb128 0x1
  945 012e 50       		.byte	0x50
  946 012f 0B       		.uleb128 0xb
- 947 0130 41010000 		.4byte	.LASF24
+ 947 0130 43010000 		.4byte	.LASF24
  948 0134 01       		.byte	0x1
  949 0135 AF       		.byte	0xaf
  950 0136 8A010000 		.4byte	0x18a
@@ -1598,7 +1598,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  966 0157 08000000 		.4byte	.LBB2
  967 015b 22000000 		.4byte	.LBE2-.LBB2
  968 015f 0E       		.uleb128 0xe
- 969 0160 27020000 		.4byte	.LASF25
+ 969 0160 88020000 		.4byte	.LASF25
  970 0164 01       		.byte	0x1
  971 0165 B5       		.byte	0xb5
  972 0166 A5000000 		.4byte	0xa5
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  986 0186 A5000000 		.4byte	0xa5
  987 018a 0F       		.uleb128 0xf
  988 018b 04       		.byte	0x4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 28
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 28
 
 
  989 018c 90010000 		.4byte	0x190
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1043 01f1 01       		.uleb128 0x1
  1044 01f2 9C       		.byte	0x9c
  1045 01f3 8B020000 		.4byte	0x28b
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 29
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 29
 
 
  1046 01f7 14       		.uleb128 0x14
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1100 0264 0A       		.byte	0xa
  1101 0265 DC05     		.2byte	0x5dc
  1102 0267 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 30
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 30
 
 
  1103 0268 15       		.uleb128 0x15
@@ -1771,14 +1771,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1130 029c 9C       		.byte	0x9c
  1131 029d C0020000 		.4byte	0x2c0
  1132 02a1 17       		.uleb128 0x17
- 1133 02a2 94020000 		.4byte	.LASF30
+ 1133 02a2 F5020000 		.4byte	.LASF30
  1134 02a6 01       		.byte	0x1
  1135 02a7 4301     		.2byte	0x143
  1136 02a9 8D000000 		.4byte	0x8d
  1137 02ad 01       		.uleb128 0x1
  1138 02ae 50       		.byte	0x50
  1139 02af 18       		.uleb128 0x18
- 1140 02b0 41030000 		.4byte	.LASF31
+ 1140 02b0 63030000 		.4byte	.LASF31
  1141 02b4 01       		.byte	0x1
  1142 02b5 4501     		.2byte	0x145
  1143 02b7 A5000000 		.4byte	0xa5
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1157 02db 8B020000 		.4byte	0x28b
  1158 02df 13       		.uleb128 0x13
  1159 02e0 01       		.uleb128 0x1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 31
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 31
 
 
  1160 02e1 50       		.byte	0x50
@@ -1807,7 +1807,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1163 02e4 00       		.byte	0
  1164 02e5 00       		.byte	0
  1165 02e6 16       		.uleb128 0x16
- 1166 02e7 60010000 		.4byte	.LASF34
+ 1166 02e7 62010000 		.4byte	.LASF34
  1167 02eb 01       		.byte	0x1
  1168 02ec 6501     		.2byte	0x165
  1169 02ee 30010000 		.4byte	.LFB9
@@ -1841,7 +1841,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1197 0330 D201     		.2byte	0x1d2
  1198 0332 51030000 		.4byte	0x351
  1199 0336 1D       		.uleb128 0x1d
- 1200 0337 6D010000 		.4byte	.LASF37
+ 1200 0337 6F010000 		.4byte	.LASF37
  1201 033b 01       		.byte	0x1
  1202 033c D301     		.2byte	0x1d3
  1203 033e 84000000 		.4byte	0x84
@@ -1854,11 +1854,11 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1210 034f 04       		.byte	0x4
  1211 0350 00       		.byte	0
  1212 0351 06       		.uleb128 0x6
- 1213 0352 1A020000 		.4byte	.LASF39
+ 1213 0352 7B020000 		.4byte	.LASF39
  1214 0356 01       		.byte	0x1
  1215 0357 D501     		.2byte	0x1d5
  1216 0359 2D030000 		.4byte	0x32d
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 32
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 32
 
 
  1217 035d 1E       		.uleb128 0x1e
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1271 03cf 03       		.byte	0x3
  1272 03d0 04000000 		.4byte	.LANCHOR0+4
  1273 03d4 22       		.byte	0x22
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 33
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 33
 
 
  1274 03d5 94       		.byte	0x94
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1328 0445 C6000000 		.4byte	.LASF41
  1329 0449 04       		.byte	0x4
  1330 044a 4E       		.byte	0x4e
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 34
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 34
 
 
  1331 044b 22       		.uleb128 0x22
@@ -1992,18 +1992,18 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1339 045f 04       		.byte	0x4
  1340 0460 50       		.byte	0x50
  1341 0461 22       		.uleb128 0x22
- 1342 0462 D9020000 		.4byte	.LASF44
- 1343 0466 D9020000 		.4byte	.LASF44
+ 1342 0462 07030000 		.4byte	.LASF44
+ 1343 0466 07030000 		.4byte	.LASF44
  1344 046a 05       		.byte	0x5
  1345 046b 6C       		.byte	0x6c
  1346 046c 22       		.uleb128 0x22
- 1347 046d 69020000 		.4byte	.LASF45
- 1348 0471 69020000 		.4byte	.LASF45
+ 1347 046d CA020000 		.4byte	.LASF45
+ 1348 0471 CA020000 		.4byte	.LASF45
  1349 0475 05       		.byte	0x5
  1350 0476 84       		.byte	0x84
  1351 0477 22       		.uleb128 0x22
- 1352 0478 5A020000 		.4byte	.LASF46
- 1353 047c 5A020000 		.4byte	.LASF46
+ 1352 0478 BB020000 		.4byte	.LASF46
+ 1353 047c BB020000 		.4byte	.LASF46
  1354 0480 05       		.byte	0x5
  1355 0481 DA       		.byte	0xda
  1356 0482 22       		.uleb128 0x22
@@ -2012,8 +2012,8 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1359 048b 05       		.byte	0x5
  1360 048c BD       		.byte	0xbd
  1361 048d 22       		.uleb128 0x22
- 1362 048e 03030000 		.4byte	.LASF48
- 1363 0492 03030000 		.4byte	.LASF48
+ 1362 048e 25010000 		.4byte	.LASF48
+ 1363 0492 25010000 		.4byte	.LASF48
  1364 0496 05       		.byte	0x5
  1365 0497 C3       		.byte	0xc3
  1366 0498 00       		.byte	0
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1385 0010 17       		.uleb128 0x17
  1386 0011 00       		.byte	0
  1387 0012 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 35
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 35
 
 
  1388 0013 02       		.uleb128 0x2
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1442 0049 00       		.byte	0
  1443 004a 07       		.uleb128 0x7
  1444 004b 35       		.uleb128 0x35
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 36
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 36
 
 
  1445 004c 00       		.byte	0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1499 0083 00       		.byte	0
  1500 0084 00       		.byte	0
  1501 0085 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 37
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 37
 
 
  1502 0086 05       		.uleb128 0x5
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1556 00bc 0F       		.uleb128 0xf
  1557 00bd 00       		.byte	0
  1558 00be 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 38
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 38
 
 
  1559 00bf 0B       		.uleb128 0xb
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1613 00fc 15       		.uleb128 0x15
  1614 00fd 898201   		.uleb128 0x4109
  1615 0100 01       		.byte	0x1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 39
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 39
 
 
  1616 0101 11       		.uleb128 0x11
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1670 0138 0B       		.uleb128 0xb
  1671 0139 3B       		.uleb128 0x3b
  1672 013a 05       		.uleb128 0x5
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 40
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 40
 
 
  1673 013b 49       		.uleb128 0x49
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1727 0172 00       		.byte	0
  1728 0173 1C       		.uleb128 0x1c
  1729 0174 13       		.uleb128 0x13
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 41
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 41
 
 
  1730 0175 01       		.byte	0x1
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1784 01ab 13       		.uleb128 0x13
  1785 01ac 02       		.uleb128 0x2
  1786 01ad 17       		.uleb128 0x17
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 42
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 42
 
 
  1787 01ae 00       		.byte	0
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1841 002f 30000000 		.4byte	.LVL10
  1842 0033 0100     		.2byte	0x1
  1843 0035 55       		.byte	0x55
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 43
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 43
 
 
  1844 0036 00000000 		.4byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1898 00c0 12000000 		.4byte	.LVL26
  1899 00c4 0100     		.2byte	0x1
  1900 00c6 53       		.byte	0x53
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 44
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 44
 
 
  1901 00c7 14000000 		.4byte	.LVL27
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1955 000e 0000     		.2byte	0
  1956 0010 00000000 		.4byte	.LFB5
  1957 0014 32000000 		.4byte	.LFE5-.LFB5
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 45
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 45
 
 
  1958 0018 00000000 		.4byte	.LFB2
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  1998      74536574 
  1998      56656374 
  1998      6F7200
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 46
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 46
 
 
  1999              	.LASF21:
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  2024      57636F53 
  2024      74617274 
  2024      00
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 47
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 47
 
 
  2025              	.LASF28:
@@ -2788,157 +2788,159 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 1
  2036      655F6279 
  2036      74657333 
  2036      3200
- 2037              	.LASF5:
- 2038 0125 73686F72 		.ascii	"short int\000"
- 2038      7420696E 
- 2038      7400
+ 2037              	.LASF48:
+ 2038 0125 4379496E 		.ascii	"CyIntEnable\000"
+ 2038      74456E61 
+ 2038      626C6500 
  2039              	.LASF23:
- 2040 012f 61646472 		.ascii	"addr_table\000"
+ 2040 0131 61646472 		.ascii	"addr_table\000"
  2040      5F746162 
  2040      6C6500
  2041              	.LASF14:
- 2042 013a 75696E74 		.ascii	"uint16\000"
+ 2042 013c 75696E74 		.ascii	"uint16\000"
  2042      313600
  2043              	.LASF24:
- 2044 0141 64617461 		.ascii	"data_table\000"
+ 2044 0143 64617461 		.ascii	"data_table\000"
  2044      5F746162 
  2044      6C6500
  2045              	.LASF15:
- 2046 014c 75696E74 		.ascii	"uint32\000"
+ 2046 014e 75696E74 		.ascii	"uint32\000"
  2046      333200
  2047              	.LASF0:
- 2048 0153 756E7369 		.ascii	"unsigned int\000"
+ 2048 0155 756E7369 		.ascii	"unsigned int\000"
  2048      676E6564 
  2048      20696E74 
  2048      00
  2049              	.LASF34:
- 2050 0160 63796669 		.ascii	"cyfitter_cfg\000"
+ 2050 0162 63796669 		.ascii	"cyfitter_cfg\000"
  2050      74746572 
  2050      5F636667 
  2050      00
  2051              	.LASF37:
- 2052 016d 61646472 		.ascii	"address\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 48
+ 2052 016f 61646472 		.ascii	"address\000"
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 48
 
 
  2052      65737300 
  2053              	.LASF9:
- 2054 0175 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2054 0177 6C6F6E67 		.ascii	"long long unsigned int\000"
  2054      206C6F6E 
  2054      6720756E 
  2054      7369676E 
  2054      65642069 
- 2055              	.LASF49:
- 2056 018c 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 2056      43313120 
- 2056      352E342E 
- 2056      31203230 
- 2056      31363036 
- 2057 01bf 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
- 2057      20726576 
- 2057      6973696F 
- 2057      6E203233 
- 2057      37373135 
- 2058 01f2 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2058      66756E63 
- 2058      74696F6E 
- 2058      2D736563 
- 2058      74696F6E 
- 2059              	.LASF39:
- 2060 021a 6366675F 		.ascii	"cfg_memset_t\000"
- 2060      6D656D73 
- 2060      65745F74 
- 2060      00
- 2061              	.LASF25:
- 2062 0227 62617365 		.ascii	"baseAddr\000"
- 2062      41646472 
- 2062      00
- 2063              	.LASF10:
- 2064 0230 73697A65 		.ascii	"sizetype\000"
- 2064      74797065 
+ 2055              	.LASF51:
+ 2056 018e 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Documents\\GitHub\\BlueCu"
+ 2056      73657273 
+ 2056      5C6A6572 
+ 2056      6F6D652E 
+ 2056      63726F63 
+ 2057 01bc 62655C5F 		.ascii	"be\\_CypressBLE\\capsenseled_512\\capsenseled.cydsn"
+ 2057      43797072 
+ 2057      65737342 
+ 2057      4C455C63 
+ 2057      61707365 
+ 2058 01ec 00       		.ascii	"\000"
+ 2059              	.LASF49:
+ 2060 01ed 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2060      43313120 
+ 2060      352E342E 
+ 2060      31203230 
+ 2060      31363036 
+ 2061 0220 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0 -mthumb -g -O"
+ 2061      20726576 
+ 2061      6973696F 
+ 2061      6E203233 
+ 2061      37373135 
+ 2062 0253 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2062      66756E63 
+ 2062      74696F6E 
+ 2062      2D736563 
+ 2062      74696F6E 
+ 2063              	.LASF39:
+ 2064 027b 6366675F 		.ascii	"cfg_memset_t\000"
+ 2064      6D656D73 
+ 2064      65745F74 
  2064      00
- 2065              	.LASF6:
- 2066 0239 73686F72 		.ascii	"short unsigned int\000"
- 2066      7420756E 
- 2066      7369676E 
- 2066      65642069 
- 2066      6E7400
- 2067              	.LASF1:
- 2068 024c 6C6F6E67 		.ascii	"long long int\000"
- 2068      206C6F6E 
- 2068      6720696E 
- 2068      7400
- 2069              	.LASF46:
- 2070 025a 43794465 		.ascii	"CyDelayUs\000"
- 2070      6C617955 
- 2070      7300
- 2071              	.LASF11:
- 2072 0264 63686172 		.ascii	"char\000"
- 2072      00
- 2073              	.LASF45:
- 2074 0269 43795379 		.ascii	"CySysClkEcoStart\000"
- 2074      73436C6B 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 49
+ 2065              	.LASF25:
+ 2066 0288 62617365 		.ascii	"baseAddr\000"
+ 2066      41646472 
+ 2066      00
+ 2067              	.LASF10:
+ 2068 0291 73697A65 		.ascii	"sizetype\000"
+ 2068      74797065 
+ 2068      00
+ 2069              	.LASF6:
+ 2070 029a 73686F72 		.ascii	"short unsigned int\000"
+ 2070      7420756E 
+ 2070      7369676E 
+ 2070      65642069 
+ 2070      6E7400
+ 2071              	.LASF1:
+ 2072 02ad 6C6F6E67 		.ascii	"long long int\000"
+ 2072      206C6F6E 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 49
 
 
- 2074      45636F53 
- 2074      74617274 
- 2074      00
- 2075              	.LASF22:
- 2076 027a 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
- 2076      66675F61 
- 2076      64647276 
- 2076      616C7565 
- 2076      5F7400
- 2077              	.LASF20:
- 2078 028d 6F666673 		.ascii	"offset\000"
- 2078      657400
- 2079              	.LASF30:
- 2080 0294 656E6162 		.ascii	"enabled\000"
- 2080      6C656400 
- 2081              	.LASF51:
- 2082 029c 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Desktop\\capsenseled\\cap"
- 2082      73657273 
- 2082      5C6A6572 
- 2082      6F6D652E 
- 2082      63726F63 
- 2083 02ca 73656E73 		.ascii	"senseled.cydsn\000"
- 2083      656C6564 
- 2083      2E637964 
- 2083      736E00
- 2084              	.LASF44:
- 2085 02d9 43795379 		.ascii	"CySysClkWriteImoFreq\000"
- 2085      73436C6B 
- 2085      57726974 
- 2085      65496D6F 
- 2085      46726571 
- 2086              	.LASF7:
- 2087 02ee 6C6F6E67 		.ascii	"long int\000"
- 2087      20696E74 
- 2087      00
- 2088              	.LASF2:
- 2089 02f7 6C6F6E67 		.ascii	"long double\000"
- 2089      20646F75 
- 2089      626C6500 
- 2090              	.LASF48:
- 2091 0303 4379496E 		.ascii	"CyIntEnable\000"
- 2091      74456E61 
- 2091      626C6500 
- 2092              	.LASF3:
- 2093 030f 7369676E 		.ascii	"signed char\000"
- 2093      65642063 
- 2093      68617200 
- 2094              	.LASF50:
- 2095 031b 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
- 2095      72617465 
- 2095      645F536F 
- 2095      75726365 
- 2095      5C50536F 
- 2096              	.LASF31:
- 2097 0341 72656756 		.ascii	"regValue\000"
- 2097      616C7565 
- 2097      00
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxAamwd.s 			page 50
+ 2072      6720696E 
+ 2072      7400
+ 2073              	.LASF46:
+ 2074 02bb 43794465 		.ascii	"CyDelayUs\000"
+ 2074      6C617955 
+ 2074      7300
+ 2075              	.LASF11:
+ 2076 02c5 63686172 		.ascii	"char\000"
+ 2076      00
+ 2077              	.LASF45:
+ 2078 02ca 43795379 		.ascii	"CySysClkEcoStart\000"
+ 2078      73436C6B 
+ 2078      45636F53 
+ 2078      74617274 
+ 2078      00
+ 2079              	.LASF22:
+ 2080 02db 63795F63 		.ascii	"cy_cfg_addrvalue_t\000"
+ 2080      66675F61 
+ 2080      64647276 
+ 2080      616C7565 
+ 2080      5F7400
+ 2081              	.LASF20:
+ 2082 02ee 6F666673 		.ascii	"offset\000"
+ 2082      657400
+ 2083              	.LASF30:
+ 2084 02f5 656E6162 		.ascii	"enabled\000"
+ 2084      6C656400 
+ 2085              	.LASF5:
+ 2086 02fd 73686F72 		.ascii	"short int\000"
+ 2086      7420696E 
+ 2086      7400
+ 2087              	.LASF44:
+ 2088 0307 43795379 		.ascii	"CySysClkWriteImoFreq\000"
+ 2088      73436C6B 
+ 2088      57726974 
+ 2088      65496D6F 
+ 2088      46726571 
+ 2089              	.LASF7:
+ 2090 031c 6C6F6E67 		.ascii	"long int\000"
+ 2090      20696E74 
+ 2090      00
+ 2091              	.LASF2:
+ 2092 0325 6C6F6E67 		.ascii	"long double\000"
+ 2092      20646F75 
+ 2092      626C6500 
+ 2093              	.LASF3:
+ 2094 0331 7369676E 		.ascii	"signed char\000"
+ 2094      65642063 
+ 2094      68617200 
+ 2095              	.LASF50:
+ 2096 033d 47656E65 		.ascii	"Generated_Source\\PSoC4\\cyfitter_cfg.c\000"
+ 2096      72617465 
+ 2096      645F536F 
+ 2096      75726365 
+ 2096      5C50536F 
+ 2097              	.LASF31:
+ 2098 0363 72656756 		.ascii	"regValue\000"
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cczseV3d.s 			page 50
 
 
- 2098              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2098      616C7565 
+ 2098      00
+ 2099              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

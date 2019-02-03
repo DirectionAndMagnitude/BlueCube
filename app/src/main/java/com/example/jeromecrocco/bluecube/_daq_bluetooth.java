@@ -48,7 +48,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import static com.example.jeromecrocco.bluecube._daq_bluetooth_PSOC.nSamples;
+
 import static java.lang.Float.parseFloat;
 
 
@@ -279,7 +279,6 @@ public class _daq_bluetooth extends AppCompatActivity {
         FloatingActionButton fab_Pause = (FloatingActionButton) findViewById(R.id.fab_Pause);
         FloatingActionButton fab_Reset = (FloatingActionButton) findViewById(R.id.fab_Reset);
         FloatingActionButton fab_Share = (FloatingActionButton) findViewById(R.id.fab_Share);
-
         Button setMTU = (Button) findViewById(R.id.setMTU);
 
 
@@ -295,7 +294,8 @@ public class _daq_bluetooth extends AppCompatActivity {
                 Snackbar.make(view, "SET MTU to " + mtuTxt.getText().toString(), Snackbar.LENGTH_SHORT)
                         .setAction("Action", null).show();
 
-                mPSoCCapSenseLedService.negotiateMTU(mtuVal);
+                mPSoCCapSenseLedService.negotiateSamples(mtuVal);
+
 
 
             }});
@@ -411,7 +411,8 @@ public class _daq_bluetooth extends AppCompatActivity {
 
         mPSoCCapSenseLedService.discoverServices();
 
-        mPSoCCapSenseLedService.negotiateMTU(nSamples);
+        mPSoCCapSenseLedService.negotiateMTU(20);
+        mPSoCCapSenseLedService.negotiateSamples(20);
 
         // Set Values
         mCapsenseValue = (TextView) findViewById(R.id.capsense_value);
@@ -442,7 +443,7 @@ public class _daq_bluetooth extends AppCompatActivity {
         return getCacheDir().toString();
     }
 
-    private void addEntry(String[] val) {
+    private void addEntry(byte[] val) {
 
         LineData data = mChart.getData();
 
@@ -458,13 +459,26 @@ public class _daq_bluetooth extends AppCompatActivity {
             }
 
             int v;
+            //val.length
+            try {
+                for (v = 0; v < val.length; v = v + 1) {
 
-            for (v=0;v<nSamples;v=v+1) {
+                    try {
 
-                float value = parseFloat(val[v]);
-                //data.addEntry(new Entry(set.getEntryCount(), (float) (Math.random() * 80) + 10f), 0);
-                data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
-            }
+                        float value = val[v];
+                        //                    data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
+
+                        data.addEntry(new Entry(set.getEntryCount(), value + 5), 0);
+
+                    } catch (Exception e) {
+                        Log.d(TAG, "Error with parseFloat data");
+                        //TODO:  Throwing errors after about 20 seconds of data?  Why?
+                    }
+                    ;
+                }
+            }catch (Exception e) {
+                Log.d(TAG, "Error with parseFloat data");
+                }
             data.notifyDataChanged();
 
             // let the chart know it's data has changed
@@ -626,8 +640,14 @@ public class _daq_bluetooth extends AppCompatActivity {
                     // Get CapSense Slider Value
                     Log.d(TAG, "Receiving CAP SENSE DATA");
                     //String CapSensePos = mPSoCCapSenseLedService.getCapSenseValue();
-                    String[] AnalogInVal = mPSoCCapSenseLedService.getAnalogInValue();
-                    addEntry(AnalogInVal);
+                    boolean getData  = led_switch.isChecked();
+
+                    if (getData) {
+                       byte[] AnalogInVal = mPSoCCapSenseLedService.getAnalogInValue();
+                       addEntry(AnalogInVal);
+                    }
+
+
 
                     //float val = parseFloat(CapSensePos);
                     //Long tsLong = System.currentTimeMillis()/1000;

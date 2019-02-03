@@ -1,6 +1,6 @@
-C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled_512\capsenseled.cydsn\capsenseled.cyprj|d15beca9-a7ed-4557-97d6-b2a947389b6a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|d713168d-f044-4604-bd31-07de4b3b2a10
-C:\Users\jerome.crocco\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|12669a39-e434-42bb-bef9-01f737f4152d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|306a08d5-7bfb-46c1-a071-dabe893d4622
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|8b980791-4834-438f-9b5e-5121ea4d23b3
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|19d9be30-25ac-4daf-8750-12f35ac669a9
+C:\Users\jerome.crocco\Documents\GitHub\BlueCube\_CypressBLE\capsenseled_512\capsenseled.cydsn\capsenseled.cyprj|b6294fd5-550d-4c90-8b23-63a24bd181c3
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|51cd6884-9d68-41b3-a6eb-abfd8e09ded8
+C:\Users\jerome.crocco\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|a1190a97-e8a0-4a9f-b2d0-907abbaf153b
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|843ab314-1ff3-40ef-a28c-b738debc5cf8
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|d903f884-829d-4440-b834-99adb25c6c77
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|1aa76ce0-90e4-41e6-abb2-5aba05ad3389

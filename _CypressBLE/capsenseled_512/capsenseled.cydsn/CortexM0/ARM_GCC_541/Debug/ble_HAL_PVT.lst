@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
   28:Generated_Source\PSoC4/ble_HAL_PVT.c **** *
   29:Generated_Source\PSoC4/ble_HAL_PVT.c **** * \return
   30:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  None
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 2
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 2
 
 
   31:Generated_Source\PSoC4/ble_HAL_PVT.c **** *
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
   85:Generated_Source\PSoC4/ble_HAL_PVT.c **** }
   86:Generated_Source\PSoC4/ble_HAL_PVT.c **** 
   87:Generated_Source\PSoC4/ble_HAL_PVT.c **** /*******************************************************************************
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 3
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 3
 
 
   88:Generated_Source\PSoC4/ble_HAL_PVT.c **** * Function Name: CyBLE_Uart_Isr_Enable
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  142:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  For BLE devices with 128K of Flash memory this function will automatically 
  143:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  modify the clock settings for the device.
  144:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  Writing to flash requires changes to be done to the IMO (set to 48 MHz)
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 4
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 4
 
 
  145:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  and HFCLK (source set to IMO) settings. The configuration is restored before
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  165:Generated_Source\PSoC4/ble_HAL_PVT.c ****     {
  166:Generated_Source\PSoC4/ble_HAL_PVT.c ****         rowId = eeOffset / CY_FLASH_SIZEOF_ROW;
   62              		.loc 1 166 0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 5
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 5
 
 
   63 001a CB09     		lsrs	r3, r1, #7
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  183:Generated_Source\PSoC4/ble_HAL_PVT.c ****                     srcIndex++;
   99              		.loc 1 183 0
  100 0042 0135     		adds	r5, r5, #1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 6
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 6
 
 
  101              	.LVL9:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  137              		.loc 1 199 0
  138 0068 0123     		movs	r3, #1
  139 006a 9A46     		mov	r10, r3
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 7
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 7
 
 
  140 006c D144     		add	r9, r9, r10
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  177 0094 A246     		mov	r10, r4
  178 0096 F0BD     		pop	{r4, r5, r6, r7, pc}
  179              	.L16:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 8
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 8
 
 
  180              		.align	2
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  213 000c 6846     		mov	r0, sp
  214              	.LVL25:
  215 000e FFF7FEFF 		bl	memset
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 9
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 9
 
 
  216              	.LVL26:
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  246 0030 8035     		adds	r5, r5, #128
  247              	.LVL31:
  259:Generated_Source\PSoC4/ble_HAL_PVT.c ****         lengthRemaining -= lengthFlash;
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 10
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 10
 
 
  248              		.loc 1 259 0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  279              		@ link register save eliminated.
  280              	.LVL36:
  282:Generated_Source\PSoC4/ble_HAL_PVT.c ****     *regValue = (uint16)CY_GET_REG32(blessAddr);
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 11
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 11
 
 
  281              		.loc 1 282 0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  315              		.code	16
  316              		.thumb_func
  317              		.type	CyBLE_Bless_RfRegRead, %function
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 12
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 12
 
 
  318              	CyBLE_Bless_RfRegRead:
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  332:Generated_Source\PSoC4/ble_HAL_PVT.c **** *
  333:Generated_Source\PSoC4/ble_HAL_PVT.c **** * \return
  334:Generated_Source\PSoC4/ble_HAL_PVT.c **** *  None
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 13
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 13
 
 
  335:Generated_Source\PSoC4/ble_HAL_PVT.c **** *
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  362:Generated_Source\PSoC4/ble_HAL_PVT.c ****     trimRegValue = ((uint32)CYBLE_SFLASH_BLESS_BB_BUMP2_HIGH_REG << 8u) | CYBLE_SFLASH_BLESS_BB_BUM
  370              		.loc 1 362 0
  371 0000 324B     		ldr	r3, .L40
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 14
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 14
 
 
  372 0002 1A78     		ldrb	r2, [r3]
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  414 0036 2A4B     		ldr	r3, .L40+20
  415              	.LVL45:
  416              	.L29:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 15
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 15
 
 
  373:Generated_Source\PSoC4/ble_HAL_PVT.c ****     }
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  454 0060 254A     		ldr	r2, .L40+44
  455 0062 1360     		str	r3, [r2]
  390:Generated_Source\PSoC4/ble_HAL_PVT.c ****     
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 16
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 16
 
 
  391:Generated_Source\PSoC4/ble_HAL_PVT.c ****     trimRegValue = ((uint32)CYBLE_SFLASH_BLESS_SY_BUMP1_HIGH_REG << 8u) | CYBLE_SFLASH_BLESS_SY_BUM
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  498              	.LVL61:
  499 0092 1B68     		ldr	r3, [r3]
  500 0094 1B09     		lsrs	r3, r3, #4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 17
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 17
 
 
  501              	.LVL62:
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  542 00c4 1343     		orrs	r3, r2
  543              	.LVL69:
  413:Generated_Source\PSoC4/ble_HAL_PVT.c **** 		CYBLE_BLERD_RX_BUMP2_REG = trimRef38Val;
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 18
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 18
 
 
  544              		.loc 1 413 0
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  420:Generated_Source\PSoC4/ble_HAL_PVT.c **** void CyBleHal_DelayUs(uint16 delayVal)
  421:Generated_Source\PSoC4/ble_HAL_PVT.c **** {
  592              		.loc 1 421 0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 19
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 19
 
 
  593              		.cfi_startproc
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  639              		.code	16
  640              		.thumb_func
  641              		.type	CyBleHal_EnableGlobalInterrupts, %function
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 20
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 20
 
 
  642              	CyBleHal_EnableGlobalInterrupts:
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  684              	.LFE12:
  685              		.size	CyBleHal_DisableGlobalInterrupts, .-CyBleHal_DisableGlobalInterrupts
  686              		.section	.text.CyBle_HalInit,"ax",%progbits
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 21
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 21
 
 
  687              		.align	2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  719 0014 00000000 		.word	CyBLE_Bless_Interrupt
  720              		.cfi_endproc
  721              	.LFE13:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 22
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 22
 
 
  722              		.size	CyBle_HalInit, .-CyBle_HalInit
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  756              		.code	16
  757              		.thumb_func
  758              		.type	CyBLE_GetIpBlockVersion, %function
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 23
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 23
 
 
  759              	CyBLE_GetIpBlockVersion:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  515:Generated_Source\PSoC4/ble_HAL_PVT.c ****      
  516:Generated_Source\PSoC4/ble_HAL_PVT.c ****     CYBLE_API_RESULT_T CyBle_Hal_pairing_remote_key_handler(void *param)
  517:Generated_Source\PSoC4/ble_HAL_PVT.c ****     {
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 24
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 24
 
 
  518:Generated_Source\PSoC4/ble_HAL_PVT.c ****         return (CyBle_Hal_mapping_pairing_remote_key_handler(param));
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  572:Generated_Source\PSoC4/ble_HAL_PVT.c **** 
  573:Generated_Source\PSoC4/ble_HAL_PVT.c ****     void CyBle_Hal_smp_sc_cmac_complete(void)
  574:Generated_Source\PSoC4/ble_HAL_PVT.c ****     {
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 25
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 25
 
 
  575:Generated_Source\PSoC4/ble_HAL_PVT.c ****        CyBle_Hal_Mapping_smp_sc_cmac_complete();
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  808              		@ link register save eliminated.
  809              	.LVL83:
  603:Generated_Source\PSoC4/ble_HAL_PVT.c ****         return (CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE);
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 26
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 26
 
 
  604:Generated_Source\PSoC4/ble_HAL_PVT.c ****     }
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  614:Generated_Source\PSoC4/ble_HAL_PVT.c ****     }
  854              		.loc 1 614 0
  855 0000 2B20     		movs	r0, #43
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 27
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 27
 
 
  856              	.LVL88:
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  900              	.LVL92:
  901              		@ sp needed
  902 0002 7047     		bx	lr
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 28
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 28
 
 
  903              		.cfi_endproc
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  947              		.cfi_endproc
  948              	.LFE23:
  949              		.size	CyBle_Hal_pairing_lr_confirming_handler, .-CyBle_Hal_pairing_lr_confirming_handler
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 29
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 29
 
 
  950              		.section	.text.CyBle_Hal_pairing_sc_tbx_dhkey_generate_complete,"ax",%progbits
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  994              		.global	CyBle_Hal_pairing_sc_generate_local_P256_public_key
  995              		.code	16
  996              		.thumb_func
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 30
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 30
 
 
  997              		.type	CyBle_Hal_pairing_sc_generate_local_P256_public_key, %function
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1040              		.thumb_func
  1041              		.type	CyBle_Hal_smp_sc_cmac_complete, %function
  1042              	CyBle_Hal_smp_sc_cmac_complete:
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 31
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 31
 
 
  1043              	.LFB28:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  668:Generated_Source\PSoC4/ble_HAL_PVT.c ****     {
  1085              		.loc 1 668 0
  1086              		.cfi_startproc
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 32
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 32
 
 
  1087              		@ args = 0, pretend = 0, frame = 0
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  684:Generated_Source\PSoC4/ble_HAL_PVT.c ****         return (BLE_STK_FTR_API_lec_hci_handle_read_local_P256_public_key_command(param));
  685:Generated_Source\PSoC4/ble_HAL_PVT.c ****     }
  686:Generated_Source\PSoC4/ble_HAL_PVT.c ****     
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 33
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 33
 
 
  687:Generated_Source\PSoC4/ble_HAL_PVT.c ****     uint16 BLE_CMP_FTR_API_lec_hci_handle_generate_DHkey_command(void *param)
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1164              		.file 2 "Generated_Source\\PSoC4\\cytypes.h"
  1165              		.file 3 "Generated_Source\\PSoC4\\ble_Stack.h"
  1166              		.file 4 "Generated_Source\\PSoC4\\CyFlash.h"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 34
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 34
 
 
  1167              		.file 5 "Generated_Source\\PSoC4\\CyLib.h"
@@ -1992,8 +1992,8 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1175 000b 01       		.uleb128 0x1
  1176 000c F6000000 		.4byte	.LASF119
  1177 0010 0C       		.byte	0xc
- 1178 0011 D2060000 		.4byte	.LASF120
- 1179 0015 BA030000 		.4byte	.LASF121
+ 1178 0011 95060000 		.4byte	.LASF120
+ 1179 0015 BE090000 		.4byte	.LASF121
  1180 0019 00000000 		.4byte	.Ldebug_ranges0+0
  1181 001d 00000000 		.4byte	0
  1182 0021 00000000 		.4byte	.Ldebug_line0
@@ -2004,15 +2004,15 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1187 002c 02       		.uleb128 0x2
  1188 002d 01       		.byte	0x1
  1189 002e 08       		.byte	0x8
- 1190 002f 0E0A0000 		.4byte	.LASF1
+ 1190 002f 300A0000 		.4byte	.LASF1
  1191 0033 02       		.uleb128 0x2
  1192 0034 02       		.byte	0x2
  1193 0035 05       		.byte	0x5
- 1194 0036 F8070000 		.4byte	.LASF2
+ 1194 0036 BB070000 		.4byte	.LASF2
  1195 003a 02       		.uleb128 0x2
  1196 003b 02       		.byte	0x2
  1197 003c 07       		.byte	0x7
- 1198 003d FB090000 		.4byte	.LASF3
+ 1198 003d 1D0A0000 		.4byte	.LASF3
  1199 0041 02       		.uleb128 0x2
  1200 0042 04       		.byte	0x4
  1201 0043 05       		.byte	0x5
@@ -2020,7 +2020,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1203 0048 02       		.uleb128 0x2
  1204 0049 04       		.byte	0x4
  1205 004a 07       		.byte	0x7
- 1206 004b 15050000 		.4byte	.LASF5
+ 1206 004b D8040000 		.4byte	.LASF5
  1207 004f 02       		.uleb128 0x2
  1208 0050 08       		.byte	0x8
  1209 0051 05       		.byte	0x5
@@ -2028,7 +2028,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1211 0056 02       		.uleb128 0x2
  1212 0057 08       		.byte	0x8
  1213 0058 07       		.byte	0x7
- 1214 0059 6C040000 		.4byte	.LASF7
+ 1214 0059 2F040000 		.4byte	.LASF7
  1215 005d 03       		.uleb128 0x3
  1216 005e 04       		.byte	0x4
  1217 005f 05       		.byte	0x5
@@ -2036,9 +2036,9 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1219 0064 02       		.uleb128 0x2
  1220 0065 04       		.byte	0x4
  1221 0066 07       		.byte	0x7
- 1222 0067 89090000 		.4byte	.LASF8
+ 1222 0067 4C090000 		.4byte	.LASF8
  1223 006b 04       		.uleb128 0x4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 35
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 35
 
 
  1224 006c 7A030000 		.4byte	.LASF9
@@ -2051,14 +2051,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1231 007d E501     		.2byte	0x1e5
  1232 007f 3A000000 		.4byte	0x3a
  1233 0083 04       		.uleb128 0x4
- 1234 0084 37040000 		.4byte	.LASF11
+ 1234 0084 FA030000 		.4byte	.LASF11
  1235 0088 02       		.byte	0x2
  1236 0089 E601     		.2byte	0x1e6
  1237 008b 48000000 		.4byte	0x48
  1238 008f 02       		.uleb128 0x2
  1239 0090 04       		.byte	0x4
  1240 0091 04       		.byte	0x4
- 1241 0092 7E070000 		.4byte	.LASF12
+ 1241 0092 41070000 		.4byte	.LASF12
  1242 0096 02       		.uleb128 0x2
  1243 0097 08       		.byte	0x8
  1244 0098 04       		.byte	0x4
@@ -2066,21 +2066,21 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1246 009d 02       		.uleb128 0x2
  1247 009e 01       		.byte	0x1
  1248 009f 08       		.byte	0x8
- 1249 00a0 0A090000 		.4byte	.LASF14
+ 1249 00a0 CD080000 		.4byte	.LASF14
  1250 00a4 04       		.uleb128 0x4
- 1251 00a5 3B0B0000 		.4byte	.LASF15
+ 1251 00a5 5D0B0000 		.4byte	.LASF15
  1252 00a9 02       		.byte	0x2
  1253 00aa 8602     		.2byte	0x286
  1254 00ac 48000000 		.4byte	0x48
  1255 00b0 04       		.uleb128 0x4
- 1256 00b1 95070000 		.4byte	.LASF16
+ 1256 00b1 58070000 		.4byte	.LASF16
  1257 00b5 02       		.byte	0x2
  1258 00b6 8E02     		.2byte	0x28e
  1259 00b8 BC000000 		.4byte	0xbc
  1260 00bc 05       		.uleb128 0x5
  1261 00bd 6B000000 		.4byte	0x6b
  1262 00c1 04       		.uleb128 0x4
- 1263 00c2 F3050000 		.4byte	.LASF17
+ 1263 00c2 B6050000 		.4byte	.LASF17
  1264 00c6 02       		.byte	0x2
  1265 00c7 9002     		.2byte	0x290
  1266 00c9 CD000000 		.4byte	0xcd
@@ -2089,16 +2089,16 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1269 00d2 02       		.uleb128 0x2
  1270 00d3 08       		.byte	0x8
  1271 00d4 04       		.byte	0x4
- 1272 00d5 33090000 		.4byte	.LASF18
+ 1272 00d5 F6080000 		.4byte	.LASF18
  1273 00d9 02       		.uleb128 0x2
  1274 00da 04       		.byte	0x4
  1275 00db 07       		.byte	0x7
- 1276 00dc 81060000 		.4byte	.LASF19
+ 1276 00dc 44060000 		.4byte	.LASF19
  1277 00e0 06       		.uleb128 0x6
  1278 00e1 04       		.byte	0x4
  1279 00e2 07       		.uleb128 0x7
  1280 00e3 02       		.byte	0x2
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 36
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 36
 
 
  1281 00e4 3A000000 		.4byte	0x3a
@@ -2106,13 +2106,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1283 00e9 EA03     		.2byte	0x3ea
  1284 00eb C1010000 		.4byte	0x1c1
  1285 00ef 08       		.uleb128 0x8
- 1286 00f0 3E040000 		.4byte	.LASF20
+ 1286 00f0 01040000 		.4byte	.LASF20
  1287 00f4 00       		.byte	0
  1288 00f5 08       		.uleb128 0x8
  1289 00f6 91030000 		.4byte	.LASF21
  1290 00fa 01       		.byte	0x1
  1291 00fb 08       		.uleb128 0x8
- 1292 00fc 2B0A0000 		.4byte	.LASF22
+ 1292 00fc 4D0A0000 		.4byte	.LASF22
  1293 0100 02       		.byte	0x2
  1294 0101 08       		.uleb128 0x8
  1295 0102 58000000 		.4byte	.LASF23
@@ -2121,25 +2121,25 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1298 0108 B5010000 		.4byte	.LASF24
  1299 010c 04       		.byte	0x4
  1300 010d 08       		.uleb128 0x8
- 1301 010e B8040000 		.4byte	.LASF25
+ 1301 010e 7B040000 		.4byte	.LASF25
  1302 0112 05       		.byte	0x5
  1303 0113 08       		.uleb128 0x8
- 1304 0114 26080000 		.4byte	.LASF26
+ 1304 0114 E9070000 		.4byte	.LASF26
  1305 0118 06       		.byte	0x6
  1306 0119 08       		.uleb128 0x8
  1307 011a EF020000 		.4byte	.LASF27
  1308 011e 07       		.byte	0x7
  1309 011f 08       		.uleb128 0x8
- 1310 0120 CD080000 		.4byte	.LASF28
+ 1310 0120 90080000 		.4byte	.LASF28
  1311 0124 08       		.byte	0x8
  1312 0125 08       		.uleb128 0x8
- 1313 0126 770B0000 		.4byte	.LASF29
+ 1313 0126 990B0000 		.4byte	.LASF29
  1314 012a 09       		.byte	0x9
  1315 012b 08       		.uleb128 0x8
- 1316 012c 9A070000 		.4byte	.LASF30
+ 1316 012c 5D070000 		.4byte	.LASF30
  1317 0130 0A       		.byte	0xa
  1318 0131 08       		.uleb128 0x8
- 1319 0132 49090000 		.4byte	.LASF31
+ 1319 0132 0C090000 		.4byte	.LASF31
  1320 0136 0B       		.byte	0xb
  1321 0137 08       		.uleb128 0x8
  1322 0138 FE010000 		.4byte	.LASF32
@@ -2148,17 +2148,17 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1325 013e 90010000 		.4byte	.LASF33
  1326 0142 0D       		.byte	0xd
  1327 0143 08       		.uleb128 0x8
- 1328 0144 D6040000 		.4byte	.LASF34
+ 1328 0144 99040000 		.4byte	.LASF34
  1329 0148 0E       		.byte	0xe
  1330 0149 08       		.uleb128 0x8
  1331 014a 9D000000 		.4byte	.LASF35
  1332 014e 0F       		.byte	0xf
  1333 014f 08       		.uleb128 0x8
- 1334 0150 CD090000 		.4byte	.LASF36
+ 1334 0150 90090000 		.4byte	.LASF36
  1335 0154 10       		.byte	0x10
  1336 0155 08       		.uleb128 0x8
- 1337 0156 5E050000 		.4byte	.LASF37
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 37
+ 1337 0156 21050000 		.4byte	.LASF37
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 37
 
 
  1338 015a 11       		.byte	0x11
@@ -2172,58 +2172,58 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1346 0168 CD020000 		.4byte	.LASF40
  1347 016c 27       		.byte	0x27
  1348 016d 08       		.uleb128 0x8
- 1349 016e A8090000 		.4byte	.LASF41
+ 1349 016e 6B090000 		.4byte	.LASF41
  1350 0172 28       		.byte	0x28
  1351 0173 08       		.uleb128 0x8
- 1352 0174 1F0B0000 		.4byte	.LASF42
+ 1352 0174 410B0000 		.4byte	.LASF42
  1353 0178 29       		.byte	0x29
  1354 0179 08       		.uleb128 0x8
- 1355 017a 7D080000 		.4byte	.LASF43
+ 1355 017a 40080000 		.4byte	.LASF43
  1356 017e 2A       		.byte	0x2a
  1357 017f 08       		.uleb128 0x8
- 1358 0180 440B0000 		.4byte	.LASF44
+ 1358 0180 660B0000 		.4byte	.LASF44
  1359 0184 2B       		.byte	0x2b
  1360 0185 08       		.uleb128 0x8
- 1361 0186 40080000 		.4byte	.LASF45
+ 1361 0186 03080000 		.4byte	.LASF45
  1362 018a 2C       		.byte	0x2c
  1363 018b 08       		.uleb128 0x8
- 1364 018c 9A080000 		.4byte	.LASF46
+ 1364 018c 5D080000 		.4byte	.LASF46
  1365 0190 2D       		.byte	0x2d
  1366 0191 08       		.uleb128 0x8
- 1367 0192 030B0000 		.4byte	.LASF47
+ 1367 0192 250B0000 		.4byte	.LASF47
  1368 0196 FE       		.byte	0xfe
  1369 0197 08       		.uleb128 0x8
- 1370 0198 46060000 		.4byte	.LASF48
+ 1370 0198 09060000 		.4byte	.LASF48
  1371 019c FF       		.byte	0xff
  1372 019d 09       		.uleb128 0x9
- 1373 019e A4050000 		.4byte	.LASF49
+ 1373 019e 67050000 		.4byte	.LASF49
  1374 01a2 0001     		.2byte	0x100
  1375 01a4 09       		.uleb128 0x9
- 1376 01a5 42070000 		.4byte	.LASF50
+ 1376 01a5 05070000 		.4byte	.LASF50
  1377 01a9 0101     		.2byte	0x101
  1378 01ab 09       		.uleb128 0x9
- 1379 01ac B4070000 		.4byte	.LASF51
+ 1379 01ac 77070000 		.4byte	.LASF51
  1380 01b0 0201     		.2byte	0x102
  1381 01b2 09       		.uleb128 0x9
  1382 01b3 34030000 		.4byte	.LASF52
  1383 01b7 0301     		.2byte	0x103
  1384 01b9 09       		.uleb128 0x9
- 1385 01ba 0F080000 		.4byte	.LASF53
+ 1385 01ba D2070000 		.4byte	.LASF53
  1386 01be 0401     		.2byte	0x104
  1387 01c0 00       		.byte	0
  1388 01c1 04       		.uleb128 0x4
- 1389 01c2 F7060000 		.4byte	.LASF54
+ 1389 01c2 BA060000 		.4byte	.LASF54
  1390 01c6 03       		.byte	0x3
  1391 01c7 5C04     		.2byte	0x45c
  1392 01c9 E2000000 		.4byte	0xe2
  1393 01cd 0A       		.uleb128 0xa
  1394 01ce 04       		.byte	0x4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 38
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 38
 
 
  1395 01cf 77000000 		.4byte	0x77
  1396 01d3 0B       		.uleb128 0xb
- 1397 01d4 21090000 		.4byte	.LASF65
+ 1397 01d4 E4080000 		.4byte	.LASF65
  1398 01d8 01       		.byte	0x1
  1399 01d9 96       		.byte	0x96
  1400 01da A4000000 		.4byte	0xa4
@@ -2233,25 +2233,25 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1404 01e7 9C       		.byte	0x9c
  1405 01e8 A7020000 		.4byte	0x2a7
  1406 01ec 0C       		.uleb128 0xc
- 1407 01ed A1090000 		.4byte	.LASF55
+ 1407 01ed 64090000 		.4byte	.LASF55
  1408 01f1 01       		.byte	0x1
  1409 01f2 96       		.byte	0x96
  1410 01f3 A7020000 		.4byte	0x2a7
  1411 01f7 00000000 		.4byte	.LLST0
  1412 01fb 0C       		.uleb128 0xc
- 1413 01fc C4080000 		.4byte	.LASF56
+ 1413 01fc 87080000 		.4byte	.LASF56
  1414 0200 01       		.byte	0x1
  1415 0201 96       		.byte	0x96
  1416 0202 A7020000 		.4byte	0x2a7
  1417 0206 42000000 		.4byte	.LLST1
  1418 020a 0C       		.uleb128 0xc
- 1419 020b 240A0000 		.4byte	.LASF57
+ 1419 020b 460A0000 		.4byte	.LASF57
  1420 020f 01       		.byte	0x1
  1421 0210 96       		.byte	0x96
  1422 0211 77000000 		.4byte	0x77
  1423 0215 84000000 		.4byte	.LLST2
  1424 0219 0D       		.uleb128 0xd
- 1425 021a 5B070000 		.4byte	.LASF58
+ 1425 021a 1E070000 		.4byte	.LASF58
  1426 021e 01       		.byte	0x1
  1427 021f 98       		.byte	0x98
  1428 0220 B2020000 		.4byte	0x2b2
@@ -2259,26 +2259,26 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1430 0225 91       		.byte	0x91
  1431 0226 E07E     		.sleb128 -160
  1432 0228 0E       		.uleb128 0xe
- 1433 0229 F9050000 		.4byte	.LASF59
+ 1433 0229 BC050000 		.4byte	.LASF59
  1434 022d 01       		.byte	0x1
  1435 022e 99       		.byte	0x99
  1436 022f 83000000 		.4byte	0x83
  1437 0233 A5000000 		.4byte	.LLST3
  1438 0237 0E       		.uleb128 0xe
- 1439 0238 A60B0000 		.4byte	.LASF60
+ 1439 0238 C80B0000 		.4byte	.LASF60
  1440 023c 01       		.byte	0x1
  1441 023d 9A       		.byte	0x9a
  1442 023e 83000000 		.4byte	0x83
  1443 0242 C3000000 		.4byte	.LLST4
  1444 0246 0E       		.uleb128 0xe
- 1445 0247 EF070000 		.4byte	.LASF61
+ 1445 0247 B2070000 		.4byte	.LASF61
  1446 024b 01       		.byte	0x1
  1447 024c 9B       		.byte	0x9b
  1448 024d 83000000 		.4byte	0x83
  1449 0251 E1000000 		.4byte	.LLST5
  1450 0255 0F       		.uleb128 0xf
  1451 0256 726300   		.ascii	"rc\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 39
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 39
 
 
  1452 0259 01       		.byte	0x1
@@ -2286,7 +2286,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1454 025b A4000000 		.4byte	0xa4
  1455 025f 0C010000 		.4byte	.LLST6
  1456 0263 0E       		.uleb128 0xe
- 1457 0264 EB080000 		.4byte	.LASF62
+ 1457 0264 AE080000 		.4byte	.LASF62
  1458 0268 01       		.byte	0x1
  1459 0269 9D       		.byte	0x9d
  1460 026a 83000000 		.4byte	0x83
@@ -2298,7 +2298,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1466 0279 83000000 		.4byte	0x83
  1467 027d A5010000 		.4byte	.LLST8
  1468 0281 0E       		.uleb128 0xe
- 1469 0282 58080000 		.4byte	.LASF64
+ 1469 0282 1B080000 		.4byte	.LASF64
  1470 0286 01       		.byte	0x1
  1471 0287 9F       		.byte	0x9f
  1472 0288 83000000 		.4byte	0x83
@@ -2333,12 +2333,12 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1501 02c0 7F       		.byte	0x7f
  1502 02c1 00       		.byte	0
  1503 02c2 0B       		.uleb128 0xb
- 1504 02c3 0F090000 		.4byte	.LASF66
+ 1504 02c3 D2080000 		.4byte	.LASF66
  1505 02c7 01       		.byte	0x1
  1506 02c8 E8       		.byte	0xe8
  1507 02c9 A4000000 		.4byte	0xa4
  1508 02cd 00000000 		.4byte	.LFB3
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 40
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 40
 
 
  1509 02d1 3E000000 		.4byte	.LFE3-.LFB3
@@ -2346,19 +2346,19 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1511 02d6 9C       		.byte	0x9c
  1512 02d7 7F030000 		.4byte	0x37f
  1513 02db 0C       		.uleb128 0xc
- 1514 02dc C4080000 		.4byte	.LASF56
+ 1514 02dc 87080000 		.4byte	.LASF56
  1515 02e0 01       		.byte	0x1
  1516 02e1 E8       		.byte	0xe8
  1517 02e2 A7020000 		.4byte	0x2a7
  1518 02e6 D6010000 		.4byte	.LLST10
  1519 02ea 0C       		.uleb128 0xc
- 1520 02eb 240A0000 		.4byte	.LASF57
+ 1520 02eb 460A0000 		.4byte	.LASF57
  1521 02ef 01       		.byte	0x1
  1522 02f0 E8       		.byte	0xe8
  1523 02f1 77000000 		.4byte	0x77
  1524 02f5 02020000 		.4byte	.LLST11
  1525 02f9 0E       		.uleb128 0xe
- 1526 02fa D7070000 		.4byte	.LASF67
+ 1526 02fa 9A070000 		.4byte	.LASF67
  1527 02fe 01       		.byte	0x1
  1528 02ff EA       		.byte	0xea
  1529 0300 A7020000 		.4byte	0x2a7
@@ -2372,13 +2372,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1537 0314 91       		.byte	0x91
  1538 0315 F07E     		.sleb128 -144
  1539 0317 0E       		.uleb128 0xe
- 1540 0318 E40A0000 		.4byte	.LASF69
+ 1540 0318 060B0000 		.4byte	.LASF69
  1541 031c 01       		.byte	0x1
  1542 031d EC       		.byte	0xec
  1543 031e 77000000 		.4byte	0x77
  1544 0322 36020000 		.4byte	.LLST13
  1545 0326 0E       		.uleb128 0xe
- 1546 0327 27040000 		.4byte	.LASF70
+ 1546 0327 EA030000 		.4byte	.LASF70
  1547 032b 01       		.byte	0x1
  1548 032c ED       		.byte	0xed
  1549 032d 77000000 		.4byte	0x77
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1563 0352 50       		.byte	0x50
  1564 0353 02       		.uleb128 0x2
  1565 0354 7D       		.byte	0x7d
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 41
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 41
 
 
  1566 0355 00       		.sleb128 0
@@ -2438,7 +2438,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1600 037d 00       		.byte	0
  1601 037e 00       		.byte	0
  1602 037f 16       		.uleb128 0x16
- 1603 0380 F4080000 		.4byte	.LASF73
+ 1603 0380 B7080000 		.4byte	.LASF73
  1604 0384 01       		.byte	0x1
  1605 0385 1801     		.2byte	0x118
  1606 0387 00000000 		.4byte	.LFB4
@@ -2447,18 +2447,18 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1609 0390 9C       		.byte	0x9c
  1610 0391 B2030000 		.4byte	0x3b2
  1611 0395 17       		.uleb128 0x17
- 1612 0396 3F090000 		.4byte	.LASF71
+ 1612 0396 02090000 		.4byte	.LASF71
  1613 039a 01       		.byte	0x1
  1614 039b 1801     		.2byte	0x118
  1615 039d B2030000 		.4byte	0x3b2
  1616 03a1 01       		.uleb128 0x1
  1617 03a2 50       		.byte	0x50
  1618 03a3 17       		.uleb128 0x17
- 1619 03a4 4D040000 		.4byte	.LASF72
+ 1619 03a4 10040000 		.4byte	.LASF72
  1620 03a8 01       		.byte	0x1
  1621 03a9 1801     		.2byte	0x118
  1622 03ab CD010000 		.4byte	0x1cd
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 42
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 42
 
 
  1623 03af 01       		.uleb128 0x1
@@ -2470,7 +2470,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1629 03b8 12       		.uleb128 0x12
  1630 03b9 C1000000 		.4byte	0xc1
  1631 03bd 16       		.uleb128 0x16
- 1632 03be 72090000 		.4byte	.LASF74
+ 1632 03be 35090000 		.4byte	.LASF74
  1633 03c2 01       		.byte	0x1
  1634 03c3 2B01     		.2byte	0x12b
  1635 03c5 00000000 		.4byte	.LFB5
@@ -2479,14 +2479,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1638 03ce 9C       		.byte	0x9c
  1639 03cf F0030000 		.4byte	0x3f0
  1640 03d3 17       		.uleb128 0x17
- 1641 03d4 3F090000 		.4byte	.LASF71
+ 1641 03d4 02090000 		.4byte	.LASF71
  1642 03d8 01       		.byte	0x1
  1643 03d9 2B01     		.2byte	0x12b
  1644 03db F0030000 		.4byte	0x3f0
  1645 03df 01       		.uleb128 0x1
  1646 03e0 50       		.byte	0x50
  1647 03e1 17       		.uleb128 0x17
- 1648 03e2 4D040000 		.4byte	.LASF72
+ 1648 03e2 10040000 		.4byte	.LASF72
  1649 03e6 01       		.byte	0x1
  1650 03e7 2B01     		.2byte	0x12b
  1651 03e9 F6030000 		.4byte	0x3f6
@@ -2499,7 +2499,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1658 03f6 12       		.uleb128 0x12
  1659 03f7 77000000 		.4byte	0x77
  1660 03fb 16       		.uleb128 0x16
- 1661 03fc 56040000 		.4byte	.LASF75
+ 1661 03fc 19040000 		.4byte	.LASF75
  1662 0400 01       		.byte	0x1
  1663 0401 3E01     		.2byte	0x13e
  1664 0403 00000000 		.4byte	.LFB6
@@ -2508,17 +2508,17 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1667 040c 9C       		.byte	0x9c
  1668 040d 2E040000 		.4byte	0x42e
  1669 0411 17       		.uleb128 0x17
- 1670 0412 3F090000 		.4byte	.LASF71
+ 1670 0412 02090000 		.4byte	.LASF71
  1671 0416 01       		.byte	0x1
  1672 0417 3E01     		.2byte	0x13e
  1673 0419 B2030000 		.4byte	0x3b2
  1674 041d 01       		.uleb128 0x1
  1675 041e 50       		.byte	0x50
  1676 041f 17       		.uleb128 0x17
- 1677 0420 4D040000 		.4byte	.LASF72
+ 1677 0420 10040000 		.4byte	.LASF72
  1678 0424 01       		.byte	0x1
  1679 0425 3E01     		.2byte	0x13e
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 43
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 43
 
 
  1680 0427 CD010000 		.4byte	0x1cd
@@ -2526,7 +2526,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1682 042c 51       		.byte	0x51
  1683 042d 00       		.byte	0
  1684 042e 16       		.uleb128 0x16
- 1685 042f 67070000 		.4byte	.LASF76
+ 1685 042f 2A070000 		.4byte	.LASF76
  1686 0433 01       		.byte	0x1
  1687 0434 5101     		.2byte	0x151
  1688 0436 00000000 		.4byte	.LFB7
@@ -2535,14 +2535,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1691 043f 9C       		.byte	0x9c
  1692 0440 61040000 		.4byte	0x461
  1693 0444 17       		.uleb128 0x17
- 1694 0445 3F090000 		.4byte	.LASF71
+ 1694 0445 02090000 		.4byte	.LASF71
  1695 0449 01       		.byte	0x1
  1696 044a 5101     		.2byte	0x151
  1697 044c F0030000 		.4byte	0x3f0
  1698 0450 01       		.uleb128 0x1
  1699 0451 50       		.byte	0x50
  1700 0452 17       		.uleb128 0x17
- 1701 0453 4D040000 		.4byte	.LASF72
+ 1701 0453 10040000 		.4byte	.LASF72
  1702 0457 01       		.byte	0x1
  1703 0458 5101     		.2byte	0x151
  1704 045a F6030000 		.4byte	0x3f6
@@ -2550,7 +2550,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1706 045f 51       		.byte	0x51
  1707 0460 00       		.byte	0
  1708 0461 16       		.uleb128 0x16
- 1709 0462 46050000 		.4byte	.LASF77
+ 1709 0462 09050000 		.4byte	.LASF77
  1710 0466 01       		.byte	0x1
  1711 0467 6001     		.2byte	0x160
  1712 0469 00000000 		.4byte	.LFB8
@@ -2559,7 +2559,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1715 0472 9C       		.byte	0x9c
  1716 0473 C8040000 		.4byte	0x4c8
  1717 0477 18       		.uleb128 0x18
- 1718 0478 02080000 		.4byte	.LASF78
+ 1718 0478 C5070000 		.4byte	.LASF78
  1719 047c 01       		.byte	0x1
  1720 047d 6401     		.2byte	0x164
  1721 047f 83000000 		.4byte	0x83
@@ -2571,14 +2571,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1727 048f 83000000 		.4byte	0x83
  1728 0493 2C030000 		.4byte	.LLST17
  1729 0497 18       		.uleb128 0x18
- 1730 0498 490A0000 		.4byte	.LASF79
+ 1730 0498 6B0A0000 		.4byte	.LASF79
  1731 049c 01       		.byte	0x1
  1732 049d 6601     		.2byte	0x166
  1733 049f 77000000 		.4byte	0x77
  1734 04a3 56030000 		.4byte	.LLST18
  1735 04a7 18       		.uleb128 0x18
- 1736 04a8 BD050000 		.4byte	.LASF80
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 44
+ 1736 04a8 80050000 		.4byte	.LASF80
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 44
 
 
  1737 04ac 01       		.byte	0x1
@@ -2586,14 +2586,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1739 04af 77000000 		.4byte	0x77
  1740 04b3 88030000 		.4byte	.LLST19
  1741 04b7 18       		.uleb128 0x18
- 1742 04b8 96090000 		.4byte	.LASF81
+ 1742 04b8 59090000 		.4byte	.LASF81
  1743 04bc 01       		.byte	0x1
  1744 04bd 6801     		.2byte	0x168
  1745 04bf 83000000 		.4byte	0x83
  1746 04c3 9B030000 		.4byte	.LLST20
  1747 04c7 00       		.byte	0
  1748 04c8 16       		.uleb128 0x16
- 1749 04c9 BB060000 		.4byte	.LASF82
+ 1749 04c9 7E060000 		.4byte	.LASF82
  1750 04cd 01       		.byte	0x1
  1751 04ce A401     		.2byte	0x1a4
  1752 04d0 00000000 		.4byte	.LFB9
@@ -2602,7 +2602,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1755 04d9 9C       		.byte	0x9c
  1756 04da F8040000 		.4byte	0x4f8
  1757 04de 1A       		.uleb128 0x1a
- 1758 04df 69090000 		.4byte	.LASF83
+ 1758 04df 2C090000 		.4byte	.LASF83
  1759 04e3 01       		.byte	0x1
  1760 04e4 A401     		.2byte	0x1a4
  1761 04e6 77000000 		.4byte	0x77
@@ -2612,7 +2612,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1765 04f3 CD080000 		.4byte	0x8cd
  1766 04f7 00       		.byte	0
  1767 04f8 16       		.uleb128 0x16
- 1768 04f9 FF050000 		.4byte	.LASF84
+ 1768 04f9 C2050000 		.4byte	.LASF84
  1769 04fd 01       		.byte	0x1
  1770 04fe AA01     		.2byte	0x1aa
  1771 0500 00000000 		.4byte	.LFB10
@@ -2621,7 +2621,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1774 0509 9C       		.byte	0x9c
  1775 050a 30050000 		.4byte	0x530
  1776 050e 1A       		.uleb128 0x1a
- 1777 050f 69090000 		.4byte	.LASF83
+ 1777 050f 2C090000 		.4byte	.LASF83
  1778 0513 01       		.byte	0x1
  1779 0514 AA01     		.2byte	0x1aa
  1780 0516 83000000 		.4byte	0x83
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1791 052d 50       		.byte	0x50
  1792 052e 00       		.byte	0
  1793 052f 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 45
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 45
 
 
  1794 0530 16       		.uleb128 0x16
@@ -2693,12 +2693,12 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1843 05a6 00       		.byte	0
  1844 05a7 00       		.byte	0
  1845 05a8 16       		.uleb128 0x16
- 1846 05a9 84070000 		.4byte	.LASF88
+ 1846 05a9 47070000 		.4byte	.LASF88
  1847 05ad 01       		.byte	0x1
  1848 05ae DC01     		.2byte	0x1dc
  1849 05b0 00000000 		.4byte	.LFB14
  1850 05b4 10000000 		.4byte	.LFE14-.LFB14
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 46
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 46
 
 
  1851 05b8 01       		.uleb128 0x1
@@ -2718,7 +2718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1865 05dc 01       		.uleb128 0x1
  1866 05dd 9C       		.byte	0x9c
  1867 05de 1D       		.uleb128 0x1d
- 1868 05df 56060000 		.4byte	.LASF89
+ 1868 05df 19060000 		.4byte	.LASF89
  1869 05e3 01       		.byte	0x1
  1870 05e4 5402     		.2byte	0x254
  1871 05e6 C1010000 		.4byte	0x1c1
@@ -2728,14 +2728,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1875 05f3 9C       		.byte	0x9c
  1876 05f4 09060000 		.4byte	0x609
  1877 05f8 1A       		.uleb128 0x1a
- 1878 05f9 CC060000 		.4byte	.LASF90
+ 1878 05f9 8F060000 		.4byte	.LASF90
  1879 05fd 01       		.byte	0x1
  1880 05fe 5402     		.2byte	0x254
  1881 0600 E0000000 		.4byte	0xe0
  1882 0604 F0030000 		.4byte	.LLST23
  1883 0608 00       		.byte	0
  1884 0609 1D       		.uleb128 0x1d
- 1885 060a BF0A0000 		.4byte	.LASF91
+ 1885 060a E10A0000 		.4byte	.LASF91
  1886 060e 01       		.byte	0x1
  1887 060f 5902     		.2byte	0x259
  1888 0611 C1010000 		.4byte	0x1c1
@@ -2745,27 +2745,27 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1892 061e 9C       		.byte	0x9c
  1893 061f 34060000 		.4byte	0x634
  1894 0623 1A       		.uleb128 0x1a
- 1895 0624 CC060000 		.4byte	.LASF90
+ 1895 0624 8F060000 		.4byte	.LASF90
  1896 0628 01       		.byte	0x1
  1897 0629 5902     		.2byte	0x259
  1898 062b E0000000 		.4byte	0xe0
  1899 062f 11040000 		.4byte	.LLST24
  1900 0633 00       		.byte	0
  1901 0634 1D       		.uleb128 0x1d
- 1902 0635 560A0000 		.4byte	.LASF92
+ 1902 0635 780A0000 		.4byte	.LASF92
  1903 0639 01       		.byte	0x1
  1904 063a 5E02     		.2byte	0x25e
  1905 063c C1010000 		.4byte	0x1c1
  1906 0640 00000000 		.4byte	.LFB18
  1907 0644 04000000 		.4byte	.LFE18-.LFB18
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 47
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 47
 
 
  1908 0648 01       		.uleb128 0x1
  1909 0649 9C       		.byte	0x9c
  1910 064a 5F060000 		.4byte	0x65f
  1911 064e 1A       		.uleb128 0x1a
- 1912 064f CC060000 		.4byte	.LASF90
+ 1912 064f 8F060000 		.4byte	.LASF90
  1913 0653 01       		.byte	0x1
  1914 0654 5E02     		.2byte	0x25e
  1915 0656 E0000000 		.4byte	0xe0
@@ -2782,7 +2782,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1926 0674 9C       		.byte	0x9c
  1927 0675 8A060000 		.4byte	0x68a
  1928 0679 1A       		.uleb128 0x1a
- 1929 067a CC060000 		.4byte	.LASF90
+ 1929 067a 8F060000 		.4byte	.LASF90
  1930 067e 01       		.byte	0x1
  1931 067f 6302     		.2byte	0x263
  1932 0681 E0000000 		.4byte	0xe0
@@ -2799,14 +2799,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1943 069f 9C       		.byte	0x9c
  1944 06a0 B5060000 		.4byte	0x6b5
  1945 06a4 1A       		.uleb128 0x1a
- 1946 06a5 CC060000 		.4byte	.LASF90
+ 1946 06a5 8F060000 		.4byte	.LASF90
  1947 06a9 01       		.byte	0x1
  1948 06aa 6802     		.2byte	0x268
  1949 06ac E0000000 		.4byte	0xe0
  1950 06b0 74040000 		.4byte	.LLST27
  1951 06b4 00       		.byte	0
  1952 06b5 1D       		.uleb128 0x1d
- 1953 06b6 99040000 		.4byte	.LASF95
+ 1953 06b6 5C040000 		.4byte	.LASF95
  1954 06ba 01       		.byte	0x1
  1955 06bb 6D02     		.2byte	0x26d
  1956 06bd C1010000 		.4byte	0x1c1
@@ -2816,9 +2816,9 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1960 06ca 9C       		.byte	0x9c
  1961 06cb E0060000 		.4byte	0x6e0
  1962 06cf 1A       		.uleb128 0x1a
- 1963 06d0 CC060000 		.4byte	.LASF90
+ 1963 06d0 8F060000 		.4byte	.LASF90
  1964 06d4 01       		.byte	0x1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 48
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 48
 
 
  1965 06d5 6D02     		.2byte	0x26d
@@ -2826,7 +2826,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1967 06db 95040000 		.4byte	.LLST28
  1968 06df 00       		.byte	0
  1969 06e0 1D       		.uleb128 0x1d
- 1970 06e1 82050000 		.4byte	.LASF96
+ 1970 06e1 45050000 		.4byte	.LASF96
  1971 06e5 01       		.byte	0x1
  1972 06e6 7202     		.2byte	0x272
  1973 06e8 C1010000 		.4byte	0x1c1
@@ -2836,7 +2836,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1977 06f5 9C       		.byte	0x9c
  1978 06f6 0B070000 		.4byte	0x70b
  1979 06fa 1A       		.uleb128 0x1a
- 1980 06fb CC060000 		.4byte	.LASF90
+ 1980 06fb 8F060000 		.4byte	.LASF90
  1981 06ff 01       		.byte	0x1
  1982 0700 7202     		.2byte	0x272
  1983 0702 E0000000 		.4byte	0xe0
@@ -2853,14 +2853,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  1994 0720 9C       		.byte	0x9c
  1995 0721 36070000 		.4byte	0x736
  1996 0725 1A       		.uleb128 0x1a
- 1997 0726 CC060000 		.4byte	.LASF90
+ 1997 0726 8F060000 		.4byte	.LASF90
  1998 072a 01       		.byte	0x1
  1999 072b 7702     		.2byte	0x277
  2000 072d E0000000 		.4byte	0xe0
  2001 0731 D7040000 		.4byte	.LLST30
  2002 0735 00       		.byte	0
  2003 0736 1D       		.uleb128 0x1d
- 2004 0737 8A060000 		.4byte	.LASF98
+ 2004 0737 4D060000 		.4byte	.LASF98
  2005 073b 01       		.byte	0x1
  2006 073c 7C02     		.2byte	0x27c
  2007 073e C1010000 		.4byte	0x1c1
@@ -2870,15 +2870,15 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2011 074b 9C       		.byte	0x9c
  2012 074c 61070000 		.4byte	0x761
  2013 0750 1A       		.uleb128 0x1a
- 2014 0751 CC060000 		.4byte	.LASF90
+ 2014 0751 8F060000 		.4byte	.LASF90
  2015 0755 01       		.byte	0x1
  2016 0756 7C02     		.2byte	0x27c
  2017 0758 E0000000 		.4byte	0xe0
  2018 075c F8040000 		.4byte	.LLST31
  2019 0760 00       		.byte	0
  2020 0761 1C       		.uleb128 0x1c
- 2021 0762 0A070000 		.4byte	.LASF100
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 49
+ 2021 0762 CD060000 		.4byte	.LASF100
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 49
 
 
  2022 0766 01       		.byte	0x1
@@ -2899,7 +2899,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2037 078c 9C       		.byte	0x9c
  2038 078d A2070000 		.4byte	0x7a2
  2039 0791 1A       		.uleb128 0x1a
- 2040 0792 CC060000 		.4byte	.LASF90
+ 2040 0792 8F060000 		.4byte	.LASF90
  2041 0796 01       		.byte	0x1
  2042 0797 8602     		.2byte	0x286
  2043 0799 6B000000 		.4byte	0x6b
@@ -2916,13 +2916,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2054 07b7 9C       		.byte	0x9c
  2055 07b8 DB070000 		.4byte	0x7db
  2056 07bc 1A       		.uleb128 0x1a
- 2057 07bd E1070000 		.4byte	.LASF103
+ 2057 07bd A4070000 		.4byte	.LASF103
  2058 07c1 01       		.byte	0x1
  2059 07c2 8B02     		.2byte	0x28b
  2060 07c4 E0000000 		.4byte	0xe0
  2061 07c8 3A050000 		.4byte	.LLST33
  2062 07cc 17       		.uleb128 0x17
- 2063 07cd E8070000 		.4byte	.LASF104
+ 2063 07cd AB070000 		.4byte	.LASF104
  2064 07d1 01       		.byte	0x1
  2065 07d2 8C02     		.2byte	0x28c
  2066 07d4 E0000000 		.4byte	0xe0
@@ -2930,7 +2930,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2068 07d9 51       		.byte	0x51
  2069 07da 00       		.byte	0
  2070 07db 1E       		.uleb128 0x1e
- 2071 07dc 27050000 		.4byte	.LASF106
+ 2071 07dc EA040000 		.4byte	.LASF106
  2072 07e0 01       		.byte	0x1
  2073 07e1 9102     		.2byte	0x291
  2074 07e3 00000000 		.4byte	.LFB28
@@ -2938,10 +2938,10 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2076 07eb 01       		.uleb128 0x1
  2077 07ec 9C       		.byte	0x9c
  2078 07ed 1D       		.uleb128 0x1d
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 50
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 50
 
 
- 2079 07ee CA050000 		.4byte	.LASF105
+ 2079 07ee 8D050000 		.4byte	.LASF105
  2080 07f2 01       		.byte	0x1
  2081 07f3 9502     		.2byte	0x295
  2082 07f5 C1010000 		.4byte	0x1c1
@@ -2951,13 +2951,13 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2086 0802 9C       		.byte	0x9c
  2087 0803 26080000 		.4byte	0x826
  2088 0807 1A       		.uleb128 0x1a
- 2089 0808 E1070000 		.4byte	.LASF103
+ 2089 0808 A4070000 		.4byte	.LASF103
  2090 080c 01       		.byte	0x1
  2091 080d 9502     		.2byte	0x295
  2092 080f E0000000 		.4byte	0xe0
  2093 0813 5B050000 		.4byte	.LLST34
  2094 0817 17       		.uleb128 0x17
- 2095 0818 E8070000 		.4byte	.LASF104
+ 2095 0818 AB070000 		.4byte	.LASF104
  2096 081c 01       		.byte	0x1
  2097 081d 9602     		.2byte	0x296
  2098 081f E0000000 		.4byte	0xe0
@@ -2973,7 +2973,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2108 0836 01       		.uleb128 0x1
  2109 0837 9C       		.byte	0x9c
  2110 0838 1D       		.uleb128 0x1d
- 2111 0839 F7030000 		.4byte	.LASF108
+ 2111 0839 BA030000 		.4byte	.LASF108
  2112 083d 01       		.byte	0x1
  2113 083e 9F02     		.2byte	0x29f
  2114 0840 C1010000 		.4byte	0x1c1
@@ -2983,14 +2983,14 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2118 084d 9C       		.byte	0x9c
  2119 084e 63080000 		.4byte	0x863
  2120 0852 1A       		.uleb128 0x1a
- 2121 0853 E1070000 		.4byte	.LASF103
+ 2121 0853 A4070000 		.4byte	.LASF103
  2122 0857 01       		.byte	0x1
  2123 0858 9F02     		.2byte	0x29f
  2124 085a E0000000 		.4byte	0xe0
  2125 085e 7C050000 		.4byte	.LLST35
  2126 0862 00       		.byte	0
  2127 0863 1D       		.uleb128 0x1d
- 2128 0864 760A0000 		.4byte	.LASF109
+ 2128 0864 980A0000 		.4byte	.LASF109
  2129 0868 01       		.byte	0x1
  2130 0869 B602     		.2byte	0x2b6
  2131 086b 77000000 		.4byte	0x77
@@ -2998,19 +2998,19 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2133 0873 04000000 		.4byte	.LFE32-.LFB32
  2134 0877 01       		.uleb128 0x1
  2135 0878 9C       		.byte	0x9c
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 51
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 51
 
 
  2136 0879 8E080000 		.4byte	0x88e
  2137 087d 1A       		.uleb128 0x1a
- 2138 087e CC060000 		.4byte	.LASF90
+ 2138 087e 8F060000 		.4byte	.LASF90
  2139 0882 01       		.byte	0x1
  2140 0883 B602     		.2byte	0x2b6
  2141 0885 E0000000 		.4byte	0xe0
  2142 0889 9D050000 		.4byte	.LLST36
  2143 088d 00       		.byte	0
  2144 088e 1D       		.uleb128 0x1d
- 2145 088f 10060000 		.4byte	.LASF110
+ 2145 088f D3050000 		.4byte	.LASF110
  2146 0893 01       		.byte	0x1
  2147 0894 BB02     		.2byte	0x2bb
  2148 0896 77000000 		.4byte	0x77
@@ -3020,28 +3020,28 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2152 08a3 9C       		.byte	0x9c
  2153 08a4 B9080000 		.4byte	0x8b9
  2154 08a8 1A       		.uleb128 0x1a
- 2155 08a9 CC060000 		.4byte	.LASF90
+ 2155 08a9 8F060000 		.4byte	.LASF90
  2156 08ad 01       		.byte	0x1
  2157 08ae BB02     		.2byte	0x2bb
  2158 08b0 E0000000 		.4byte	0xe0
  2159 08b4 BE050000 		.4byte	.LLST37
  2160 08b8 00       		.byte	0
  2161 08b9 1F       		.uleb128 0x1f
- 2162 08ba F00A0000 		.4byte	.LASF111
- 2163 08be F00A0000 		.4byte	.LASF111
+ 2162 08ba 120B0000 		.4byte	.LASF111
+ 2163 08be 120B0000 		.4byte	.LASF111
  2164 08c2 04       		.byte	0x4
  2165 08c3 4E       		.byte	0x4e
  2166 08c4 20       		.uleb128 0x20
- 2167 08c5 B80A0000 		.4byte	.LASF122
- 2168 08c9 B80A0000 		.4byte	.LASF122
+ 2167 08c5 DA0A0000 		.4byte	.LASF122
+ 2168 08c9 DA0A0000 		.4byte	.LASF122
  2169 08cd 1F       		.uleb128 0x1f
  2170 08ce 80030000 		.4byte	.LASF112
  2171 08d2 80030000 		.4byte	.LASF112
  2172 08d6 05       		.byte	0x5
  2173 08d7 DA       		.byte	0xda
  2174 08d8 1F       		.uleb128 0x1f
- 2175 08d9 1C0A0000 		.4byte	.LASF113
- 2176 08dd 1C0A0000 		.4byte	.LASF113
+ 2175 08d9 3E0A0000 		.4byte	.LASF113
+ 2176 08dd 3E0A0000 		.4byte	.LASF113
  2177 08e1 05       		.byte	0x5
  2178 08e2 D9       		.byte	0xd9
  2179 08e3 1F       		.uleb128 0x1f
@@ -3050,26 +3050,26 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2182 08ec 06       		.byte	0x6
  2183 08ed 23       		.byte	0x23
  2184 08ee 1F       		.uleb128 0x1f
- 2185 08ef 83040000 		.4byte	.LASF115
- 2186 08f3 83040000 		.4byte	.LASF115
+ 2185 08ef 46040000 		.4byte	.LASF115
+ 2186 08f3 46040000 		.4byte	.LASF115
  2187 08f7 06       		.byte	0x6
  2188 08f8 25       		.byte	0x25
  2189 08f9 1F       		.uleb128 0x1f
- 2190 08fa 65080000 		.4byte	.LASF116
- 2191 08fe 65080000 		.4byte	.LASF116
+ 2190 08fa 28080000 		.4byte	.LASF116
+ 2191 08fe 28080000 		.4byte	.LASF116
  2192 0902 06       		.byte	0x6
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 52
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 52
 
 
  2193 0903 1D       		.byte	0x1d
  2194 0904 1F       		.uleb128 0x1f
- 2195 0905 8C0B0000 		.4byte	.LASF117
- 2196 0909 8C0B0000 		.4byte	.LASF117
+ 2195 0905 AE0B0000 		.4byte	.LASF117
+ 2196 0909 AE0B0000 		.4byte	.LASF117
  2197 090d 06       		.byte	0x6
  2198 090e 20       		.byte	0x20
  2199 090f 1F       		.uleb128 0x1f
- 2200 0910 FF040000 		.4byte	.LASF118
- 2201 0914 FF040000 		.4byte	.LASF118
+ 2200 0910 C2040000 		.4byte	.LASF118
+ 2201 0914 C2040000 		.4byte	.LASF118
  2202 0918 06       		.byte	0x6
  2203 0919 18       		.byte	0x18
  2204 091a 00       		.byte	0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2247 0028 00       		.byte	0
  2248 0029 04       		.uleb128 0x4
  2249 002a 16       		.uleb128 0x16
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 53
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 53
 
 
  2250 002b 00       		.byte	0
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2304 0061 1C       		.uleb128 0x1c
  2305 0062 05       		.uleb128 0x5
  2306 0063 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 54
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 54
 
 
  2307 0064 00       		.byte	0
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2361 009b 00       		.byte	0
  2362 009c 03       		.uleb128 0x3
  2363 009d 0E       		.uleb128 0xe
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 55
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 55
 
 
  2364 009e 3A       		.uleb128 0x3a
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2418 00d8 9142     		.uleb128 0x2111
  2419 00da 18       		.uleb128 0x18
  2420 00db 00       		.byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 56
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 56
 
 
  2421 00dc 00       		.byte	0
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2475 0114 40       		.uleb128 0x40
  2476 0115 18       		.uleb128 0x18
  2477 0116 9742     		.uleb128 0x2117
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 57
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 57
 
 
  2478 0118 19       		.uleb128 0x19
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2532 014e 0E       		.uleb128 0xe
  2533 014f 3A       		.uleb128 0x3a
  2534 0150 0B       		.uleb128 0xb
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 58
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 58
 
 
  2535 0151 3B       		.uleb128 0x3b
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2589 018a 19       		.uleb128 0x19
  2590 018b 49       		.uleb128 0x49
  2591 018c 13       		.uleb128 0x13
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 59
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 59
 
 
  2592 018d 11       		.uleb128 0x11
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2646 01c5 00       		.byte	0
  2647 01c6 3F       		.uleb128 0x3f
  2648 01c7 19       		.uleb128 0x19
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 60
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 60
 
 
  2649 01c8 3C       		.uleb128 0x3c
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2703 006e 8E000000 		.4byte	.LVL21
  2704 0072 9C000000 		.4byte	.LFE2
  2705 0076 0400     		.2byte	0x4
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 61
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 61
 
 
  2706 0078 F3       		.byte	0xf3
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2760 0100 0200     		.2byte	0x2
  2761 0102 30       		.byte	0x30
  2762 0103 9F       		.byte	0x9f
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 62
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 62
 
 
  2763 0104 00000000 		.4byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2817 0197 0400     		.2byte	0x4
  2818 0199 F3       		.byte	0xf3
  2819 019a 01       		.uleb128 0x1
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 63
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 63
 
 
  2820 019b 51       		.byte	0x51
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2874              	.LLST12:
  2875 0223 12000000 		.4byte	.LVL26
  2876 0227 3C000000 		.4byte	.LVL35
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 64
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 64
 
 
  2877 022b 0100     		.2byte	0x1
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2931 02bb 5C000000 		.4byte	.LVL50
  2932 02bf 0100     		.2byte	0x1
  2933 02c1 53       		.byte	0x53
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 65
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 65
 
 
  2934 02c2 5E000000 		.4byte	.LVL51
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  2988              	.LLST18:
  2989 0356 B6000000 		.4byte	.LVL65
  2990 035a BC000000 		.4byte	.LVL67
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 66
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 66
 
 
  2991 035e 0100     		.2byte	0x1
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3045 03e4 F3       		.byte	0xf3
  3046 03e5 01       		.uleb128 0x1
  3047 03e6 50       		.byte	0x50
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 67
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 67
 
 
  3048 03e7 9F       		.byte	0x9f
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3102 0469 01       		.uleb128 0x1
  3103 046a 50       		.byte	0x50
  3104 046b 9F       		.byte	0x9f
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 68
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 68
 
 
  3105 046c 00000000 		.4byte	0
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3159 04ee 50       		.byte	0x50
  3160 04ef 9F       		.byte	0x9f
  3161 04f0 00000000 		.4byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 69
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 69
 
 
  3162 04f4 00000000 		.4byte	0
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3216 0573 9F       		.byte	0x9f
  3217 0574 00000000 		.4byte	0
  3218 0578 00000000 		.4byte	0
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 70
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 70
 
 
  3219              	.LLST35:
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3273 0020 00000000 		.4byte	.LFB4
  3274 0024 06000000 		.4byte	.LFE4-.LFB4
  3275 0028 00000000 		.4byte	.LFB5
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 71
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 71
 
 
  3276 002c 04000000 		.4byte	.LFE5-.LFB5
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3330 0104 04000000 		.4byte	.LFE32-.LFB32
  3331 0108 00000000 		.4byte	.LFB33
  3332 010c 04000000 		.4byte	.LFE33-.LFB33
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 72
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 72
 
 
  3333 0110 00000000 		.4byte	0
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3387 00c8 00000000 		.4byte	.LFB27
  3388 00cc 04000000 		.4byte	.LFE27
  3389 00d0 00000000 		.4byte	.LFB28
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 73
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 73
 
 
  3390 00d4 02000000 		.4byte	.LFE28
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3419 00c2 4359424C 		.ascii	"CYBLE_ERROR_GATT_DB_INVALID_ATTR_HANDLE\000"
  3419      455F4552 
  3419      524F525F 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 74
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 74
 
 
  3419      47415454 
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3437      4641494C 
  3438              	.LASF93:
  3439 0215 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_check_handler\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 75
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 75
 
 
  3439      655F4861 
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3458      455F4552 
  3458      524F525F 
  3458      494E5641 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 76
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 76
 
 
  3458      4C49445F 
@@ -4532,507 +4532,512 @@ ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 1
  3472 03af 62797465 		.ascii	"byteOffset\000"
  3472      4F666673 
  3472      657400
- 3473              	.LASF121:
- 3474 03ba 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Desktop\\capsenseled\\cap"
- 3474      73657273 
- 3474      5C6A6572 
- 3474      6F6D652E 
- 3474      63726F63 
- 3475 03e8 73656E73 		.ascii	"senseled.cydsn\000"
- 3475      656C6564 
- 3475      2E637964 
- 3475      736E00
- 3476              	.LASF108:
- 3477 03f7 4379426C 		.ascii	"CyBle_Hal_pairing_sc_validate_p256_pub_key_pair\000"
- 3477      655F4861 
- 3477      6C5F7061 
- 3477      6972696E 
- 3477      675F7363 
- 3478              	.LASF70:
- 3479 0427 6C656E67 		.ascii	"lengthRemaining\000"
- 3479      74685265 
- 3479      6D61696E 
- 3479      696E6700 
- 3480              	.LASF11:
- 3481 0437 75696E74 		.ascii	"uint32\000"
- 3481      333200
- 3482              	.LASF20:
- 3483 043e 4359424C 		.ascii	"CYBLE_ERROR_OK\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 77
+ 3473              	.LASF108:
+ 3474 03ba 4379426C 		.ascii	"CyBle_Hal_pairing_sc_validate_p256_pub_key_pair\000"
+ 3474      655F4861 
+ 3474      6C5F7061 
+ 3474      6972696E 
+ 3474      675F7363 
+ 3475              	.LASF70:
+ 3476 03ea 6C656E67 		.ascii	"lengthRemaining\000"
+ 3476      74685265 
+ 3476      6D61696E 
+ 3476      696E6700 
+ 3477              	.LASF11:
+ 3478 03fa 75696E74 		.ascii	"uint32\000"
+ 3478      333200
+ 3479              	.LASF20:
+ 3480 0401 4359424C 		.ascii	"CYBLE_ERROR_OK\000"
+ 3480      455F4552 
+ 3480      524F525F 
+ 3480      4F4B00
+ 3481              	.LASF72:
+ 3482 0410 72656756 		.ascii	"regValue\000"
+ 3482      616C7565 
+ 3482      00
+ 3483              	.LASF75:
+ 3484 0419 4379424C 		.ascii	"CyBLE_Bless_RfRegRead\000"
+ 3484      455F426C 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 77
 
 
- 3483      455F4552 
- 3483      524F525F 
- 3483      4F4B00
- 3484              	.LASF72:
- 3485 044d 72656756 		.ascii	"regValue\000"
- 3485      616C7565 
- 3485      00
- 3486              	.LASF75:
- 3487 0456 4379424C 		.ascii	"CyBLE_Bless_RfRegRead\000"
- 3487      455F426C 
- 3487      6573735F 
- 3487      52665265 
- 3487      67526561 
- 3488              	.LASF7:
- 3489 046c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 3489      206C6F6E 
- 3489      6720756E 
- 3489      7369676E 
- 3489      65642069 
- 3490              	.LASF115:
- 3491 0483 626C655F 		.ascii	"ble_bless_isr_Disable\000"
- 3491      626C6573 
- 3491      735F6973 
- 3491      725F4469 
- 3491      7361626C 
- 3492              	.LASF95:
- 3493 0499 4379426C 		.ascii	"CyBle_Hal_pairing_rand_handler\000"
- 3493      655F4861 
- 3493      6C5F7061 
- 3493      6972696E 
- 3493      675F7261 
- 3494              	.LASF25:
- 3495 04b8 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
- 3495      455F4552 
- 3495      524F525F 
- 3495      4F4F425F 
- 3495      4E4F545F 
- 3496              	.LASF34:
- 3497 04d6 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
- 3497      455F4552 
- 3497      524F525F 
- 3497      4C324341 
- 3497      505F5053 
- 3498              	.LASF118:
- 3499 04ff 626C655F 		.ascii	"ble_bless_isr_StartEx\000"
- 3499      626C6573 
- 3499      735F6973 
- 3499      725F5374 
- 3499      61727445 
- 3500              	.LASF5:
- 3501 0515 6C6F6E67 		.ascii	"long unsigned int\000"
- 3501      20756E73 
- 3501      69676E65 
- 3501      6420696E 
- 3501      7400
- 3502              	.LASF106:
- 3503 0527 4379426C 		.ascii	"CyBle_Hal_smp_sc_cmac_complete\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 78
+ 3484      6573735F 
+ 3484      52665265 
+ 3484      67526561 
+ 3485              	.LASF7:
+ 3486 042f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 3486      206C6F6E 
+ 3486      6720756E 
+ 3486      7369676E 
+ 3486      65642069 
+ 3487              	.LASF115:
+ 3488 0446 626C655F 		.ascii	"ble_bless_isr_Disable\000"
+ 3488      626C6573 
+ 3488      735F6973 
+ 3488      725F4469 
+ 3488      7361626C 
+ 3489              	.LASF95:
+ 3490 045c 4379426C 		.ascii	"CyBle_Hal_pairing_rand_handler\000"
+ 3490      655F4861 
+ 3490      6C5F7061 
+ 3490      6972696E 
+ 3490      675F7261 
+ 3491              	.LASF25:
+ 3492 047b 4359424C 		.ascii	"CYBLE_ERROR_OOB_NOT_AVAILABLE\000"
+ 3492      455F4552 
+ 3492      524F525F 
+ 3492      4F4F425F 
+ 3492      4E4F545F 
+ 3493              	.LASF34:
+ 3494 0499 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
+ 3494      455F4552 
+ 3494      524F525F 
+ 3494      4C324341 
+ 3494      505F5053 
+ 3495              	.LASF118:
+ 3496 04c2 626C655F 		.ascii	"ble_bless_isr_StartEx\000"
+ 3496      626C6573 
+ 3496      735F6973 
+ 3496      725F5374 
+ 3496      61727445 
+ 3497              	.LASF5:
+ 3498 04d8 6C6F6E67 		.ascii	"long unsigned int\000"
+ 3498      20756E73 
+ 3498      69676E65 
+ 3498      6420696E 
+ 3498      7400
+ 3499              	.LASF106:
+ 3500 04ea 4379426C 		.ascii	"CyBle_Hal_smp_sc_cmac_complete\000"
+ 3500      655F4861 
+ 3500      6C5F736D 
+ 3500      705F7363 
+ 3500      5F636D61 
+ 3501              	.LASF77:
+ 3502 0509 4379424C 		.ascii	"CyBLE_BlessDeviceConfig\000"
+ 3502      455F426C 
+ 3502      65737344 
+ 3502      65766963 
+ 3502      65436F6E 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 78
 
 
- 3503      655F4861 
- 3503      6C5F736D 
- 3503      705F7363 
- 3503      5F636D61 
- 3504              	.LASF77:
- 3505 0546 4379424C 		.ascii	"CyBLE_BlessDeviceConfig\000"
- 3505      455F426C 
- 3505      65737344 
- 3505      65766963 
- 3505      65436F6E 
- 3506              	.LASF37:
- 3507 055e 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CHANNEL_NOT_FOUND\000"
- 3507      455F4552 
- 3507      524F525F 
- 3507      4C324341 
- 3507      505F4348 
- 3508              	.LASF96:
- 3509 0582 4379426C 		.ascii	"CyBle_Hal_pairing_confirm_handler\000"
- 3509      655F4861 
- 3509      6C5F7061 
- 3509      6972696E 
- 3509      675F636F 
- 3510              	.LASF49:
- 3511 05a4 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
- 3511      455F4552 
- 3511      524F525F 
- 3511      4E54465F 
- 3511      44495341 
- 3512              	.LASF80:
- 3513 05bd 7472696D 		.ascii	"trimRef38Val\000"
- 3513      52656633 
- 3513      3856616C 
- 3513      00
- 3514              	.LASF105:
- 3515 05ca 4379426C 		.ascii	"CyBle_Hal_se_smp_sc_user_passkey_handler\000"
- 3515      655F4861 
- 3515      6C5F7365 
- 3515      5F736D70 
- 3515      5F73635F 
- 3516              	.LASF17:
- 3517 05f3 72656733 		.ascii	"reg32\000"
- 3517      3200
- 3518              	.LASF59:
- 3519 05f9 726F7749 		.ascii	"rowId\000"
- 3519      6400
- 3520              	.LASF84:
- 3521 05ff 4379426C 		.ascii	"CyBleHal_DelayMs\000"
- 3521      6548616C 
- 3521      5F44656C 
- 3521      61794D73 
- 3521      00
- 3522              	.LASF110:
- 3523 0610 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_generate_DHkey_comma"
- 3523      434D505F 
- 3523      4654525F 
- 3523      4150495F 
- 3523      6C65635F 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 79
+ 3503              	.LASF37:
+ 3504 0521 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CHANNEL_NOT_FOUND\000"
+ 3504      455F4552 
+ 3504      524F525F 
+ 3504      4C324341 
+ 3504      505F4348 
+ 3505              	.LASF96:
+ 3506 0545 4379426C 		.ascii	"CyBle_Hal_pairing_confirm_handler\000"
+ 3506      655F4861 
+ 3506      6C5F7061 
+ 3506      6972696E 
+ 3506      675F636F 
+ 3507              	.LASF49:
+ 3508 0567 4359424C 		.ascii	"CYBLE_ERROR_NTF_DISABLED\000"
+ 3508      455F4552 
+ 3508      524F525F 
+ 3508      4E54465F 
+ 3508      44495341 
+ 3509              	.LASF80:
+ 3510 0580 7472696D 		.ascii	"trimRef38Val\000"
+ 3510      52656633 
+ 3510      3856616C 
+ 3510      00
+ 3511              	.LASF105:
+ 3512 058d 4379426C 		.ascii	"CyBle_Hal_se_smp_sc_user_passkey_handler\000"
+ 3512      655F4861 
+ 3512      6C5F7365 
+ 3512      5F736D70 
+ 3512      5F73635F 
+ 3513              	.LASF17:
+ 3514 05b6 72656733 		.ascii	"reg32\000"
+ 3514      3200
+ 3515              	.LASF59:
+ 3516 05bc 726F7749 		.ascii	"rowId\000"
+ 3516      6400
+ 3517              	.LASF84:
+ 3518 05c2 4379426C 		.ascii	"CyBleHal_DelayMs\000"
+ 3518      6548616C 
+ 3518      5F44656C 
+ 3518      61794D73 
+ 3518      00
+ 3519              	.LASF110:
+ 3520 05d3 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_generate_DHkey_comma"
+ 3520      434D505F 
+ 3520      4654525F 
+ 3520      4150495F 
+ 3520      6C65635F 
+ 3521 0606 6E6400   		.ascii	"nd\000"
+ 3522              	.LASF48:
+ 3523 0609 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
+ 3523      455F4552 
+ 3523      524F525F 
+ 3523      4D415800 
+ 3524              	.LASF89:
+ 3525 0619 4379426C 		.ascii	"CyBle_Hal_pairing_local_public_key_handler\000"
+ 3525      655F4861 
+ 3525      6C5F7061 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 79
 
 
- 3524 0643 6E6400   		.ascii	"nd\000"
- 3525              	.LASF48:
- 3526 0646 4359424C 		.ascii	"CYBLE_ERROR_MAX\000"
- 3526      455F4552 
- 3526      524F525F 
- 3526      4D415800 
- 3527              	.LASF89:
- 3528 0656 4379426C 		.ascii	"CyBle_Hal_pairing_local_public_key_handler\000"
- 3528      655F4861 
- 3528      6C5F7061 
- 3528      6972696E 
- 3528      675F6C6F 
- 3529              	.LASF19:
- 3530 0681 73697A65 		.ascii	"sizetype\000"
- 3530      74797065 
- 3530      00
- 3531              	.LASF98:
- 3532 068a 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_dhkey_generate_complete\000"
- 3532      655F4861 
- 3532      6C5F7061 
- 3532      6972696E 
- 3532      675F7363 
- 3533              	.LASF82:
- 3534 06bb 4379426C 		.ascii	"CyBleHal_DelayUs\000"
- 3534      6548616C 
- 3534      5F44656C 
- 3534      61795573 
- 3534      00
- 3535              	.LASF90:
- 3536 06cc 70617261 		.ascii	"param\000"
- 3536      6D00
- 3537              	.LASF120:
- 3538 06d2 47656E65 		.ascii	"Generated_Source\\PSoC4\\ble_HAL_PVT.c\000"
- 3538      72617465 
- 3538      645F536F 
- 3538      75726365 
- 3538      5C50536F 
- 3539              	.LASF54:
- 3540 06f7 4359424C 		.ascii	"CYBLE_API_RESULT_T\000"
- 3540      455F4150 
- 3540      495F5245 
- 3540      53554C54 
- 3540      5F5400
- 3541              	.LASF100:
- 3542 070a 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_local_pubkey_generate_comp"
- 3542      655F4861 
- 3542      6C5F7061 
- 3542      6972696E 
- 3542      675F7363 
- 3543 073d 6C657465 		.ascii	"lete\000"
- 3543      00
- 3544              	.LASF50:
- 3545 0742 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
- 3545      455F4552 
- 3545      524F525F 
- 3545      494E445F 
- 3545      44495341 
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 80
+ 3525      6972696E 
+ 3525      675F6C6F 
+ 3526              	.LASF19:
+ 3527 0644 73697A65 		.ascii	"sizetype\000"
+ 3527      74797065 
+ 3527      00
+ 3528              	.LASF98:
+ 3529 064d 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_dhkey_generate_complete\000"
+ 3529      655F4861 
+ 3529      6C5F7061 
+ 3529      6972696E 
+ 3529      675F7363 
+ 3530              	.LASF82:
+ 3531 067e 4379426C 		.ascii	"CyBleHal_DelayUs\000"
+ 3531      6548616C 
+ 3531      5F44656C 
+ 3531      61795573 
+ 3531      00
+ 3532              	.LASF90:
+ 3533 068f 70617261 		.ascii	"param\000"
+ 3533      6D00
+ 3534              	.LASF120:
+ 3535 0695 47656E65 		.ascii	"Generated_Source\\PSoC4\\ble_HAL_PVT.c\000"
+ 3535      72617465 
+ 3535      645F536F 
+ 3535      75726365 
+ 3535      5C50536F 
+ 3536              	.LASF54:
+ 3537 06ba 4359424C 		.ascii	"CYBLE_API_RESULT_T\000"
+ 3537      455F4150 
+ 3537      495F5245 
+ 3537      53554C54 
+ 3537      5F5400
+ 3538              	.LASF100:
+ 3539 06cd 4379426C 		.ascii	"CyBle_Hal_pairing_sc_tbx_local_pubkey_generate_comp"
+ 3539      655F4861 
+ 3539      6C5F7061 
+ 3539      6972696E 
+ 3539      675F7363 
+ 3540 0700 6C657465 		.ascii	"lete\000"
+ 3540      00
+ 3541              	.LASF50:
+ 3542 0705 4359424C 		.ascii	"CYBLE_ERROR_IND_DISABLED\000"
+ 3542      455F4552 
+ 3542      524F525F 
+ 3542      494E445F 
+ 3542      44495341 
+ 3543              	.LASF58:
+ 3544 071e 77726974 		.ascii	"writeBuffer\000"
+ 3544      65427566 
+ 3544      66657200 
+ 3545              	.LASF76:
+ 3546 072a 4379424C 		.ascii	"CyBLE_Bless_RfRegWrite\000"
+ 3546      455F426C 
+ 3546      6573735F 
+ 3546      52665265 
+ 3546      67577269 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 80
 
 
- 3546              	.LASF58:
- 3547 075b 77726974 		.ascii	"writeBuffer\000"
- 3547      65427566 
- 3547      66657200 
- 3548              	.LASF76:
- 3549 0767 4379424C 		.ascii	"CyBLE_Bless_RfRegWrite\000"
- 3549      455F426C 
- 3549      6573735F 
- 3549      52665265 
- 3549      67577269 
- 3550              	.LASF12:
- 3551 077e 666C6F61 		.ascii	"float\000"
- 3551      7400
- 3552              	.LASF88:
- 3553 0784 4359424C 		.ascii	"CYBLE_BlessStart\000"
- 3553      455F426C 
- 3553      65737353 
- 3553      74617274 
- 3553      00
- 3554              	.LASF16:
- 3555 0795 72656738 		.ascii	"reg8\000"
- 3555      00
- 3556              	.LASF30:
- 3557 079a 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
- 3557      455F4552 
- 3557      524F525F 
- 3557      54585F50 
- 3557      4F574552 
- 3558              	.LASF51:
- 3559 07b4 4359424C 		.ascii	"CYBLE_ERROR_CHAR_IS_NOT_DISCOVERED\000"
- 3559      455F4552 
- 3559      524F525F 
- 3559      43484152 
- 3559      5F49535F 
- 3560              	.LASF67:
- 3561 07d7 74656D70 		.ascii	"tempFlash\000"
- 3561      466C6173 
- 3561      6800
- 3562              	.LASF103:
- 3563 07e1 70617261 		.ascii	"param1\000"
- 3563      6D3100
- 3564              	.LASF104:
- 3565 07e8 70617261 		.ascii	"param2\000"
- 3565      6D3200
- 3566              	.LASF61:
- 3567 07ef 73726349 		.ascii	"srcIndex\000"
- 3567      6E646578 
- 3567      00
- 3568              	.LASF2:
- 3569 07f8 73686F72 		.ascii	"short int\000"
- 3569      7420696E 
- 3569      7400
- 3570              	.LASF78:
- 3571 0802 7472696D 		.ascii	"trimRegValue\000"
- 3571      52656756 
- 3571      616C7565 
- 3571      00
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 81
+ 3547              	.LASF12:
+ 3548 0741 666C6F61 		.ascii	"float\000"
+ 3548      7400
+ 3549              	.LASF88:
+ 3550 0747 4359424C 		.ascii	"CYBLE_BlessStart\000"
+ 3550      455F426C 
+ 3550      65737353 
+ 3550      74617274 
+ 3550      00
+ 3551              	.LASF16:
+ 3552 0758 72656738 		.ascii	"reg8\000"
+ 3552      00
+ 3553              	.LASF30:
+ 3554 075d 4359424C 		.ascii	"CYBLE_ERROR_TX_POWER_READ\000"
+ 3554      455F4552 
+ 3554      524F525F 
+ 3554      54585F50 
+ 3554      4F574552 
+ 3555              	.LASF51:
+ 3556 0777 4359424C 		.ascii	"CYBLE_ERROR_CHAR_IS_NOT_DISCOVERED\000"
+ 3556      455F4552 
+ 3556      524F525F 
+ 3556      43484152 
+ 3556      5F49535F 
+ 3557              	.LASF67:
+ 3558 079a 74656D70 		.ascii	"tempFlash\000"
+ 3558      466C6173 
+ 3558      6800
+ 3559              	.LASF103:
+ 3560 07a4 70617261 		.ascii	"param1\000"
+ 3560      6D3100
+ 3561              	.LASF104:
+ 3562 07ab 70617261 		.ascii	"param2\000"
+ 3562      6D3200
+ 3563              	.LASF61:
+ 3564 07b2 73726349 		.ascii	"srcIndex\000"
+ 3564      6E646578 
+ 3564      00
+ 3565              	.LASF2:
+ 3566 07bb 73686F72 		.ascii	"short int\000"
+ 3566      7420696E 
+ 3566      7400
+ 3567              	.LASF78:
+ 3568 07c5 7472696D 		.ascii	"trimRegValue\000"
+ 3568      52656756 
+ 3568      616C7565 
+ 3568      00
+ 3569              	.LASF53:
+ 3570 07d2 4359424C 		.ascii	"CYBLE_ERROR_STACK_BUSY\000"
+ 3570      455F4552 
+ 3570      524F525F 
+ 3570      53544143 
+ 3570      4B5F4255 
+ 3571              	.LASF26:
+ 3572 07e9 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
+ 3572      455F4552 
+ 3572      524F525F 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 81
 
 
- 3572              	.LASF53:
- 3573 080f 4359424C 		.ascii	"CYBLE_ERROR_STACK_BUSY\000"
- 3573      455F4552 
- 3573      524F525F 
- 3573      53544143 
- 3573      4B5F4255 
- 3574              	.LASF26:
- 3575 0826 4359424C 		.ascii	"CYBLE_ERROR_NO_CONNECTION\000"
- 3575      455F4552 
- 3575      524F525F 
- 3575      4E4F5F43 
- 3575      4F4E4E45 
- 3576              	.LASF45:
- 3577 0840 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
- 3577      455F4552 
- 3577      524F525F 
- 3577      464C4153 
- 3577      485F5752 
- 3578              	.LASF64:
- 3579 0858 726F7773 		.ascii	"rowsNotEqual\000"
- 3579      4E6F7445 
- 3579      7175616C 
- 3579      00
- 3580              	.LASF116:
- 3581 0865 626C655F 		.ascii	"ble_bless_isr_SetVector\000"
- 3581      626C6573 
- 3581      735F6973 
- 3581      725F5365 
- 3581      74566563 
- 3582              	.LASF43:
- 3583 087d 4359424C 		.ascii	"CYBLE_ERROR_HARDWARE_FAILURE\000"
- 3583      455F4552 
- 3583      524F525F 
- 3583      48415244 
- 3583      57415245 
- 3584              	.LASF46:
- 3585 089a 4359424C 		.ascii	"CYBLE_ERROR_LL_SAME_TRANSACTION_COLLISION\000"
- 3585      455F4552 
- 3585      524F525F 
- 3585      4C4C5F53 
- 3585      414D455F 
- 3586              	.LASF56:
- 3587 08c4 76617246 		.ascii	"varFlash\000"
- 3587      6C617368 
- 3587      00
- 3588              	.LASF28:
- 3589 08cd 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
- 3589      455F4552 
- 3589      524F525F 
- 3589      52455045 
- 3589      41544544 
- 3590              	.LASF62:
- 3591 08eb 65654F66 		.ascii	"eeOffset\000"
- 3591      66736574 
- 3591      00
- 3592              	.LASF73:
- 3593 08f4 4379424C 		.ascii	"CyBLE_Bless_LlRegRead\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 82
+ 3572      4E4F5F43 
+ 3572      4F4E4E45 
+ 3573              	.LASF45:
+ 3574 0803 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE\000"
+ 3574      455F4552 
+ 3574      524F525F 
+ 3574      464C4153 
+ 3574      485F5752 
+ 3575              	.LASF64:
+ 3576 081b 726F7773 		.ascii	"rowsNotEqual\000"
+ 3576      4E6F7445 
+ 3576      7175616C 
+ 3576      00
+ 3577              	.LASF116:
+ 3578 0828 626C655F 		.ascii	"ble_bless_isr_SetVector\000"
+ 3578      626C6573 
+ 3578      735F6973 
+ 3578      725F5365 
+ 3578      74566563 
+ 3579              	.LASF43:
+ 3580 0840 4359424C 		.ascii	"CYBLE_ERROR_HARDWARE_FAILURE\000"
+ 3580      455F4552 
+ 3580      524F525F 
+ 3580      48415244 
+ 3580      57415245 
+ 3581              	.LASF46:
+ 3582 085d 4359424C 		.ascii	"CYBLE_ERROR_LL_SAME_TRANSACTION_COLLISION\000"
+ 3582      455F4552 
+ 3582      524F525F 
+ 3582      4C4C5F53 
+ 3582      414D455F 
+ 3583              	.LASF56:
+ 3584 0887 76617246 		.ascii	"varFlash\000"
+ 3584      6C617368 
+ 3584      00
+ 3585              	.LASF28:
+ 3586 0890 4359424C 		.ascii	"CYBLE_ERROR_REPEATED_ATTEMPTS\000"
+ 3586      455F4552 
+ 3586      524F525F 
+ 3586      52455045 
+ 3586      41544544 
+ 3587              	.LASF62:
+ 3588 08ae 65654F66 		.ascii	"eeOffset\000"
+ 3588      66736574 
+ 3588      00
+ 3589              	.LASF73:
+ 3590 08b7 4379424C 		.ascii	"CyBLE_Bless_LlRegRead\000"
+ 3590      455F426C 
+ 3590      6573735F 
+ 3590      4C6C5265 
+ 3590      67526561 
+ 3591              	.LASF14:
+ 3592 08cd 63686172 		.ascii	"char\000"
+ 3592      00
+ 3593              	.LASF66:
+ 3594 08d2 4379424C 		.ascii	"CyBLE_Nvram_Erase\000"
+ 3594      455F4E76 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 82
 
 
- 3593      455F426C 
- 3593      6573735F 
- 3593      4C6C5265 
- 3593      67526561 
- 3594              	.LASF14:
- 3595 090a 63686172 		.ascii	"char\000"
- 3595      00
- 3596              	.LASF66:
- 3597 090f 4379424C 		.ascii	"CyBLE_Nvram_Erase\000"
- 3597      455F4E76 
- 3597      72616D5F 
- 3597      45726173 
- 3597      6500
- 3598              	.LASF65:
- 3599 0921 4379424C 		.ascii	"CyBLE_Nvram_Write\000"
- 3599      455F4E76 
- 3599      72616D5F 
- 3599      57726974 
- 3599      6500
- 3600              	.LASF18:
- 3601 0933 6C6F6E67 		.ascii	"long double\000"
- 3601      20646F75 
- 3601      626C6500 
- 3602              	.LASF71:
- 3603 093f 626C6573 		.ascii	"blessAddr\000"
- 3603      73416464 
- 3603      7200
- 3604              	.LASF31:
- 3605 0949 4359424C 		.ascii	"CYBLE_ERROR_BT_ON_NOT_COMPLETED\000"
- 3605      455F4552 
- 3605      524F525F 
- 3605      42545F4F 
- 3605      4E5F4E4F 
- 3606              	.LASF83:
- 3607 0969 64656C61 		.ascii	"delayVal\000"
- 3607      7956616C 
- 3607      00
- 3608              	.LASF74:
- 3609 0972 4379424C 		.ascii	"CyBLE_Bless_LlRegWrite\000"
- 3609      455F426C 
- 3609      6573735F 
- 3609      4C6C5265 
- 3609      67577269 
- 3610              	.LASF8:
- 3611 0989 756E7369 		.ascii	"unsigned int\000"
- 3611      676E6564 
- 3611      20696E74 
- 3611      00
- 3612              	.LASF81:
- 3613 0996 73696C69 		.ascii	"siliconRev\000"
- 3613      636F6E52 
- 3613      657600
- 3614              	.LASF55:
- 3615 09a1 62756666 		.ascii	"buffer\000"
- 3615      657200
- 3616              	.LASF41:
- 3617 09a8 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 83
+ 3594      72616D5F 
+ 3594      45726173 
+ 3594      6500
+ 3595              	.LASF65:
+ 3596 08e4 4379424C 		.ascii	"CyBLE_Nvram_Write\000"
+ 3596      455F4E76 
+ 3596      72616D5F 
+ 3596      57726974 
+ 3596      6500
+ 3597              	.LASF18:
+ 3598 08f6 6C6F6E67 		.ascii	"long double\000"
+ 3598      20646F75 
+ 3598      626C6500 
+ 3599              	.LASF71:
+ 3600 0902 626C6573 		.ascii	"blessAddr\000"
+ 3600      73416464 
+ 3600      7200
+ 3601              	.LASF31:
+ 3602 090c 4359424C 		.ascii	"CYBLE_ERROR_BT_ON_NOT_COMPLETED\000"
+ 3602      455F4552 
+ 3602      524F525F 
+ 3602      42545F4F 
+ 3602      4E5F4E4F 
+ 3603              	.LASF83:
+ 3604 092c 64656C61 		.ascii	"delayVal\000"
+ 3604      7956616C 
+ 3604      00
+ 3605              	.LASF74:
+ 3606 0935 4379424C 		.ascii	"CyBLE_Bless_LlRegWrite\000"
+ 3606      455F426C 
+ 3606      6573735F 
+ 3606      4C6C5265 
+ 3606      67577269 
+ 3607              	.LASF8:
+ 3608 094c 756E7369 		.ascii	"unsigned int\000"
+ 3608      676E6564 
+ 3608      20696E74 
+ 3608      00
+ 3609              	.LASF81:
+ 3610 0959 73696C69 		.ascii	"siliconRev\000"
+ 3610      636F6E52 
+ 3610      657600
+ 3611              	.LASF55:
+ 3612 0964 62756666 		.ascii	"buffer\000"
+ 3612      657200
+ 3613              	.LASF41:
+ 3614 096b 4359424C 		.ascii	"CYBLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
+ 3614      455F4552 
+ 3614      524F525F 
+ 3614      464C4153 
+ 3614      485F5752 
+ 3615              	.LASF36:
+ 3616 0990 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
+ 3616      455F4552 
+ 3616      524F525F 
+ 3616      4C324341 
+ 3616      505F434F 
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 83
 
 
- 3617      455F4552 
- 3617      524F525F 
- 3617      464C4153 
- 3617      485F5752 
- 3618              	.LASF36:
- 3619 09cd 4359424C 		.ascii	"CYBLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
- 3619      455F4552 
- 3619      524F525F 
- 3619      4C324341 
- 3619      505F434F 
- 3620              	.LASF3:
- 3621 09fb 73686F72 		.ascii	"short unsigned int\000"
- 3621      7420756E 
- 3621      7369676E 
- 3621      65642069 
- 3621      6E7400
- 3622              	.LASF1:
- 3623 0a0e 756E7369 		.ascii	"unsigned char\000"
- 3623      676E6564 
- 3623      20636861 
- 3623      7200
- 3624              	.LASF113:
- 3625 0a1c 43794465 		.ascii	"CyDelay\000"
- 3625      6C617900 
- 3626              	.LASF57:
- 3627 0a24 6C656E67 		.ascii	"length\000"
- 3627      746800
- 3628              	.LASF22:
- 3629 0a2b 4359424C 		.ascii	"CYBLE_ERROR_INVALID_OPERATION\000"
- 3629      455F4552 
- 3629      524F525F 
- 3629      494E5641 
- 3629      4C49445F 
- 3630              	.LASF79:
- 3631 0a49 7472696D 		.ascii	"trimRef34Val\000"
- 3631      52656633 
- 3631      3456616C 
- 3631      00
- 3632              	.LASF92:
- 3633 0a56 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_handler\000"
- 3633      655F4861 
- 3633      6C5F7061 
- 3633      6972696E 
- 3633      675F6468 
- 3634              	.LASF109:
- 3635 0a76 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_read_local_P256_publ"
- 3635      434D505F 
- 3635      4654525F 
- 3635      4150495F 
- 3635      6C65635F 
- 3636 0aa9 69635F6B 		.ascii	"ic_key_command\000"
- 3636      65795F63 
- 3636      6F6D6D61 
- 3636      6E6400
- 3637              	.LASF122:
- 3638 0ab8 6D656D73 		.ascii	"memset\000"
- 3638      657400
-ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\cceDsVSf.s 			page 84
+ 3617              	.LASF121:
+ 3618 09be 433A5C55 		.ascii	"C:\\Users\\jerome.crocco\\Documents\\GitHub\\BlueCu"
+ 3618      73657273 
+ 3618      5C6A6572 
+ 3618      6F6D652E 
+ 3618      63726F63 
+ 3619 09ec 62655C5F 		.ascii	"be\\_CypressBLE\\capsenseled_512\\capsenseled.cydsn"
+ 3619      43797072 
+ 3619      65737342 
+ 3619      4C455C63 
+ 3619      61707365 
+ 3620 0a1c 00       		.ascii	"\000"
+ 3621              	.LASF3:
+ 3622 0a1d 73686F72 		.ascii	"short unsigned int\000"
+ 3622      7420756E 
+ 3622      7369676E 
+ 3622      65642069 
+ 3622      6E7400
+ 3623              	.LASF1:
+ 3624 0a30 756E7369 		.ascii	"unsigned char\000"
+ 3624      676E6564 
+ 3624      20636861 
+ 3624      7200
+ 3625              	.LASF113:
+ 3626 0a3e 43794465 		.ascii	"CyDelay\000"
+ 3626      6C617900 
+ 3627              	.LASF57:
+ 3628 0a46 6C656E67 		.ascii	"length\000"
+ 3628      746800
+ 3629              	.LASF22:
+ 3630 0a4d 4359424C 		.ascii	"CYBLE_ERROR_INVALID_OPERATION\000"
+ 3630      455F4552 
+ 3630      524F525F 
+ 3630      494E5641 
+ 3630      4C49445F 
+ 3631              	.LASF79:
+ 3632 0a6b 7472696D 		.ascii	"trimRef34Val\000"
+ 3632      52656633 
+ 3632      3456616C 
+ 3632      00
+ 3633              	.LASF92:
+ 3634 0a78 4379426C 		.ascii	"CyBle_Hal_pairing_dhkey_handler\000"
+ 3634      655F4861 
+ 3634      6C5F7061 
+ 3634      6972696E 
+ 3634      675F6468 
+ 3635              	.LASF109:
+ 3636 0a98 424C455F 		.ascii	"BLE_CMP_FTR_API_lec_hci_handle_read_local_P256_publ"
+ 3636      434D505F 
+ 3636      4654525F 
+ 3636      4150495F 
+ 3636      6C65635F 
+ 3637 0acb 69635F6B 		.ascii	"ic_key_command\000"
+ 3637      65795F63 
+ 3637      6F6D6D61 
+ 3637      6E6400
+ 3638              	.LASF122:
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 84
 
 
- 3639              	.LASF91:
- 3640 0abf 4379426C 		.ascii	"CyBle_Hal_pairing_remote_key_handler\000"
- 3640      655F4861 
- 3640      6C5F7061 
- 3640      6972696E 
- 3640      675F7265 
- 3641              	.LASF69:
- 3642 0ae4 6C656E67 		.ascii	"lengthFlash\000"
- 3642      7468466C 
- 3642      61736800 
- 3643              	.LASF111:
- 3644 0af0 43795379 		.ascii	"CySysFlashWriteRow\000"
- 3644      73466C61 
- 3644      73685772 
- 3644      69746552 
- 3644      6F7700
- 3645              	.LASF47:
- 3646 0b03 4359424C 		.ascii	"CYBLE_ERROR_CONTROLLER_BUSY\000"
- 3646      455F4552 
- 3646      524F525F 
- 3646      434F4E54 
- 3646      524F4C4C 
- 3647              	.LASF42:
- 3648 0b1f 4359424C 		.ascii	"CYBLE_ERROR_MIC_AUTH_FAILED\000"
- 3648      455F4552 
- 3648      524F525F 
- 3648      4D49435F 
- 3648      41555448 
- 3649              	.LASF15:
- 3650 0b3b 63797374 		.ascii	"cystatus\000"
- 3650      61747573 
- 3650      00
- 3651              	.LASF44:
- 3652 0b44 4359424C 		.ascii	"CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE\000"
- 3652      455F4552 
- 3652      524F525F 
- 3652      554E5355 
- 3652      50504F52 
- 3653              	.LASF29:
- 3654 0b77 4359424C 		.ascii	"CYBLE_ERROR_GAP_ROLE\000"
- 3654      455F4552 
- 3654      524F525F 
- 3654      4741505F 
- 3654      524F4C45 
- 3655              	.LASF117:
- 3656 0b8c 626C655F 		.ascii	"ble_bless_isr_SetPriority\000"
- 3656      626C6573 
- 3656      735F6973 
- 3656      725F5365 
- 3656      74507269 
- 3657              	.LASF60:
- 3658 0ba6 64737449 		.ascii	"dstIndex\000"
- 3658      6E646578 
- 3658      00
- 3659              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 3639 0ada 6D656D73 		.ascii	"memset\000"
+ 3639      657400
+ 3640              	.LASF91:
+ 3641 0ae1 4379426C 		.ascii	"CyBle_Hal_pairing_remote_key_handler\000"
+ 3641      655F4861 
+ 3641      6C5F7061 
+ 3641      6972696E 
+ 3641      675F7265 
+ 3642              	.LASF69:
+ 3643 0b06 6C656E67 		.ascii	"lengthFlash\000"
+ 3643      7468466C 
+ 3643      61736800 
+ 3644              	.LASF111:
+ 3645 0b12 43795379 		.ascii	"CySysFlashWriteRow\000"
+ 3645      73466C61 
+ 3645      73685772 
+ 3645      69746552 
+ 3645      6F7700
+ 3646              	.LASF47:
+ 3647 0b25 4359424C 		.ascii	"CYBLE_ERROR_CONTROLLER_BUSY\000"
+ 3647      455F4552 
+ 3647      524F525F 
+ 3647      434F4E54 
+ 3647      524F4C4C 
+ 3648              	.LASF42:
+ 3649 0b41 4359424C 		.ascii	"CYBLE_ERROR_MIC_AUTH_FAILED\000"
+ 3649      455F4552 
+ 3649      524F525F 
+ 3649      4D49435F 
+ 3649      41555448 
+ 3650              	.LASF15:
+ 3651 0b5d 63797374 		.ascii	"cystatus\000"
+ 3651      61747573 
+ 3651      00
+ 3652              	.LASF44:
+ 3653 0b66 4359424C 		.ascii	"CYBLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE\000"
+ 3653      455F4552 
+ 3653      524F525F 
+ 3653      554E5355 
+ 3653      50504F52 
+ 3654              	.LASF29:
+ 3655 0b99 4359424C 		.ascii	"CYBLE_ERROR_GAP_ROLE\000"
+ 3655      455F4552 
+ 3655      524F525F 
+ 3655      4741505F 
+ 3655      524F4C45 
+ 3656              	.LASF117:
+ 3657 0bae 626C655F 		.ascii	"ble_bless_isr_SetPriority\000"
+ 3657      626C6573 
+ 3657      735F6973 
+ 3657      725F5365 
+ 3657      74507269 
+ 3658              	.LASF60:
+ 3659 0bc8 64737449 		.ascii	"dstIndex\000"
+ 3659      6E646578 
+ 3659      00
+ 3660              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ARM GAS  C:\Users\JEROME~1.CRO\AppData\Local\Temp\ccxgFbey.s 			page 85
+
+
